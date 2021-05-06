@@ -1,7 +1,7 @@
 import "./App.css";
 import React from "react";
 
-//Import NavBar 
+//Import NavBar
 import Logo from "./assets/logoPrincipal.png";
 
 //Import Banner
@@ -23,9 +23,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-
 function App() {
-
   var settings = {
     centerMode: true,
     centerPadding: "20px",
@@ -62,78 +60,93 @@ function App() {
     ],
   };
 
-var imgs = [];
-var sliderBanner;
-var imgCurrent;
-var maxImg;
-var time;
-var timeChange;
+  var imgs = [];
+  var sliderBanner;
+  var imgCurrent;
+  var maxImg;
+  var time;
+  var timeChange;
 
-function preLoading() {
-  var s = 1;
-  for (var i = 0; i < 5; i++) {
-    imgs[i] = new Image();
-    imgs[i].src = "assets/s" + s + ".jpg";
-    s++;
+  function preLoading() {
+    var s = 1;
+    for (var i = 0; i < 5; i++) {
+      imgs[i] = new Image();
+      imgs[i].src = "assets/s" + s + ".jpg";
+      s++;
+    }
   }
-}
 
-function loadImg(img) {
-  sliderBanner.style.backgroundImage = "url('" + imgs[img].src + "')";
-}
+  function loadImg(img) {
+    sliderBanner.style.backgroundImage = "url('" + imgs[img].src + "')";
+  }
 
-function start() {
-  preLoading();
-  imgCurrent = 0;
-  maxImg = imgs.length - 1;
-  sliderBanner = document.getElementById("dvslider");
-  loadImg(imgCurrent);
-  timeChange = 3000;
-  time = setInterval(change, timeChange);
-}
-
-function change() {
-  imgCurrent++;
-  if (imgCurrent > maxImg) {
+  function start() {
+    preLoading();
     imgCurrent = 0;
+    maxImg = imgs.length - 1;
+    sliderBanner = document.getElementById("dvslider");
+    loadImg(imgCurrent);
+    timeChange = 3000;
+    time = setInterval(change, timeChange);
   }
-  loadImg(imgCurrent);
-}
 
-window.addEventListener("load", start);
+  function change() {
+    imgCurrent++;
+    if (imgCurrent > maxImg) {
+      imgCurrent = 0;
+    }
+    loadImg(imgCurrent);
+  }
+
+  window.addEventListener("load", start);
 
   return (
     <div className="App">
       {/* <header className="App-header"></header> */}
       <body>
-      <div class="container-navbar">
-      <header id="header">
-				<nav>
-          <img src={Logo} alt="logo" />
-					<ul>
-						<li><a href="#intro">Início</a></li>
-						<li><a href="#one">Sobre Nós</a></li>
-						<li><a href="#two">Produtos</a></li>
-						<li><a href="#work">Contato</a></li>
-						<li><a href="#contact">Login</a></li>
-					</ul>
-				</nav>
-			</header>
-      </div>
+        <div class="container-navbar">
+          <header id="header">
+            <nav>
+              <img src={Logo} alt="logo" />
+              <ul>
+                <li>
+                  <a href="#intro">Início</a>
+                </li>
+                <li>
+                  <a href="#one">Sobre Nós</a>
+                </li>
+                <li>
+                  <a href="#two">Produtos</a>
+                </li>
+                <li>
+                  <a href="#work">Contato</a>
+                </li>
+                <li>
+                  <a href="#contact">Login</a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+        </div>
 
         {/* Banner */}
-       
-        <div id="dvslider"></div>
 
+        <div id="dvslider"></div>
 
         {/* Sobre a empresa */}
 
         <div class="basic">
-          <center><img src={iconSN} alt="icon-sobre-nos" id="icon-sobre-nos" class="imagem"/></center>
+          <center>
+            <img
+              src={iconSN}
+              alt="icon-sobre-nos"
+              id="icon-sobre-nos"
+              class="imagem"
+            />
+          </center>
           <h1 class="title">SOBRE NÓS</h1>
           <hr size="10" width="450" color="#b89b34" align="center"></hr>
         </div>
-
 
         <div class="basic-2">
           <div class="card">
@@ -152,16 +165,30 @@ window.addEventListener("load", start);
 
           <div class="card">
             <div class="card-body">
-             <div class="card-title">Visão</div>
-             <hr class="divisor"></hr>
+              <div class="card-title">Visão</div>
+              <hr class="divisor"></hr>
               <ul>
-                <li><h6>Transparência</h6></li>
-                <li><h6>Sustentabilidade</h6></li>
-                <li><h6>Empatia</h6></li>
-                <li><h6>Integridade</h6></li>
-                <li><h6>Respeito</h6></li>
-                <li><h6>Inclusão</h6></li>
-                <li><h6>Compromisso</h6></li>
+                <li>
+                  <h6>Transparência</h6>
+                </li>
+                <li>
+                  <h6>Sustentabilidade</h6>
+                </li>
+                <li>
+                  <h6>Empatia</h6>
+                </li>
+                <li>
+                  <h6>Integridade</h6>
+                </li>
+                <li>
+                  <h6>Respeito</h6>
+                </li>
+                <li>
+                  <h6>Inclusão</h6>
+                </li>
+                <li>
+                  <h6>Compromisso</h6>
+                </li>
               </ul>
             </div>
           </div>
@@ -181,9 +208,8 @@ window.addEventListener("load", start);
           </div>
         </div>
 
-
-          {/* PRODUCTS */}
-          <div className="container-products">
+        {/* PRODUCTS */}
+        <div className="container-products">
           <h1 class="title">PRODUTOS</h1>
           <div class="line" />
           <div class="slider">
@@ -246,10 +272,40 @@ window.addEventListener("load", start);
               </div>
             </Slider>
           </div>
-          </div>
+        </div>
         {/* PRODUCTS */}
-        </body>
-      
+
+        {/* BEGIN CONTACT */}
+
+        <div className="container-contact">
+          <h1 class="title">CONTATO</h1>
+          <div class="line" />
+
+          <div class="dados">
+            <h6>Av. Castelo Branco, 123 - Bairro República</h6>
+            <h6>vinhodaarabia@outlook.com</h6>
+            <h6>(31) 3456-7890 / (31) 4002-8922</h6>
+          </div>
+
+          <h4>Envie-nos uma mensagem através do formulário abaixo</h4>
+
+          <div id="mapsForms" class="mapsForms">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753.6328584850276!2d-43.18409268563655!3d-19.81315793980183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa5a9dba712abdb%3A0x6c4a86310f77da0b!2sAv.%20Castelo%20Branco%2C%20123%20-%20Republica%2C%20Jo%C3%A3o%20Monlevade%20-%20MG%2C%2035930-090!5e0!3m2!1spt-BR!2sbr!4v1620104017900!5m2!1spt-BR!2sbr"
+              width="403"
+              height="403"
+              // style="border:0;"
+              frameborder="0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+
+            {/* FORMS */}
+          </div>
+        </div>
+
+        {/* END CONTACT */}
+      </body>
     </div>
   );
 }

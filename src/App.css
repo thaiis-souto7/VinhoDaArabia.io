@@ -296,9 +296,62 @@ h5 {
 /*******************
 05. CONTATO
 *******************/
+.container-contact{
+  position: relative;
+  background-color: #f2e6d6;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container-contact .title{
+  position: relative;
+  color: #20100d;
+  font-family: Sunflower;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 5vw;
+  top: 20vh;
+  text-decoration-line: underline;
+  text-decoration-color: #b89b34;
+}
+
+.dados h6{
+  position: relative;
+  padding: 0 10px;
+  top: 24vh;
+  width: 80vw;
+  margin: 0 auto;
+  font-family: Montserrat;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  line-height: 16px;
+}
 
 
-
+.container-contact h4{
+  position: relative;
+  padding: 10px 10px;
+  top: 24vh;
+  width: 80vw;
+  margin: 0 auto;
+  font-family: Montserrat;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display:flex;
+}
+.container-contact .mapsForms{
+  display:  flex;
+  align-items: column;
+  justify-content: center;
+  position:relative;
+  padding: 0 10px;
+  top: 24vh;
+  max-width: 50%; 
+  margin: 0 auto;
+  margin-top: 10px;
+}
 
 /*******************
 06. MEDIA
