@@ -9,7 +9,6 @@ Table Of Contents:
 06. Media
 *******************/
 
-
 /*******************
 01. APP
 *******************/
@@ -36,12 +35,10 @@ Table Of Contents:
 01. HEADER
 *******************/
 
-.container-navbar{
-display: grid;
-
- margin: 0px;
+.container-navbar {
+  display: grid;
+  margin: 0px;
 }
-
 
 #header {
   position: fixed;
@@ -55,80 +52,78 @@ display: grid;
   box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
 }
 
-  #header img {
-    position: absolute;
-    left: -32em;
-    top: 0;
-    height: 7em;
-    line-height: 3em;
-    cursor: default;
+#header img {
+  position: absolute;
+  left: -32em;
+  top: 0;
+  height: 7em;
+  line-height: 3em;
+  cursor: default;
+}
+
+#header h1 a {
+  font-size: 1.9em;
+}
+
+#header nav {
+  position: absolute;
+  right: 0.5em;
+  top: 0;
+  height: 3em;
+  line-height: 3em;
+}
+
+#header nav ul {
+  margin: 0;
+}
+
+#header nav ul li {
+  display: inline-block;
+  margin-left: 0.5em;
+  font-size: 1.99em;
+  color: rgba(193, 143, 29, 0.95);
+}
+
+#header nav ul li a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  height: 3em;
+  line-height: 3em;
+  padding: 0 0.5em 0 0.5em;
+  outline: 0;
+}
+
+@media screen and (max-width: 736px) {
+  #header {
+    height: 2.5em;
+    line-height: 2.5em;
   }
 
-    #header h1 a {
-      font-size: 1.90em;
-    }
+  #header h1 {
+    text-align: center;
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 2.5em;
+    line-height: 2.5em;
+  }
+
+  #header h1 a {
+    font-size: 1em;
+  }
 
   #header nav {
-    position: absolute;
-    right: 0.5em;
-    top: 0;
-    height: 3em;
-    line-height: 3em;
+    display: none;
   }
-
-    #header nav ul {
-      margin: 0;
-    }
-
-      #header nav ul li {
-        display: inline-block;
-        margin-left: 0.5em;
-        font-size: 1.99em;
-        color:rgba(193, 143, 29, 0.95)
-      }
-
-        #header nav ul li a {
-          display: block;
-          color: inherit;
-          text-decoration: none;
-          height: 3em;
-          line-height: 3em;
-          padding: 0 0.5em 0 0.5em;
-          outline: 0;
-        }
-
-  @media screen and (max-width: 736px) {
-
-    #header {
-      height: 2.5em;
-      line-height: 2.5em;
-    }
-
-      #header h1 {
-        text-align: center;
-        position: relative;
-        left: 0;
-        top: 0;
-        height: 2.5em;
-        line-height: 2.5em;
-      }
-
-        #header h1 a {
-          font-size: 1em;
-        }
-
-      #header nav {
-        display: none;
-      }
-
-  }
-
+}
 
 /*******************
 01. BODY
 *******************/
 
-body, html {
+body,
+html {
   height: 100%;
   margin-top: 0;
   margin-bottom: 0;
@@ -136,13 +131,11 @@ body, html {
   margin-right: 0;
 }
 
-  @media screen and (max-width: 736px) {
-
-    body {
-      padding-top: 2.5em;
-    }
-
+@media screen and (max-width: 736px) {
+  body {
+    padding-top: 2.5em;
   }
+}
 
 /*******************
 02. BANNER
@@ -153,7 +146,6 @@ body, html {
   height: 80vh;
   position: relative;
 }
-
 
 /*******************
 03. SOBRE NÓS
@@ -181,7 +173,7 @@ h5 {
   font-weight: bold;
 }
 
-h4{
+h4 {
   font-family: Montserrat;
   display: block;
   font-size: 1.2em;
@@ -192,21 +184,21 @@ h4{
   font-weight: normal;
 }
 
-.basic{
+.basic {
   background: #f2e6d6;
-  display: flex; 
+  display: flex;
   flex-direction: column;
   padding-top: 5rem;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
 }
 
-.basic-title{
+.basic-title {
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   position: relative;
-  color: #20100D;
+  color: #20100d;
   font-family: Sunflower;
   font-style: normal;
   font-weight: 300;
@@ -215,18 +207,18 @@ h4{
   text-decoration-color: #b89b34;
 }
 
-.basic-2{
+.basic-2 {
   background: #f2e6d6;
-  display: flex; 
+  display: flex;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
 }
 
-.basic-2-image{
+.basic-2-image {
   margin-bottom: 3rem;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   display: flex;
 }
@@ -235,91 +227,91 @@ h4{
   justify-content: center;
   color: #f9f9f9;
   display: flex;
-	width: 17rem;
+  width: 17rem;
   height: 22rem;
   margin-bottom: 5rem;
   margin-right: 2rem;
   margin-left: 2rem;
-	background: #20100D;
-	border-radius: 0.5rem;
-  align-items: center; 
+  background: #20100d;
+  border-radius: 0.5rem;
+  align-items: center;
 }
 
 .card-body {
   padding: 2.5rem 2.75rem 1.875rem 2.5rem;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
 }
 
 .card-title {
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   font-family: Sacramento;
   font-size: 3em;
-	color: #E5AC23;
+  color: #e5ac23;
 }
 
 .card-divisor {
-  align-items: center; 
+  align-items: center;
   justify-content: center;
-	height: 1px;
-	margin-top: 0;
-	margin-bottom: 2em;
-	border: none;
-	background-color: #f9f9f9;
+  height: 1px;
+  margin-top: 0;
+  margin-bottom: 2em;
+  border: none;
+  background-color: #f9f9f9;
 }
 
-.container{
+.container {
   border-color: #20100d;
   border-style: solid;
   border-width: 0.4rem;
   display: flex;
-	width: 30rem;
+  width: 30rem;
   height: 21rem;
   margin-top: 1.9rem;
   margin-bottom: 5rem;
   margin-right: 3rem;
   margin-left: 3rem;
-	background: #f2e6d6;
-  align-items: center; 
+  background: #f2e6d6;
+  align-items: center;
   justify-content: center;
 }
 
-.container-2{
-  align-items: center; 
+.container-2 {
+  align-items: center;
   justify-content: center;
   color: #f9f9f9;
   display: flex;
-	width: 29rem;
+  width: 29rem;
   height: 20rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
   margin-left: 0.5rem;
-	background: #20100D;
+  background: #20100d;
 }
 
-.container-text-1{
+.container-text-1 {
   padding: 3rem;
   font-family: montserrat;
   text-align: center;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
 }
 
-.container-text-2{
+.container-text-2 {
   padding: 2.5rem;
   font-family: montserrat;
   text-align: center;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
 }
 
-.container-text-3{
+.container-text-3 {
   padding: 6rem;
   font-family: montserrat;
   text-align: center;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
 }
 
@@ -336,21 +328,21 @@ h4{
   background-size: cover;
   background-color: #464646;
   background-size:100%; */
-  background-color:#20100D;
+  background-color: #20100d;
   display: flex;
   flex-direction: column;
-
+  padding-bottom: 10vh;
 }
 
-.container-products .title{
+.container-products .title {
   position: relative;
   color: #ffffff;
   font-family: Sunflower;
   font-style: normal;
   font-weight: 300;
   font-size: 5vw;
-  top: 18vh;
-  padding-bottom: 30vh;
+  padding-bottom: 20vh;
+  margin-top: 2em;
   text-decoration-line: underline;
   text-decoration-color: #b89b34;
 }
@@ -358,9 +350,9 @@ h4{
   width: 80%;
   margin: 0 auto;
   cursor: pointer;
-  padding-bottom: 10vh;
+  
 }
-.slider img{
+.slider img {
   margin: 0 auto;
   max-width: 15vw !important;
 }
@@ -376,17 +368,16 @@ h4{
   color: #b89b34;
   font-size: 1.7vw;
 }
-.slider .thumbnail{
+.slider .thumbnail {
   margin-left: 1vw;
 }
-
 
 /*******************
 05. CONTATO
 *******************/
 
-.text-contact{
-  color:#20100D;
+.text-contact {
+  color: #20100d;
   font-family: Montserrat;
   display: block;
   text-align: center;
@@ -396,11 +387,10 @@ h4{
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
-
 }
 
-.text-contact-2{
-  color:#20100D;
+.text-contact-2 {
+  color: #20100d;
   font-family: Montserrat;
   display: block;
   text-align: center;
@@ -410,24 +400,23 @@ h4{
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
-
 }
 
-.mapsForms{
+.mapsForms {
   background: #f2e6d6;
-	position: relative;
-	overflow: hidden;
-	padding-bottom: 5%;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 5%;
 }
 
-.mapsForms iframe  {
+.mapsForms iframe {
   margin-top: 2rem;
   position: relative;
-	top: 0;
-	left: 0;
-	width: 30rem;
-	height: 20rem;
-	border: none; 
+  top: 0;
+  left: 0;
+  width: 30rem;
+  height: 20rem;
+  border: none;
   justify-content: center;
   align-items: center;
 }
@@ -435,13 +424,13 @@ h4{
 06. MEDIA
 *******************/
 
-@media(max-width: 1080px) {
+@media (max-width: 1080px) {
   html {
     font-size: 93.75%;
   }
 }
 
-@media(max-width: 720px) {
+@media (max-width: 720px) {
   html {
     font-size: 87.5%;
   }
