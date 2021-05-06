@@ -261,17 +261,16 @@ h5 {
   font-style: normal;
   font-weight: 300;
   font-size: 5vw;
-  top: 20vh;
+  top: 18vh;
+  padding-bottom: 30vh;
   text-decoration-line: underline;
   text-decoration-color: #b89b34;
 }
 .container-products .slider {
-  position: relative;
-  top: 24vh;
   width: 80%;
   margin: 0 auto;
   cursor: pointer;
-  padding-bottom: 35vh;
+  padding-bottom: 10vh;
 }
 .slider img{
   margin: 0 auto;
