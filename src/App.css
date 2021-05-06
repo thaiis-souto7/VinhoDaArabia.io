@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -31,8 +20,8 @@
 /* Header */
 
 .container-navbar{
-  display: flex;
- border: 1px solid #C3FFFF;
+display: grid;
+
  margin: 0px;
 }
 
@@ -49,11 +38,11 @@
   box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
 }
 
-  #header h1 {
+  #header img {
     position: absolute;
-    left: 1em;
+    left: -32em;
     top: 0;
-    height: 3em;
+    height: 7em;
     line-height: 3em;
     cursor: default;
   }
@@ -129,8 +118,6 @@ body {
 
   }
 
-
-
 /* BANNER */
 
 #dvslider {
@@ -143,11 +130,18 @@ body {
 /* PRODUTOS */
 .container-products {
   position: relative;
-  background: #20100d;
-  padding: 0;
+  /* background-image: url("./assets/background-products.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+  background-size:100%; */
+  background-color:#20100D;
   height: 100vh;
 }
-.container-products .title {
+
+.container-products .title{
   position: relative;
   color: #ffffff;
   font-family: Sunflower;
@@ -162,10 +156,12 @@ body {
   position: relative;
   padding: 0 10px;
   top: 24vh;
-  width: 70%;
-  left: 15vw;
+  width: 80%;
+  margin: 0 auto;
+  cursor: pointer;
 }
-.slider img {
+.slider img{
+  margin: 0 auto;
   max-width: 15vw !important;
 }
 .slider .product-details {
@@ -179,6 +175,9 @@ body {
   font-family: Montserrat;
   color: #b89b34;
   font-size: 1.7vw;
+}
+.slider .thumbnail{
+  margin-left: 1vw;
 }
 
 /* PRODUTOS */

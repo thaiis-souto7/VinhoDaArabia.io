@@ -2,7 +2,7 @@ import "./App.css";
 import React from "react";
 
 //Import NavBar 
-import NavBar from "./components/NavBar";
+import Logo from "./assets/logoPrincipal.png";
 
 //Import Banner
 
@@ -30,7 +30,7 @@ function App() {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 2000,
     variableWidth: true,
     dots: true,
     responsive: [
@@ -107,6 +107,7 @@ window.addEventListener("load", start);
       <div class="container-navbar">
       <header id="header">
 				<nav>
+          <img src={Logo} alt="logo" />
 					<ul>
 						<li><a href="#intro">Início</a></li>
 						<li><a href="#one">Sobre Nós</a></li>
@@ -122,8 +123,8 @@ window.addEventListener("load", start);
        
         <div id="dvslider"></div>
 
-        {/* Produtos */}
-        <div className="container-products">
+          {/* PRODUCTS */}
+          <div className="container-products">
           <h1 class="title">PRODUTOS</h1>
           <div class="line" />
           <div class="slider">
@@ -159,7 +160,7 @@ window.addEventListener("load", start);
               <div class="thumbnail">
                 <img src={Garrafa} class="product" alt="marcador" />
                 <div class="product-details">
-                  <h2>Garrafa</h2>
+                  <h2>Garrafa térmica</h2>
                   <p>R$19,99</p>
                 </div>
               </div>
@@ -186,8 +187,11 @@ window.addEventListener("load", start);
               </div>
             </Slider>
           </div>
-        </div>
-      </body>
+          </div>
+        {/* PRODUCTS */}
+
+        </body>
+      
     </div>
   );
 }
