@@ -1,0 +1,18 @@
+*{
+
+}
+
+body{
+    background-color: rgb(218, 175, 134); 
+}
+
+.container{
+  display: flex;
+}
+
+.head{
+  background-color: #e07d7d;
+}
+header{
+  text-align: center;
+}
