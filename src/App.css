@@ -28,11 +28,46 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* PRODUTOS */
+.container-products{
+  position: relative;
+  background: #20100D;
+  padding: 0;
+  height: 100vh;
 }
+.container-products .title{
+  position: relative;
+  color: #ffffff;
+  font-family: Sunflower;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 5vw;
+  top: 20vh;
+  text-decoration-line: underline;
+  text-decoration-color: #b89b34;
+}
+.container-products .slider{
+  position: relative;
+  padding: 0 10px;
+  top: 24vh;
+  width: 70%;
+  left:15vw;
+}
+.slider img{
+  max-width: 15vw !important;
+}
+.slider .product-details{
+  color: white;
+}
+.slider .product-details h2 {
+  font-family: Montserrat;
+  font-size: 2vw;
+}
+.slider .product-details p {
+  font-family: Montserrat;
+  color: #b89b34;
+  font-size: 1.7vw;
+}
+
+/* PRODUTOS */
+
