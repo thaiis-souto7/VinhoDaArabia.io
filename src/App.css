@@ -128,8 +128,12 @@ display: grid;
 01. BODY
 *******************/
 
-body {
-  padding-top: 3em;
+body, html {
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
   @media screen and (max-width: 736px) {
@@ -198,6 +202,9 @@ h4{
 }
 
 .basic-title{
+  display: flex;
+  align-items: center; 
+  justify-content: center;
   position: relative;
   color: #20100D;
   font-family: Sunflower;
@@ -219,6 +226,9 @@ h4{
 
 .basic-2-image{
   margin-bottom: 3rem;
+  align-items: center; 
+  justify-content: center;
+  display: flex;
 }
 
 .card {
@@ -232,21 +242,26 @@ h4{
   margin-left: 2rem;
 	background: #20100D;
 	border-radius: 0.5rem;
+  align-items: center; 
 }
 
 .card-body {
   padding: 2.5rem 2.75rem 1.875rem 2.5rem;
+  align-items: center; 
+  justify-content: center;
 }
 
 .card-title {
+  align-items: center; 
   justify-content: center;
   font-family: Sacramento;
-  display: flex;
   font-size: 3em;
 	color: #E5AC23;
 }
 
 .card-divisor {
+  align-items: center; 
+  justify-content: center;
 	height: 1px;
 	margin-top: 0;
 	margin-bottom: 2em;
@@ -266,9 +281,12 @@ h4{
   margin-right: 3rem;
   margin-left: 3rem;
 	background: #f2e6d6;
+  align-items: center; 
+  justify-content: center;
 }
 
 .container-2{
+  align-items: center; 
   justify-content: center;
   color: #f9f9f9;
   display: flex;
@@ -285,18 +303,24 @@ h4{
   padding: 3rem;
   font-family: montserrat;
   text-align: center;
+  align-items: center; 
+  justify-content: center;
 }
 
 .container-text-2{
   padding: 2.5rem;
   font-family: montserrat;
   text-align: center;
+  align-items: center; 
+  justify-content: center;
 }
 
 .container-text-3{
   padding: 6rem;
   font-family: montserrat;
   text-align: center;
+  align-items: center; 
+  justify-content: center;
 }
 
 /*******************

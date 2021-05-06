@@ -113,13 +113,12 @@ window.addEventListener("load", start);
       <div class="container-navbar">
       <header id="header">
 				<nav>
-          <img src={Logo} alt="logo" />
+          <img src={Logo} alt="logo" href="index.html"/>
 					<ul>
-						<li><a href="#intro">Início</a></li>
-						<li><a href="#one">Sobre Nós</a></li>
-						<li><a href="#two">Produtos</a></li>
-						<li><a href="#work">Contato</a></li>
-						<li><a href="#contact">Login</a></li>
+						<li><a href="#index">Início</a></li>
+						<li><a href="#about">Sobre Nós</a></li>
+						<li><a href="#products">Produtos</a></li>
+						<li><a href="#contact">Contato</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -132,7 +131,7 @@ window.addEventListener("load", start);
 
         {/* Sobre a empresa */}
 
-        <div class="basic">
+        <div id="about" class="basic">
           <center><img src={iconSN} alt="icon-sobre-nos" id="icon-sobre-nos" class="imagem"/></center>
           <h1 class="basic-title">SOBRE NÓS</h1>
         </div>
@@ -235,7 +234,7 @@ window.addEventListener("load", start);
 
 
           {/* PRODUCTS */}
-          <div className="container-products">
+          <div id="products" className="container-products">
           <h1 class="title">PRODUTOS</h1>
           <div class="line" />
           <div class="slider">
