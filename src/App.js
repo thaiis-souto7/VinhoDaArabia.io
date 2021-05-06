@@ -104,20 +104,18 @@ window.addEventListener("load", start);
     <div className="App">
       {/* <header className="App-header"></header> */}
       <body>
-      <div class="container-navbar">
+
       <header id="header">
 				<nav>
           <img src={Logo} alt="logo" />
 					<ul>
 						<li><a href="#intro">Início</a></li>
-						<li><a href="#one">Sobre Nós</a></li>
-						<li><a href="#two">Produtos</a></li>
-						<li><a href="#work">Contato</a></li>
-						<li><a href="#contact">Login</a></li>
+						<li><a href="#about">Sobre Nós</a></li>
+						<li><a href="#work">Produtos</a></li>
+						<li><a href="#contact">Contato</a></li>
 					</ul>
 				</nav>
 			</header>
-      </div>
 
         {/* Banner */}
        

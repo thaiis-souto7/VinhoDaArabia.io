@@ -19,13 +19,6 @@
 
 /* Header */
 
-.container-navbar{
-display: grid;
-
- margin: 0px;
-}
-
-
 #header {
   position: fixed;
   z-index: 10000;
@@ -38,85 +31,82 @@ display: grid;
   box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
 }
 
-  #header img {
-    position: absolute;
-    left: -32em;
-    top: 0;
-    height: 7em;
-    line-height: 3em;
-    cursor: default;
+#header nav {
+  right: 0.5em;
+  top: 0;
+  height: 3em;
+  line-height: 3em;
+}
+
+#header img {
+  float: left;
+  top: 0;
+  height: 7em;
+  line-height: 3em;
+  cursor: default;
+}
+
+
+#header nav ul {
+  float: right;
+}
+
+#header nav ul li {
+  display: inline-block;
+  margin-right: 0.5em;
+  font-size: 1.99em;
+  color: rgba(193, 143, 29, 0.95);
+}
+
+
+#header nav ul li a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  height: 3em;
+  line-height: 3em;
+  padding: 0 0.5em 0 0.5em;
+  outline: 0;
+}
+
+#header nav ul li a:hover{
+  color: #ffffff; 
+}
+
+
+@media screen and (max-width: 736px) {
+  #header {
+    height: 2.5em;
+    line-height: 2.5em;
   }
 
-    #header h1 a {
-      font-size: 1.90em;
-    }
+   #header h1 {
+    text-align: center;
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 2.5em;
+    line-height: 2.5em;
+  }
+
+  #header h1 a {
+    font-size: 1em;
+  }
 
   #header nav {
-    position: absolute;
-    right: 0.5em;
-    top: 0;
-    height: 3em;
-    line-height: 3em;
+    display: none;
   }
-
-    #header nav ul {
-      margin: 0;
-    }
-
-      #header nav ul li {
-        display: inline-block;
-        margin-left: 0.5em;
-        font-size: 1.99em;
-        color:rgba(193, 143, 29, 0.95)
-      }
-
-        #header nav ul li a {
-          display: block;
-          color: inherit;
-          text-decoration: none;
-          height: 3em;
-          line-height: 3em;
-          padding: 0 0.5em 0 0.5em;
-          outline: 0;
-        }
-
-  @media screen and (max-width: 736px) {
-
-    #header {
-      height: 2.5em;
-      line-height: 2.5em;
-    }
-
-      #header h1 {
-        text-align: center;
-        position: relative;
-        left: 0;
-        top: 0;
-        height: 2.5em;
-        line-height: 2.5em;
-      }
-
-        #header h1 a {
-          font-size: 1em;
-        }
-
-      #header nav {
-        display: none;
-      }
-
-  }
+}
 
 body {
   padding-top: 3em;
 }
 
-  @media screen and (max-width: 736px) {
-
-    body {
-      padding-top: 2.5em;
-    }
-
+@media screen and (max-width: 736px) {
+  body {
+    padding-top: 2.5em;
   }
+}
 
 /* BANNER */
 
@@ -125,7 +115,6 @@ body {
   height: 80vh;
   position: relative;
 }
-
 
 /* PRODUTOS */
 .container-products {
@@ -137,11 +126,11 @@ body {
   background-size: cover;
   background-color: #464646;
   background-size:100%; */
-  background-color:#20100D;
+  background-color: #20100d;
   height: 100vh;
 }
 
-.container-products .title{
+.container-products .title {
   position: relative;
   color: #ffffff;
   font-family: Sunflower;
@@ -160,7 +149,7 @@ body {
   margin: 0 auto;
   cursor: pointer;
 }
-.slider img{
+.slider img {
   margin: 0 auto;
   max-width: 15vw !important;
 }
@@ -176,7 +165,7 @@ body {
   color: #b89b34;
   font-size: 1.7vw;
 }
-.slider .thumbnail{
+.slider .thumbnail {
   margin-left: 1vw;
 }
 
