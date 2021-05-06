@@ -313,7 +313,7 @@ h4{
   background-color: #464646;
   background-size:100%; */
   background-color:#20100D;
-  height: 100vh;
+
 }
 
 .container-products .title{
@@ -323,17 +323,16 @@ h4{
   font-style: normal;
   font-weight: 300;
   font-size: 5vw;
-  top: 20vh;
+  top: 18vh;
+  padding-bottom: 30vh;
   text-decoration-line: underline;
   text-decoration-color: #b89b34;
 }
 .container-products .slider {
-  position: relative;
-  padding: 0 10px;
-  top: 24vh;
   width: 80%;
   margin: 0 auto;
   cursor: pointer;
+  padding-bottom: 10vh;
 }
 .slider img{
   margin: 0 auto;

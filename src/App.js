@@ -300,11 +300,9 @@ window.addEventListener("load", start);
           </div>
           </div>
         {/* PRODUCTS */}
-
         </body>
       
     </div>
   );
 }
-
 export default App;
