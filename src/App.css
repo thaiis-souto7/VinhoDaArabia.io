@@ -337,6 +337,8 @@ h4{
   background-color: #464646;
   background-size:100%; */
   background-color:#20100D;
+  display: flex;
+  flex-direction: column;
 
 }
 
@@ -382,63 +384,53 @@ h4{
 /*******************
 05. CONTATO
 *******************/
-.container-contact{
-  position: relative;
-  background-color: #f2e6d6;
-  height: 100vh;
-  width: 100vw;
-}
 
-.container-contact .title{
-  position: relative;
-  color: #20100d;
-  font-family: Sunflower;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 5vw;
-  top: 20vh;
-  text-decoration-line: underline;
-  text-decoration-color: #b89b34;
-}
-
-.dados h6{
-  position: relative;
-  padding: 0 10px;
-  top: 24vh;
-  width: 80vw;
-  margin: 0 auto;
+.text-contact{
+  color:#20100D;
   font-family: Montserrat;
+  display: block;
   text-align: center;
-  align-items: center;
-  justify-content: center;
-  line-height: 16px;
+  font-size: 0.9em;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+
 }
 
-
-.container-contact h4{
-  position: relative;
-  padding: 10px 10px;
-  top: 24vh;
-  width: 80vw;
-  margin: 0 auto;
+.text-contact-2{
+  color:#20100D;
   font-family: Montserrat;
+  display: block;
   text-align: center;
-  align-items: center;
-  justify-content: center;
-  display:flex;
-}
-.container-contact .mapsForms{
-  display:  flex;
-  align-items: column;
-  justify-content: center;
-  position:relative;
-  padding: 0 10px;
-  top: 24vh;
-  max-width: 50%; 
-  margin: 0 auto;
-  margin-top: 10px;
+  font-size: 1.2em;
+  margin-top: 3em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+
 }
 
+.mapsForms{
+  background: #f2e6d6;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 5%;
+}
+
+.mapsForms iframe  {
+  margin-top: 2rem;
+  position: relative;
+	top: 0;
+	left: 0;
+	width: 30rem;
+	height: 20rem;
+	border: none; 
+  justify-content: center;
+  align-items: center;
+}
 /*******************
 06. MEDIA
 *******************/
