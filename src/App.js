@@ -102,7 +102,7 @@ function App() {
     loadImg(imgCurrent);
   }
 
-  window.addEventListener("load", start);
+  window.addEventListener("load", start);  
 
   return (
     <div className="App">
@@ -121,7 +121,6 @@ function App() {
 				</nav>
 			</header>
       </div>
-
         {/* Banner */}
 
         <div id="dvslider"></div>
@@ -129,7 +128,7 @@ function App() {
         {/* Sobre a empresa */}
 
         <div id="about" class="basic">
-          <center><img src={iconSN} alt="icon-sobre-nos" id="icon-sobre-nos" class="imagem"/></center>
+          <center><img src={iconSN} alt="icon-sobre-nos" id="icon-sobre-nos" width="120vw" height="100vh"/></center>
           <h1 class="basic-title">SOBRE NÓS</h1>
         </div>
 
@@ -197,7 +196,7 @@ function App() {
           <div class="basic-2-image">
             <img src={img1} alt="icon-1" id="icon-1"/>         
           </div>
-          <div class="container">
+          <div class="container" id="text-1">
             <div class="container-2">
               <div class="container-text-1">
                 <h4>Embora a planta tenha origem</h4>
@@ -211,7 +210,7 @@ function App() {
           </div>
         </div>
 
-        <div class="basic-2">
+        <div class="basic-2" id="reverse">
           <div class="container">
             <div class="container-2">
               <div class="container-text-2">
