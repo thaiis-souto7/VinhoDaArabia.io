@@ -209,8 +209,8 @@ h4{
   color: #20100D;
   font-family: Sunflower;
   font-style: normal;
-  font-weight: 300;
-  font-size: 5vw;
+  font-weight: 200;
+  font-size: 4vw;
   text-decoration-line: underline;
   text-decoration-color: #b89b34;
 }
@@ -341,18 +341,19 @@ h4{
   background-color:#20100D;
   display: flex;
   flex-direction: column;
-
 }
 
 .container-products .title{
+  display: flex;
+  align-items: center; 
+  justify-content: center;
   position: relative;
   color: #ffffff;
   font-family: Sunflower;
   font-style: normal;
-  font-weight: 300;
-  font-size: 5vw;
-  top: 18vh;
-  padding-bottom: 30vh;
+  font-weight: 200;
+  font-size: 4vw;
+   margin-top: 2em;
   text-decoration-line: underline;
   text-decoration-color: #b89b34;
 }
@@ -437,14 +438,22 @@ h4{
 06. MEDIA
 *******************/
 
-@media(max-width: 1080px) {
-  html {
-    font-size: 93.75%;
-  }
-}
-
-@media(max-width: 720px) {
+@media(max-width: 768px) {
   html {
     font-size: 87.5%;
   }
+  .basic-2{
+    flex-direction: column;
+  }
+  #reverse{
+    flex-direction: column-reverse;
+  }
+  .basic-2-image #icon-1 {
+    width: 28rem;
+  }
+  .container{
+    width: 27rem;
+  }
+
+  
 }
