@@ -128,8 +128,12 @@ display: grid;
 01. BODY
 *******************/
 
-body {
-  padding-top: 3em;
+body, html {
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
   @media screen and (max-width: 736px) {
@@ -154,16 +158,6 @@ body {
 /*******************
 03. SOBRE NÓS
 *******************/
-h1 {
-  display: block;
-  font-size: 2em;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-}
-
 h6 {
   font-family: Montserrat;
   display: block;
@@ -175,6 +169,7 @@ h6 {
   margin-right: 0;
   font-weight: bold;
 }
+
 h5 {
   font-family: Montserrat;
   display: block;
@@ -186,6 +181,17 @@ h5 {
   font-weight: bold;
 }
 
+h4{
+  font-family: Montserrat;
+  display: block;
+  font-size: 1.2em;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: normal;
+}
+
 .basic{
   background: #f2e6d6;
   display: flex; 
@@ -195,39 +201,67 @@ h5 {
   justify-content: center;
 }
 
+.basic-title{
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  position: relative;
+  color: #20100D;
+  font-family: Sunflower;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 5vw;
+  text-decoration-line: underline;
+  text-decoration-color: #b89b34;
+}
+
 .basic-2{
   background: #f2e6d6;
   display: flex; 
-  padding-top: 5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   align-items: center; 
   justify-content: center;
+}
 
+.basic-2-image{
+  margin-bottom: 3rem;
+  align-items: center; 
+  justify-content: center;
+  display: flex;
 }
 
 .card {
+  justify-content: center;
   color: #f9f9f9;
-  display: block;
-	width: 18rem;
+  display: flex;
+	width: 17rem;
   height: 22rem;
   margin-bottom: 5rem;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 2rem;
+  margin-left: 2rem;
 	background: #20100D;
 	border-radius: 0.5rem;
+  align-items: center; 
 }
 
 .card-body {
   padding: 2.5rem 2.75rem 1.875rem 2.5rem;
+  align-items: center; 
+  justify-content: center;
 }
 
 .card-title {
+  align-items: center; 
+  justify-content: center;
   font-family: Sacramento;
-  display: block;
   font-size: 3em;
 	color: #E5AC23;
 }
 
-.divisor {
+.card-divisor {
+  align-items: center; 
+  justify-content: center;
 	height: 1px;
 	margin-top: 0;
 	margin-bottom: 2em;
@@ -235,7 +269,59 @@ h5 {
 	background-color: #f9f9f9;
 }
 
+.container{
+  border-color: #20100d;
+  border-style: solid;
+  border-width: 0.4rem;
+  display: flex;
+	width: 30rem;
+  height: 21rem;
+  margin-top: 1.9rem;
+  margin-bottom: 5rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
+	background: #f2e6d6;
+  align-items: center; 
+  justify-content: center;
+}
 
+.container-2{
+  align-items: center; 
+  justify-content: center;
+  color: #f9f9f9;
+  display: flex;
+	width: 29rem;
+  height: 20rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+	background: #20100D;
+}
+
+.container-text-1{
+  padding: 3rem;
+  font-family: montserrat;
+  text-align: center;
+  align-items: center; 
+  justify-content: center;
+}
+
+.container-text-2{
+  padding: 2.5rem;
+  font-family: montserrat;
+  text-align: center;
+  align-items: center; 
+  justify-content: center;
+}
+
+.container-text-3{
+  padding: 6rem;
+  font-family: montserrat;
+  text-align: center;
+  align-items: center; 
+  justify-content: center;
+}
 
 /*******************
 04. PRODUTOS

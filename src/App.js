@@ -8,6 +8,10 @@ import Logo from "./assets/logoPrincipal.png";
 
 //Import Sobre nós
 import iconSN from "./assets/iconSN.png";
+import img1 from "./assets/img1.png"
+import img2 from "./assets/img2.png"
+import img3 from "./assets/img3.png"
+
 
 //Import Products
 
@@ -104,30 +108,19 @@ function App() {
     <div className="App">
       {/* <header className="App-header"></header> */}
       <body>
-        <div class="container-navbar">
-          <header id="header">
-            <nav>
-              <img src={Logo} alt="logo" />
-              <ul>
-                <li>
-                  <a href="#intro">Início</a>
-                </li>
-                <li>
-                  <a href="#one">Sobre Nós</a>
-                </li>
-                <li>
-                  <a href="#two">Produtos</a>
-                </li>
-                <li>
-                  <a href="#work">Contato</a>
-                </li>
-                <li>
-                  <a href="#contact">Login</a>
-                </li>
-              </ul>
-            </nav>
-          </header>
-        </div>
+      <div class="container-navbar">
+      <header id="header">
+				<nav>
+          <img src={Logo} alt="logo" href="index.html"/>
+					<ul>
+						<li><a href="#index">Início</a></li>
+						<li><a href="#about">Sobre Nós</a></li>
+						<li><a href="#products">Produtos</a></li>
+						<li><a href="#contact">Contato</a></li>
+					</ul>
+				</nav>
+			</header>
+      </div>
 
         {/* Banner */}
 
@@ -135,24 +128,16 @@ function App() {
 
         {/* Sobre a empresa */}
 
-        <div class="basic">
-          <center>
-            <img
-              src={iconSN}
-              alt="icon-sobre-nos"
-              id="icon-sobre-nos"
-              class="imagem"
-            />
-          </center>
-          <h1 class="title">SOBRE NÓS</h1>
-          <hr size="10" width="450" color="#b89b34" align="center"></hr>
+        <div id="about" class="basic">
+          <center><img src={iconSN} alt="icon-sobre-nos" id="icon-sobre-nos" class="imagem"/></center>
+          <h1 class="basic-title">SOBRE NÓS</h1>
         </div>
 
         <div class="basic-2">
           <div class="card">
             <div class="card-body">
               <div class="card-title">Missão</div>
-              <hr class="divisor"></hr>
+              <hr class="card-divisor"></hr>
               <h5>Comprometer-se ao </h5>
               <h5>negócio para que as</h5>
               <h5>pessoas optem por</h5>
@@ -165,8 +150,8 @@ function App() {
 
           <div class="card">
             <div class="card-body">
-              <div class="card-title">Visão</div>
-              <hr class="divisor"></hr>
+             <div class="card-title">Visão</div>
+             <hr class="card-divisor"></hr>
               <ul>
                 <li>
                   <h6>Transparência</h6>
@@ -196,7 +181,7 @@ function App() {
           <div class="card">
             <div class="card-body">
               <div class="card-title">Valores</div>
-              <hr class="divisor"></hr>
+              <hr class="card-divisor"></hr>
               <h5>Ser referência no</h5>
               <h5>mercado cafeeiro</h5>
               <h5>com qualidade</h5>
@@ -208,8 +193,59 @@ function App() {
           </div>
         </div>
 
-        {/* PRODUCTS */}
-        <div className="container-products">
+        <div class="basic-2">
+          <div class="basic-2-image">
+            <img src={img1} alt="icon-1" id="icon-1"/>         
+          </div>
+          <div class="container">
+            <div class="container-2">
+              <div class="container-text-1">
+                <h4>Embora a planta tenha origem</h4>
+                <h4>africana, foi no Iêmen, região oeste</h4>
+                <h4>da Arábia, que ela começou a ser</h4>
+                <h4>cultivada. A história do café, aliás,</h4>
+                <h4>começa pela criação do nome,</h4>
+                <h4>que tem origem árabe.</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="basic-2">
+          <div class="container">
+            <div class="container-2">
+              <div class="container-text-2">
+                <h4>Conhecida como vinho da Arábia, </h4>
+                <h4>o café ganhou escala comercial no </h4>
+                <h4>séc. XIV, na região de Moka, principal</h4> 
+                <h4>porto do Iêmen, que foi responsável  </h4>
+                <h4>por um dosmaiores cultivos do </h4>
+                <h4>produto no mundo árabe. E o seu </h4>
+                <h4>porto, o maior exportador.</h4>
+              </div>
+            </div>
+          </div>
+          <div class="basic-2-image">
+            <img src={img2} alt="icon-1" id="icon-1"/>         
+          </div>
+        </div>
+
+        <div class="basic-2">
+          <div class="basic-2-image">
+            <img src={img3} alt="icon-1" id="icon-1"/>         
+          </div>
+          <div class="container">
+            <div class="container-2">
+              <div class="container-text-3">
+                <h4>Diante do fato histórico, temos o prazer de vincular nossa marca e  cultura, originando o nome da nossa empresa.</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+          {/* PRODUCTS */}
+          <div id="products" className="container-products">
           <h1 class="title">PRODUTOS</h1>
           <div class="line" />
           <div class="slider">
