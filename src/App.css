@@ -138,7 +138,7 @@ body {
   background-color: #464646;
   background-size:100%; */
   background-color:#20100D;
-  height: 100vh;
+
 }
 
 .container-products .title{
@@ -154,11 +154,11 @@ body {
 }
 .container-products .slider {
   position: relative;
-  padding: 0 10px;
   top: 24vh;
   width: 80%;
   margin: 0 auto;
   cursor: pointer;
+  padding-bottom: 35vh;
 }
 .slider img{
   margin: 0 auto;
