@@ -6,6 +6,8 @@ import Logo from "./assets/logoPrincipal.png";
 
 //Import Banner
 
+//Import Sobre nós
+import iconSN from "./assets/iconSN.png";
 
 //Import Products
 
@@ -122,6 +124,63 @@ window.addEventListener("load", start);
         {/* Banner */}
        
         <div id="dvslider"></div>
+
+
+        {/* Sobre a empresa */}
+
+        <div class="basic">
+          <center><img src={iconSN} alt="icon-sobre-nos" id="icon-sobre-nos" class="imagem"/></center>
+          <h1 class="title">SOBRE NÓS</h1>
+          <hr size="10" width="450" color="#b89b34" align="center"></hr>
+        </div>
+
+
+        <div class="basic-2">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title">Missão</div>
+              <hr class="divisor"></hr>
+              <h5>Comprometer-se ao </h5>
+              <h5>negócio para que as</h5>
+              <h5>pessoas optem por</h5>
+              <h5>nossos serviços e</h5>
+              <h5>tenham orgulho de</h5>
+              <h5>consumir, garantindo a</h5>
+              <h5>sustentabilidade.</h5>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+             <div class="card-title">Visão</div>
+             <hr class="divisor"></hr>
+              <ul>
+                <li><h6>Transparência</h6></li>
+                <li><h6>Sustentabilidade</h6></li>
+                <li><h6>Empatia</h6></li>
+                <li><h6>Integridade</h6></li>
+                <li><h6>Respeito</h6></li>
+                <li><h6>Inclusão</h6></li>
+                <li><h6>Compromisso</h6></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title">Valores</div>
+              <hr class="divisor"></hr>
+              <h5>Ser referência no</h5>
+              <h5>mercado cafeeiro</h5>
+              <h5>com qualidade</h5>
+              <h5>garantida do</h5>
+              <h5>produto e </h5>
+              <h5>cumprindo com os </h5>
+              <h5>valores da empresa.</h5>
+            </div>
+          </div>
+        </div>
+
 
           {/* PRODUCTS */}
           <div className="container-products">
