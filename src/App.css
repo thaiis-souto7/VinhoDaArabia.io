@@ -1,3 +1,18 @@
+/*******************
+Table Of Contents:
+
+01. Global
+02. Banner
+03. Sobre nós
+04. Produtos
+05. Contato
+06. Media
+*******************/
+
+
+/*******************
+01. APP
+*******************/
 .App {
   text-align: center;
 }
@@ -17,7 +32,9 @@
   color: #61dafb;
 }
 
-/* Header */
+/*******************
+01. HEADER
+*******************/
 
 #header {
   position: fixed;
@@ -98,9 +115,14 @@
   }
 }
 
-body {
+
+/*******************
+01. BODY
+*******************/
+
+body{
   padding-top: 3em;
-}
+} 
 
 @media screen and (max-width: 736px) {
   body {
@@ -108,15 +130,143 @@ body {
   }
 }
 
-/* BANNER */
+/*******************
+02. BANNER
+*******************/
 
-#dvslider {
-  width: 100%;
+
+.container-banner {
+  position: relative;
   height: 80vh;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f4f0;
+}
+
+
+#sliderBanner {
+  
+  width: 80%;
+  max-width: 500px;
+  height: 25vw;
+  max-height: 150px;
+
   position: relative;
 }
 
+#sliderBanner img{
+  position: absolute;
+  padding-top: 5rem;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: opacity 800ms;
+}
+
+#sliderBanner img.selected {
+  opacity: 1;
+}
+
+
+
+
+
+
 /* PRODUTOS */
+
+/*******************
+03. SOBRE NÓS
+*******************/
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h6 {
+  font-family: Montserrat;
+  display: block;
+  text-align: left;
+  font-size: 0.9em;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+h5 {
+  font-family: Montserrat;
+  display: block;
+  font-size: 0.9em;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.basic{
+  background: #f2e6d6;
+  display: flex; 
+  flex-direction: column;
+  padding-top: 5rem;
+  align-items: center; 
+  justify-content: center;
+}
+
+.basic-2{
+  background: #f2e6d6;
+  display: flex; 
+  padding-top: 5rem;
+  align-items: center; 
+  justify-content: center;
+
+}
+
+.card {
+  color: #f9f9f9;
+  display: block;
+	width: 18rem;
+  height: 22rem;
+  margin-bottom: 5rem;
+  margin-right: auto;
+  margin-left: auto;
+	background: #20100D;
+	border-radius: 0.5rem;
+}
+
+.card-body {
+  padding: 2.5rem 2.75rem 1.875rem 2.5rem;
+}
+
+.card-title {
+  font-family: Sacramento;
+  display: block;
+  font-size: 3em;
+	color: #E5AC23;
+}
+
+.divisor {
+	height: 1px;
+	margin-top: 0;
+	margin-bottom: 2em;
+	border: none;
+	background-color: #f9f9f9;
+}
+
+
+
+/*******************
+04. PRODUTOS
+*******************/
+
 .container-products {
   position: relative;
   /* background-image: url("./assets/background-products.jpg");
@@ -169,4 +319,26 @@ body {
   margin-left: 1vw;
 }
 
-/* PRODUTOS */
+
+/*******************
+05. CONTATO
+*******************/
+
+
+
+
+/*******************
+06. MEDIA
+*******************/
+
+@media(max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media(max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}

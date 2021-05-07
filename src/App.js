@@ -1,11 +1,19 @@
 import "./App.css";
 import React from "react";
 
-//Import NavBar 
+//Import NavBar
 import Logo from "./assets/logoPrincipal.png";
 
 //Import Banner
+// import s1 from "./assets/s1.jpg";
+// import s2 from "./assets/s2.jpg";
+// import s3 from "./assets/s3.jpg";
+// import s4 from "./assets/s4.jpg";
+// import s5 from "./assets/s5.jpg";
+// import script from "./script.js";
 
+//Import Sobre nós
+import iconSN from "./assets/iconSN.png";
 
 //Import Products
 
@@ -21,9 +29,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-
 function App() {
-
   var settings = {
     centerMode: true,
     centerPadding: "20px",
@@ -60,69 +66,120 @@ function App() {
     ],
   };
 
-var imgs = [];
-var sliderBanner;
-var imgCurrent;
-var maxImg;
-var time;
-var timeChange;
-
-function preLoading() {
-  var s = 1;
-  for (var i = 0; i < 5; i++) {
-    imgs[i] = new Image();
-    imgs[i].src = "assets/s" + s + ".jpg";
-    s++;
-  }
-}
-
-function loadImg(img) {
-  sliderBanner.style.backgroundImage = "url('" + imgs[img].src + "')";
-}
-
-function start() {
-  preLoading();
-  imgCurrent = 0;
-  maxImg = imgs.length - 1;
-  sliderBanner = document.getElementById("dvslider");
-  loadImg(imgCurrent);
-  timeChange = 3000;
-  time = setInterval(change, timeChange);
-}
-
-function change() {
-  imgCurrent++;
-  if (imgCurrent > maxImg) {
-    imgCurrent = 0;
-  }
-  loadImg(imgCurrent);
-}
-
-window.addEventListener("load", start);
-
   return (
     <div className="App">
       {/* <header className="App-header"></header> */}
       <body>
+        <header id="header">
+          <nav>
+            <img src={Logo} alt="logo" />
+            <ul>
+              <li>
+                <a href="#intro">Início</a>
+              </li>
+              <li>
+                <a href="#about">Sobre Nós</a>
+              </li>
+              <li>
+                <a href="#work">Produtos</a>
+              </li>
+              <li>
+                <a href="#contact">Contato</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
 
-      <header id="header">
-				<nav>
-          <img src={Logo} alt="logo" />
-					<ul>
-						<li><a href="#intro">Início</a></li>
-						<li><a href="#about">Sobre Nós</a></li>
-						<li><a href="#work">Produtos</a></li>
-						<li><a href="#contact">Contato</a></li>
-					</ul>
-				</nav>
-			</header>
+        {/* Banner 
+        <div className="container-banner">
+          <div id="sliderBanner">
+            <img class="selected" src={s1} alt="Image1" />
+            <img  src={s2} alt="Image2" />
+            <img  src={s3} alt="Image3" />
+            <img  src={s4} alt="Image4" />
+            <img  src={s5} alt="Image5" />
+          </div>
+        </div>
 
-        {/* Banner */}
-       
-        <div id="dvslider"></div>
+        <script src={script}></script>*/}
 
-          {/* PRODUCTS */}
-          <div className="container-products">
+        {/* Sobre a empresa */}
+
+        <div class="basic">
+          <center>
+            <img
+              src={iconSN}
+              alt="icon-sobre-nos"
+              id="icon-sobre-nos"
+              class="imagem"
+            />
+          </center>
+          <h1 class="title">SOBRE NÓS</h1>
+          <hr size="10" width="450" color="#b89b34" align="center"></hr>
+        </div>
+
+        <div class="basic-2">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title">Missão</div>
+              <hr class="divisor"></hr>
+              <h5>Comprometer-se ao </h5>
+              <h5>negócio para que as</h5>
+              <h5>pessoas optem por</h5>
+              <h5>nossos serviços e</h5>
+              <h5>tenham orgulho de</h5>
+              <h5>consumir, garantindo a</h5>
+              <h5>sustentabilidade.</h5>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title">Visão</div>
+              <hr class="divisor"></hr>
+              <ul>
+                <li>
+                  <h6>Transparência</h6>
+                </li>
+                <li>
+                  <h6>Sustentabilidade</h6>
+                </li>
+                <li>
+                  <h6>Empatia</h6>
+                </li>
+                <li>
+                  <h6>Integridade</h6>
+                </li>
+                <li>
+                  <h6>Respeito</h6>
+                </li>
+                <li>
+                  <h6>Inclusão</h6>
+                </li>
+                <li>
+                  <h6>Compromisso</h6>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title">Valores</div>
+              <hr class="divisor"></hr>
+              <h5>Ser referência no</h5>
+              <h5>mercado cafeeiro</h5>
+              <h5>com qualidade</h5>
+              <h5>garantida do</h5>
+              <h5>produto e </h5>
+              <h5>cumprindo com os </h5>
+              <h5>valores da empresa.</h5>
+            </div>
+          </div>
+        </div>
+
+        {/* PRODUCTS */}
+        <div className="container-products">
           <h1 class="title">PRODUTOS</h1>
           <div class="line" />
           <div class="slider">
@@ -185,11 +242,9 @@ window.addEventListener("load", start);
               </div>
             </Slider>
           </div>
-          </div>
+        </div>
         {/* PRODUCTS */}
-
-        </body>
-      
+      </body>
     </div>
   );
 }
