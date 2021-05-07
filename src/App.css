@@ -545,6 +545,12 @@ h4 {
   .basic-2-image #icon-1 {
     width: 22rem;
   }
+  .basic-2-image #icon-2 {
+    width: 22rem;
+  }
+  .basic-2-image #icon-3 {
+    width: 22rem;
+  }
   .container{
     width: 20rem;
     height: 20rem;
@@ -560,6 +566,12 @@ h4 {
   }
   .container-text-3{
     font-size: 80%;
+  }
+  .basic-title{
+    font-size: 2rem;
+  }
+  .container-products .title{
+    font-size: 2rem;
   }
 }
 
