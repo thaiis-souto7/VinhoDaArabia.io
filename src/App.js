@@ -50,13 +50,15 @@ function App() {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 3,
+          arrows:false,
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 330,
         settings: {
+          arrows:false,
           slidesToShow: 1,
           slidesToScroll: 1,
         },
