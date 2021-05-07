@@ -9,7 +9,6 @@ Table Of Contents:
 06. Media
 *******************/
 
-
 /*******************
 01. APP
 *******************/
@@ -36,6 +35,11 @@ Table Of Contents:
 01. HEADER
 *******************/
 
+.container-navbar {
+  display: grid;
+  margin: 0px;
+}
+
 #header {
   position: fixed;
   z-index: 10000;
@@ -48,21 +52,14 @@ Table Of Contents:
   box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
 }
 
-#header nav {
-  right: 0.5em;
-  top: 0;
-  height: 3em;
-  line-height: 3em;
-}
-
 #header img {
-  float: left;
+  position: absolute;
+  left: -32em;
   top: 0;
   height: 7em;
   line-height: 3em;
   cursor: default;
 }
-
 
 #header nav ul {
   float: right;
@@ -70,11 +67,10 @@ Table Of Contents:
 
 #header nav ul li {
   display: inline-block;
-  margin-right: 0.5em;
+  margin-left: 0.5em;
   font-size: 1.99em;
   color: rgba(193, 143, 29, 0.95);
 }
-
 
 #header nav ul li a {
   display: block;
@@ -86,18 +82,13 @@ Table Of Contents:
   outline: 0;
 }
 
-#header nav ul li a:hover{
-  color: #ffffff; 
-}
-
-
 @media screen and (max-width: 736px) {
   #header {
     height: 2.5em;
     line-height: 2.5em;
   }
 
-   #header h1 {
+  #header h1 {
     text-align: center;
     position: relative;
     left: 0;
@@ -109,20 +100,25 @@ Table Of Contents:
   #header h1 a {
     font-size: 1em;
   }
+}
 
   #header nav {
     display: none;
   }
-}
 
 
 /*******************
 01. BODY
 *******************/
 
-body{
-  padding-top: 3em;
-} 
+body,
+html {
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
 
 @media screen and (max-width: 736px) {
   body {
@@ -180,16 +176,6 @@ body{
 /*******************
 03. SOBRE NÓS
 *******************/
-h1 {
-  display: block;
-  font-size: 2em;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-}
-
 h6 {
   font-family: Montserrat;
   display: block;
@@ -201,6 +187,7 @@ h6 {
   margin-right: 0;
   font-weight: bold;
 }
+
 h5 {
   font-family: Montserrat;
   display: block;
@@ -212,133 +199,357 @@ h5 {
   font-weight: bold;
 }
 
-.basic{
+h4 {
+  font-family: Montserrat;
+  display: block;
+  font-size: 1.2em;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: normal;
+}
+
+.basic {
   background: #f2e6d6;
-  display: flex; 
+  display: flex;
   flex-direction: column;
   padding-top: 5rem;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
 }
 
-.basic-2{
+.basic-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #20100d;
+  font-family: Sunflower;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 4vw;
+  text-decoration-line: underline;
+  text-decoration-color: #b89b34;
+}
+
+.basic-2 {
   background: #f2e6d6;
-  display: flex; 
-  padding-top: 5rem;
+  display: flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.basic-2-image {
+  margin-bottom: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   align-items: center; 
   justify-content: center;
-
+  display: flex;
 }
 
 .card {
+  justify-content: center;
   color: #f9f9f9;
-  display: block;
-	width: 18rem;
+  display: flex;
+  width: 17rem;
   height: 22rem;
   margin-bottom: 5rem;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 3rem;
+  margin-left: 3rem;
 	background: #20100D;
 	border-radius: 0.5rem;
+  align-items: center; 
 }
 
 .card-body {
   padding: 2.5rem 2.75rem 1.875rem 2.5rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-title {
+  align-items: center;
+  justify-content: center;
   font-family: Sacramento;
-  display: block;
   font-size: 3em;
-	color: #E5AC23;
+  color: #e5ac23;
 }
 
-.divisor {
-	height: 1px;
-	margin-top: 0;
-	margin-bottom: 2em;
-	border: none;
-	background-color: #f9f9f9;
+.card-divisor {
+  align-items: center;
+  justify-content: center;
+  height: 1px;
+  margin-top: 0;
+  margin-bottom: 2em;
+  border: none;
+  background-color: #f9f9f9;
 }
 
+.container {
+  border-color: #20100d;
+  border-style: solid;
+  border-width: 0.4rem;
+  display: flex;
+  width: 30rem;
+  height: 21rem;
+  margin-top: 1.9rem;
+  margin-bottom: 5rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+	background: #f2e6d6;
+  align-items: center; 
+  justify-content: center;
+}
 
+.container-2 {
+  align-items: center;
+  justify-content: center;
+  color: #f9f9f9;
+  display: flex;
+  width: 29rem;
+  height: 20rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  background: #20100d;
+}
+
+.container-text-1 {
+  padding: 3rem;
+  font-family: montserrat;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-text-2 {
+  padding: 2.5rem;
+  font-family: montserrat;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-text-3 {
+  padding: 6rem;
+  font-family: montserrat;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
 
 /*******************
 04. PRODUTOS
 *******************/
 
-.container-products {
-  position: relative;
-  /* background-image: url("./assets/background-products.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-  background-size:100%; */
-  background-color: #20100d;
-  height: 100vh;
+@media only screen and (max-width: 600px) {
+  .container-products {
+    position: relative;
+    background-color: #20100d;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container-products .title{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    position: relative;
+    color: #ffffff;
+    font-family: Sunflower;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 6vw;
+    margin-top: 2em;
+    padding-bottom: 3vh;
+    text-decoration-line: underline;
+    text-decoration-color: #b89b34;
+  }
+  .container-products .slider {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 8vh;
+  }
+  .slider img {
+    margin: 0 auto;
+    max-width: 40vw !important;
+  }
+  .slider .product-details {
+    color: white;
+  }
+  .slider .product-details h2 {
+    font-family: Montserrat;
+    font-size: 4vw;
+  }
+  .slider .product-details p {
+    font-family: Montserrat;
+    color: #b89b34;
+    font-size: 4vw;
+  }
+  .slider .thumbnail {
+    margin-left: 1vw;
+  }
 }
 
-.container-products .title {
-  position: relative;
-  color: #ffffff;
-  font-family: Sunflower;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 5vw;
-  top: 20vh;
-  text-decoration-line: underline;
-  text-decoration-color: #b89b34;
-}
-.container-products .slider {
-  position: relative;
-  padding: 0 10px;
-  top: 24vh;
-  width: 80%;
-  margin: 0 auto;
-  cursor: pointer;
-}
-.slider img {
-  margin: 0 auto;
-  max-width: 15vw !important;
-}
-.slider .product-details {
-  color: white;
-}
-.slider .product-details h2 {
-  font-family: Montserrat;
-  font-size: 2vw;
-}
-.slider .product-details p {
-  font-family: Montserrat;
-  color: #b89b34;
-  font-size: 1.7vw;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container-products {
+    position: relative;
+    background-color: #20100d;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container-products .title{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    position: relative;
+    color: #ffffff;
+    font-family: Sunflower;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 4vw;
+    margin-top: 2em;
+    padding-bottom: 3vh;
+    text-decoration-line: underline;
+    text-decoration-color: #b89b34;
+  }
+  .container-products .slider {
+    width: 55%;
+    margin: 0 auto;
+    cursor: pointer;
+    padding-bottom: 6vh;
+  }
+  .slider img {
+    margin: 0 auto;
+    max-width: 12.5vw !important;
+  }
+  .slider .product-details {
+    color: white;
+  }
+  .slider .product-details h2 {
+    font-family: Montserrat;
+    font-size: 2vw;
+  }
+  .slider .product-details p {
+    font-family: Montserrat;
+    color: #b89b34;
+    font-size: 2vw;
+  }
+  .slider .thumbnail {
+    margin-left: 1vw;
+  }
 }
 .slider .thumbnail {
   margin-left: 1vw;
 }
 
 
+
 /*******************
 05. CONTATO
 *******************/
 
+.text-contact {
+  color: #20100d;
+  font-family: Montserrat;
+  display: block;
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
 
+.text-contact-2 {
+  color: #20100d;
+  font-family: Montserrat;
+  display: block;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 3em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
 
+.mapsForms {
+  background: #f2e6d6;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 5%;
+}
 
+.mapsForms iframe {
+  margin-top: 2rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 30rem;
+  height: 20rem;
+  border: none;
+  justify-content: center;
+  align-items: center;
+}
 /*******************
 06. MEDIA
 *******************/
 
-@media(max-width: 1080px) {
+@media(max-width: 768px) {
   html {
-    font-size: 93.75%;
+    font-size: 100%;
+  }
+  .basic-2{
+    flex-direction: column;
+  }
+  #reverse{
+    flex-direction: column-reverse;
+  }
+  .basic-2-image #icon-1 {
+    width: 21rem;
+  }
+  .basic-2-image #icon-2 {
+    width: 21rem;
+  }
+  .basic-2-image #icon-3 {
+    width: 21rem;
+  }
+  .basic-2-image #icon-2 {
+    width: 22rem;
+  }
+  .basic-2-image #icon-3 {
+    width: 22rem;
+  }
+  .container{
+    width: 20rem;
+    height: 20rem;
+  }  
+  .container-2{
+    height: 19rem;
+  }
+  .container-text-1{
+    font-size: 80%;
+  }
+  .container-text-2{
+    font-size: 70%;
+  }
+  .container-text-3{
+    font-size: 80%;
+  }
+  .basic-title{
+    font-size: 2rem;
+  }
+  .container-products .title{
+    font-size: 2rem;
   }
 }
 
-@media(max-width: 720px) {
-  html {
-    font-size: 87.5%;
-  }
-}
