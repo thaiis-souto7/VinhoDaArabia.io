@@ -2,7 +2,6 @@ import "./App.css";
 import React from "react";
 
 //Import NavBar
-import Logo from "./assets/logoPrincipal.png";
 import Header from "./components/Header";
 
 //Import Banner
@@ -109,24 +108,8 @@ function App() {
   return (
     <div className="App">
       {/* <header className="App-header"></header> */}
-      <body>
-        <Header />
-        {/* <nav>
-          <ul>
-            <li>
-              <a href="#intro">Início</a>
-            </li>
-            <li>
-              <a href="#about">Sobre Nós</a>
-            </li>
-            <li>
-              <a href="#products">Produtos</a>
-            </li>
-            <li>
-              <a href="#contact">Contato</a>
-            </li>
-          </ul>
-        </nav> */}
+      <body>  
+        <Header />         
 
         {/* Banner */}
 

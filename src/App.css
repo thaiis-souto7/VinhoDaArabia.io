@@ -60,28 +60,21 @@ nav ul li a:hover{
   color: #f7f7f7;
 }
 
-@media screen and (max-width: 736px) {
-  #header {
-    height: 2.5em;
-    line-height: 2.5em;
-  }
 
-  #header h1 {
-    text-align: center;
-    position: relative;
-    left: 0;
-    top: 0;
-    height: 2.5em;
-    line-height: 2.5em;
+@media screen and (max-width: 425px) {
+  nav {
+    display: flex;
+    flex-direction: inherit; 
   }
-
-  #header h1 a {
-    font-size: 1em;
+  
+   nav ul li {
+     font-size: 0.9em;
+     justify-content: flex-end;
   }
-
-  #header nav {
-    display: none;
-  }
+  
+  nav ul li a:hover{
+    color: #f7f7f7;
+  } 
 }
 
 /*******************
