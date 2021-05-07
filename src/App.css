@@ -395,26 +395,26 @@ h4 {
     text-decoration-color: #b89b34;
   }
   .container-products .slider {
-    width: 80%;
+    width: 65%;
     margin: 0 auto;
     cursor: pointer;
     padding-bottom: 6vh;
   }
   .slider img {
     margin: 0 auto;
-    max-width: 22vw !important;
+    max-width: 18vw !important;
   }
   .slider .product-details {
     color: white;
   }
   .slider .product-details h2 {
     font-family: Montserrat;
-    font-size: 3vw;
+    font-size: 2vw;
   }
   .slider .product-details p {
     font-family: Montserrat;
     color: #b89b34;
-    font-size: 3vw;
+    font-size: 2vw;
   }
   .slider .thumbnail {
     margin-left: 1vw;
@@ -466,12 +466,12 @@ h4 {
   }
   .slider .product-details h2 {
     font-family: Montserrat;
-    font-size: 2vw;
+    font-size: 1.7vw;
   }
   .slider .product-details p {
     font-family: Montserrat;
     color: #b89b34;
-    font-size: 1.7vw;
+    font-size: 1.4vw;
   }
   .slider .thumbnail {
     margin-left: 1vw;
