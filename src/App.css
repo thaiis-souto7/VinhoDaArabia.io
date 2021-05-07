@@ -290,7 +290,12 @@ h4 {
 @media only screen and (max-width: 600px) {
   .container-products {
     position: relative;
-    background-color: #20100d;
+    background-image: url("./assets/background-coffe-beans.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #464646;
+    
     display: flex;
     flex-direction: column;
   }
@@ -340,7 +345,12 @@ h4 {
 @media only screen and (min-width: 600px) {
   .container-products {
     position: relative;
-    background-color: #20100d;
+    background-image: url("./assets/background-coffe-beans.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #464646;
+    background-size:100%; 
     display: flex;
     flex-direction: column;
   }
@@ -368,7 +378,7 @@ h4 {
   }
   .slider img {
     margin: 0 auto;
-    max-width: 12.5vw !important;
+    max-width: 11vw !important;
   }
   .slider .product-details {
     color: white;
@@ -391,14 +401,12 @@ h4 {
 @media only screen and (min-width: 1200px) {
   .container-products {
     position: relative;
-    /* background-image: url("./assets/background-products.jpg");
+    background-image: url("./assets/background-coffe-beans.jpg");
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     background-color: #464646;
-    background-size:100%; */
-    background-color: #20100d;
+    background-size:100%; 
     display: flex;
     flex-direction: column;
   }
@@ -436,7 +444,7 @@ h4 {
   }
   .slider .product-details p {
     font-family: Montserrat;
-    color: #b89b34;
+    color: #d8b63b;
     font-size: 1.4vw;
   }
   .slider .thumbnail {
