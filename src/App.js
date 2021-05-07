@@ -55,7 +55,7 @@ function App() {
         },
       },
       {
-        breakpoint: 300,
+        breakpoint: 330,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
