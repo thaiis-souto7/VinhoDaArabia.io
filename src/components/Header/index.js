@@ -8,7 +8,7 @@ export default function CenteredGrid() {
   return (
     <HeaderCustom container spacing={3}>
       <Grid item xs={2}>
-        <img src={Logo} alt="logo" />
+      <img src={Logo} alt="logo" />
         <nav>
           <ul>
             <li>
@@ -25,7 +25,7 @@ export default function CenteredGrid() {
             </li>
           </ul>
         </nav>
-      </Grid>
+        </Grid>
     </HeaderCustom>
   );
 }

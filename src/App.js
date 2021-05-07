@@ -2,19 +2,23 @@ import "./App.css";
 import React from "react";
 
 //Import NavBar
-import Logo from "./assets/logoPrincipal.png";
 import Header from "./components/Header";
 
 //Import Banner
 
 //Import Sobre nós
 import iconSN from "./assets/iconSN.png";
+<<<<<<< HEAD
+import img1 from "./assets/img1.png"
+import img2 from "./assets/img2.png"
+import img3 from "./assets/img3.png"
+=======
 import img1 from "./assets/img1.png";
 import img2 from "./assets/img2.png";
 import img3 from "./assets/img3.png";
+>>>>>>> 2eef9e6402f269365b38d0441d8a0fcb35bc1228
 
 //Import Products
-
 import Marcador from "./assets/marcador.png";
 import Almofada from "./assets/almofada.png";
 import Capsula from "./assets/capsula.png";
@@ -109,24 +113,8 @@ function App() {
   return (
     <div className="App">
       {/* <header className="App-header"></header> */}
-      <body>
-        <Header />
-        {/* <nav>
-          <ul>
-            <li>
-              <a href="#intro">Início</a>
-            </li>
-            <li>
-              <a href="#about">Sobre Nós</a>
-            </li>
-            <li>
-              <a href="#products">Produtos</a>
-            </li>
-            <li>
-              <a href="#contact">Contato</a>
-            </li>
-          </ul>
-        </nav> */}
+      <body>  
+        <Header />         
 
         {/* Banner */}
 
