@@ -396,7 +396,6 @@ h4 {
   }
   .container-products .slider {
     width: 55%;
-
     margin: 0 auto;
     cursor: pointer;
     padding-bottom: 6vh;
@@ -544,14 +543,29 @@ h4 {
     flex-direction: column-reverse;
   }
   .basic-2-image #icon-1 {
-    width: 25rem;
+    width: 21rem;
+  }
+  .basic-2-image #icon-2 {
+    width: 21rem;
+  }
+  .basic-2-image #icon-3 {
+    width: 21rem;
   }
   .container{
-    width: 25rem;
-    height: 25rem;
+    width: 20rem;
+    height: 20rem;
   }  
   .container-2{
-    height: 24rem;
+    height: 19rem;
+  }
+  .container-text-1{
+    font-size: 80%;
+  }
+  .container-text-2{
+    font-size: 70%;
+  }
+  .container-text-3{
+    font-size: 80%;
   }
 }
 
