@@ -12,9 +12,7 @@ import img1 from "./assets/img1.png"
 import img2 from "./assets/img2.png"
 import img3 from "./assets/img3.png"
 
-
 //Import Products
-
 import Marcador from "./assets/marcador.png";
 import Almofada from "./assets/almofada.png";
 import Capsula from "./assets/capsula.png";
