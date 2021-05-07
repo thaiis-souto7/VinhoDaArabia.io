@@ -345,13 +345,13 @@ h4 {
     text-decoration-color: #b89b34;
   }
   .container-products .slider {
-    width: 80%;
+    width: 81%;
     margin: 0 auto;
     padding-bottom: 8vh;
   }
   .slider img {
     margin: 0 auto;
-    max-width: 22vw !important;
+    max-width: 20vw !important;
   }
   .slider .product-details {
     color: white;
@@ -396,7 +396,6 @@ h4 {
   }
   .container-products .slider {
     width: 55%;
-    
     margin: 0 auto;
     cursor: pointer;
     padding-bottom: 6vh;
@@ -544,14 +543,23 @@ h4 {
     flex-direction: column-reverse;
   }
   .basic-2-image #icon-1 {
-    width: 25rem;
+    width: 22rem;
   }
   .container{
-    width: 25rem;
-    height: 25rem;
+    width: 20rem;
+    height: 20rem;
   }  
   .container-2{
-    height: 24rem;
+    height: 19rem;
+  }
+  .container-text-1{
+    font-size: 80%;
+  }
+  .container-text-2{
+    font-size: 70%;
+  }
+  .container-text-3{
+    font-size: 80%;
   }
 }
 
