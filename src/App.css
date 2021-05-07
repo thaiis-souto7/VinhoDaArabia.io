@@ -321,59 +321,164 @@ h4 {
 04. PRODUTOS
 *******************/
 
-.container-products {
-  position: relative;
-  /* background-image: url("./assets/background-products.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-  background-size:100%; */
-  background-color: #20100d;
-  display: flex;
-  flex-direction: column;
+@media only screen and (max-width: 600px) {
+  .container-products {
+    position: relative;
+    background-color: #20100d;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container-products .title{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    position: relative;
+    color: #ffffff;
+    font-family: Sunflower;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 6vw;
+    margin-top: 2em;
+    padding-bottom: 3vh;
+    text-decoration-line: underline;
+    text-decoration-color: #b89b34;
+  }
+  .container-products .slider {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 8vh;
+  }
+  .slider img {
+    margin: 0 auto;
+    max-width: 22vw !important;
+  }
+  .slider .product-details {
+    color: white;
+  }
+  .slider .product-details h2 {
+    font-family: Montserrat;
+    font-size: 3vw;
+  }
+  .slider .product-details p {
+    font-family: Montserrat;
+    color: #b89b34;
+    font-size: 3vw;
+  }
+  .slider .thumbnail {
+    margin-left: 1vw;
+  }
 }
 
-.container-products .title{
-  display: flex;
-  align-items: center; 
-  justify-content: center;
-  position: relative;
-  color: #ffffff;
-  font-family: Sunflower;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 4vw;
-   margin-top: 2em;
-  text-decoration-line: underline;
-  text-decoration-color: #b89b34;
-}
-.container-products .slider {
-  width: 80%;
-  margin: 0 auto;
-  cursor: pointer;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container-products {
+    position: relative;
+    background-color: #20100d;
+    display: flex;
+    flex-direction: column;
+  }
   
+  .container-products .title{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    position: relative;
+    color: #ffffff;
+    font-family: Sunflower;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 4vw;
+    margin-top: 2em;
+    padding-bottom: 3vh;
+    text-decoration-line: underline;
+    text-decoration-color: #b89b34;
+  }
+  .container-products .slider {
+    width: 80%;
+    margin: 0 auto;
+    cursor: pointer;
+    padding-bottom: 6vh;
+  }
+  .slider img {
+    margin: 0 auto;
+    max-width: 22vw !important;
+  }
+  .slider .product-details {
+    color: white;
+  }
+  .slider .product-details h2 {
+    font-family: Montserrat;
+    font-size: 3vw;
+  }
+  .slider .product-details p {
+    font-family: Montserrat;
+    color: #b89b34;
+    font-size: 3vw;
+  }
+  .slider .thumbnail {
+    margin-left: 1vw;
+  }
 }
-.slider img {
-  margin: 0 auto;
-  max-width: 15vw !important;
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container-products {
+    position: relative;
+    /* background-image: url("./assets/background-products.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+    background-size:100%; */
+    background-color: #20100d;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container-products .title{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    position: relative;
+    color: #ffffff;
+    font-family: Sunflower;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 4vw;
+     margin-top: 2em;
+    text-decoration-line: underline;
+    text-decoration-color: #b89b34;
+  }
+  .container-products .slider {
+    width: 70vw;
+    margin: 0 auto;
+    cursor: pointer;
+    padding-bottom: 8vh;
+  }
+  .slider img {
+    margin: 0 auto;
+    max-width: 16vw !important;
+  }
+  .slider .product-details {
+    color: white;
+  }
+  .slider .product-details h2 {
+    font-family: Montserrat;
+    font-size: 2vw;
+  }
+  .slider .product-details p {
+    font-family: Montserrat;
+    color: #b89b34;
+    font-size: 1.7vw;
+  }
+  .slider .thumbnail {
+    margin-left: 1vw;
+  }
 }
-.slider .product-details {
-  color: white;
-}
-.slider .product-details h2 {
-  font-family: Montserrat;
-  font-size: 2vw;
-}
-.slider .product-details p {
-  font-family: Montserrat;
-  color: #b89b34;
-  font-size: 1.7vw;
-}
-.slider .thumbnail {
-  margin-left: 1vw;
-}
+
+
 
 /*******************
 05. CONTATO
