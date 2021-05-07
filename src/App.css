@@ -35,63 +35,29 @@ Table Of Contents:
 01. HEADER
 *******************/
 
-.container-navbar {
-  display: grid;
-  margin: 0px;
-}
-
-#header {
-  position: fixed;
-  z-index: 10000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  background: rgba(32, 16, 13, 0.95);
-  height: 7em;
-  line-height: 3em;
-  box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
-}
-
-#header img {
+ nav {
   position: absolute;
-  left: -32em;
-  top: 0;
-  height: 7em;
-  line-height: 3em;
-  cursor: default;
+  float:right;
+  right: 0.9em;
+  margin: -5em 0 0 0;
 }
 
-#header h1 a {
-  font-size: 1.9em;
-}
-
-#header nav {
-  position: absolute;
-  right: 0.5em;
-  top: 0;
-  height: 3em;
-  line-height: 3em;
-}
-
-#header nav ul {
-  margin: 0;
-}
-
-#header nav ul li {
+nav ul li {
   display: inline-block;
   margin-left: 0.5em;
   font-size: 1.99em;
   color: rgba(193, 143, 29, 0.95);
 }
-
-#header nav ul li a {
-  display: block;
+ 
+nav ul li a {
   color: inherit;
   text-decoration: none;
-  height: 3em;
-  line-height: 3em;
   padding: 0 0.5em 0 0.5em;
-  outline: 0;
+
+} 
+
+nav ul li a:hover{
+  color: #f7f7f7;
 }
 
 @media screen and (max-width: 736px) {
