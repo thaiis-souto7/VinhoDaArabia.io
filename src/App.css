@@ -440,7 +440,7 @@ h4{
 
 @media(max-width: 768px) {
   html {
-    font-size: 87.5%;
+    font-size: 100%;
   }
   .basic-2{
     flex-direction: column;
@@ -449,11 +449,14 @@ h4{
     flex-direction: column-reverse;
   }
   .basic-2-image #icon-1 {
-    width: 28rem;
+    width: 25rem;
   }
   .container{
-    width: 27rem;
+    width: 25rem;
+    height: 25rem;
+  }  
+  .container-2{
+    height: 24rem;
   }
-
-  
 }
+
