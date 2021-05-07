@@ -3,17 +3,15 @@ import React from "react";
 
 //Import NavBar
 import Logo from "./assets/logoPrincipal.png";
+import Header from "./components/Header";
 
 //Import Banner
-// import s1 from "./assets/s1.jpg";
-// import s2 from "./assets/s2.jpg";
-// import s3 from "./assets/s3.jpg";
-// import s4 from "./assets/s4.jpg";
-// import s5 from "./assets/s5.jpg";
-// import script from "./script.js";
 
 //Import Sobre nós
 import iconSN from "./assets/iconSN.png";
+import img1 from "./assets/img1.png";
+import img2 from "./assets/img2.png";
+import img3 from "./assets/img3.png";
 
 //Import Products
 
@@ -43,7 +41,7 @@ function App() {
       {
         breakpoint: 1024,
         settings: {
-          arrows: false,
+          arrows: true,
           centerMode: true,
           centerPadding: "40px",
           slidesToShow: 3,
@@ -52,13 +50,15 @@ function App() {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          arrows: false,
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 300,
+        breakpoint: 330,
         settings: {
+          arrows: false,
           slidesToShow: 1,
           slidesToScroll: 1,
         },
@@ -66,63 +66,92 @@ function App() {
     ],
   };
 
+  // var imgs = [];
+  // var sliderBanner;
+  // var imgCurrent;
+  // var maxImg;
+  // var time;
+  // var timeChange;
+
+  // function preLoading() {
+  //   var s = 1;
+  //   for (var i = 0; i < 5; i++) {
+  //     imgs[i] = new Image();
+  //     imgs[i].src = "assets/s" + s + ".jpg";
+  //     s++;
+  //   }
+  // }
+
+  // function loadImg(img) {
+  //   sliderBanner.style.backgroundImage = "url('" + imgs[img].src + "')";
+  // }
+
+  // function start() {
+  //   preLoading();
+  //   imgCurrent = 0;
+  //   maxImg = imgs.length - 1;
+  //   sliderBanner = document.getElementById("dvslider");
+  //   loadImg(imgCurrent);
+  //   timeChange = 3000;
+  //   time = setInterval(change, timeChange);
+  // }
+
+  // function change() {
+  //   imgCurrent++;
+  //   if (imgCurrent > maxImg) {
+  //     imgCurrent = 0;
+  //   }
+  //   loadImg(imgCurrent);
+  // }
+
+  // window.addEventListener("load", start);
+
   return (
     <div className="App">
       {/* <header className="App-header"></header> */}
       <body>
-        <header id="header">
-          <nav>
-            <img src={Logo} alt="logo" />
-            <ul>
-              <li>
-                <a href="#intro">Início</a>
-              </li>
-              <li>
-                <a href="#about">Sobre Nós</a>
-              </li>
-              <li>
-                <a href="#work">Produtos</a>
-              </li>
-              <li>
-                <a href="#contact">Contato</a>
-              </li>
-            </ul>
-          </nav>
-        </header>
+        <Header />
+        {/* <nav>
+          <ul>
+            <li>
+              <a href="#intro">Início</a>
+            </li>
+            <li>
+              <a href="#about">Sobre Nós</a>
+            </li>
+            <li>
+              <a href="#products">Produtos</a>
+            </li>
+            <li>
+              <a href="#contact">Contato</a>
+            </li>
+          </ul>
+        </nav> */}
 
-        {/* Banner 
-        <div className="container-banner">
-          <div id="sliderBanner">
-            <img class="selected" src={s1} alt="Image1" />
-            <img  src={s2} alt="Image2" />
-            <img  src={s3} alt="Image3" />
-            <img  src={s4} alt="Image4" />
-            <img  src={s5} alt="Image5" />
-          </div>
-        </div>
+        {/* Banner */}
 
-        <script src={script}></script>*/}
+        <div id="dvslider"></div>
 
         {/* Sobre a empresa */}
 
-        <div class="basic">
+        <div id="about" class="basic">
           <center>
             <img
               src={iconSN}
               alt="icon-sobre-nos"
               id="icon-sobre-nos"
-              class="imagem"
+              width="120vw"
+              height="100vh"
             />
           </center>
-          <h1 class="title">SOBRE NÓS</h1>
-          <hr size="10" width="450" color="#b89b34" align="center"></hr>
+          <h1 class="basic-title">SOBRE NÓS</h1>
         </div>
 
         <div class="basic-2">
           <div class="card">
             <div class="card-body">
               <div class="card-title">Missão</div>
-              <hr class="divisor"></hr>
+              <hr class="card-divisor"></hr>
               <h5>Comprometer-se ao </h5>
               <h5>negócio para que as</h5>
               <h5>pessoas optem por</h5>
@@ -136,7 +165,7 @@ function App() {
           <div class="card">
             <div class="card-body">
               <div class="card-title">Visão</div>
-              <hr class="divisor"></hr>
+              <hr class="card-divisor"></hr>
               <ul>
                 <li>
                   <h6>Transparência</h6>
@@ -166,7 +195,7 @@ function App() {
           <div class="card">
             <div class="card-body">
               <div class="card-title">Valores</div>
-              <hr class="divisor"></hr>
+              <hr class="card-divisor"></hr>
               <h5>Ser referência no</h5>
               <h5>mercado cafeeiro</h5>
               <h5>com qualidade</h5>
@@ -178,8 +207,61 @@ function App() {
           </div>
         </div>
 
+        <div class="basic-2">
+          <div class="basic-2-image">
+            <img src={img1} alt="icon-1" id="icon-1" />
+          </div>
+          <div class="container" id="text-1">
+            <div class="container-2">
+              <div class="container-text-1">
+                <h4>Embora a planta tenha origem</h4>
+                <h4>africana, foi no Iêmen, região oeste</h4>
+                <h4>da Arábia, que ela começou a ser</h4>
+                <h4>cultivada. A história do café, aliás,</h4>
+                <h4>começa pela criação do nome,</h4>
+                <h4>que tem origem árabe.</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="basic-2" id="reverse">
+          <div class="container">
+            <div class="container-2">
+              <div class="container-text-2">
+                <h4>Conhecida como vinho da Arábia, </h4>
+                <h4>o café ganhou escala comercial no </h4>
+                <h4>séc. XIV, na região de Moka, principal</h4>
+                <h4>porto do Iêmen, que foi responsável </h4>
+                <h4>por um dosmaiores cultivos do </h4>
+                <h4>produto no mundo árabe. E o seu </h4>
+                <h4>porto, o maior exportador.</h4>
+              </div>
+            </div>
+          </div>
+          <div class="basic-2-image">
+            <img src={img2} alt="icon-1" id="icon-1" />
+          </div>
+        </div>
+
+        <div class="basic-2">
+          <div class="basic-2-image">
+            <img src={img3} alt="icon-1" id="icon-1" />
+          </div>
+          <div class="container">
+            <div class="container-2">
+              <div class="container-text-3">
+                <h4>
+                  Diante do fato histórico, temos o prazer de vincular nossa
+                  marca e cultura, originando o nome da nossa empresa.
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* PRODUCTS */}
-        <div className="container-products">
+        <div id="products" className="container-products">
           <h1 class="title">PRODUTOS</h1>
           <div class="line" />
           <div class="slider">
@@ -244,9 +326,34 @@ function App() {
           </div>
         </div>
         {/* PRODUCTS */}
+
+        {/* BEGIN CONTACT */}
+
+        <div id="contact">
+          <div class="basic">
+            <h1 class="basic-title">CONTATO</h1>
+            <h6 class="text-contact">
+              Av. Castelo Branco, 123 - Bairro República
+            </h6>
+            <h6 class="text-contact">vinhodaarabia@outlook.com</h6>
+            <h6 class="text-contact">(31) 3456-7890 / (31) 4002-8922</h6>
+            <h4 class="text-contact-2">
+              Envie-nos uma mensagem através do formulário abaixo
+            </h4>
+          </div>
+
+          <div class="mapsForms">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753.6328584850276!2d-43.18409268563655!3d-19.81315793980183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa5a9dba712abdb%3A0x6c4a86310f77da0b!2sAv.%20Castelo%20Branco%2C%20123%20-%20Republica%2C%20Jo%C3%A3o%20Monlevade%20-%20MG%2C%2035930-090!5e0!3m2!1spt-BR!2sbr!4v1620104017900!5m2!1spt-BR!2sbr"
+              allowfullscreen
+            ></iframe>
+            {/* FORMS */}
+          </div>
+        </div>
+
+        {/* END CONTACT */}
       </body>
     </div>
   );
 }
-
 export default App;
