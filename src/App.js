@@ -41,7 +41,7 @@ function App() {
       {
         breakpoint: 1024,
         settings: {
-          arrows: false,
+          arrows: true,
           centerMode: true,
           centerPadding: "40px",
           slidesToShow: 3,
@@ -50,7 +50,7 @@ function App() {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },

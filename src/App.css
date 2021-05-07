@@ -395,14 +395,14 @@ h4 {
     text-decoration-color: #b89b34;
   }
   .container-products .slider {
-    width: 65%;
+    width: 55%;
     margin: 0 auto;
     cursor: pointer;
     padding-bottom: 6vh;
   }
   .slider img {
     margin: 0 auto;
-    max-width: 18vw !important;
+    max-width: 12.5vw !important;
   }
   .slider .product-details {
     color: white;
