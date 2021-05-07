@@ -35,51 +35,29 @@ Table Of Contents:
 01. HEADER
 *******************/
 
-.container-navbar {
-  display: grid;
-  margin: 0px;
-}
-
-#header {
-  position: fixed;
-  z-index: 10000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  background: rgba(32, 16, 13, 0.95);
-  height: 7em;
-  line-height: 3em;
-  box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
-}
-
-#header img {
+ nav {
   position: absolute;
-  left: -32em;
-  top: 0;
-  height: 7em;
-  line-height: 3em;
-  cursor: default;
+  float:right;
+  right: 0.9em;
+  margin: -5em 0 0 0;
 }
 
-#header nav ul {
-  float: right;
-}
-
-#header nav ul li {
+nav ul li {
   display: inline-block;
   margin-left: 0.5em;
   font-size: 1.99em;
   color: rgba(193, 143, 29, 0.95);
 }
-
-#header nav ul li a {
-  display: block;
+ 
+nav ul li a {
   color: inherit;
   text-decoration: none;
-  height: 3em;
-  line-height: 3em;
   padding: 0 0.5em 0 0.5em;
-  outline: 0;
+
+} 
+
+nav ul li a:hover{
+  color: #f7f7f7;
 }
 
 @media screen and (max-width: 736px) {
@@ -100,12 +78,11 @@ Table Of Contents:
   #header h1 a {
     font-size: 1em;
   }
-}
 
   #header nav {
     display: none;
   }
-
+}
 
 /*******************
 01. BODY
@@ -130,48 +107,11 @@ html {
 02. BANNER
 *******************/
 
-
-.container-banner {
-  position: relative;
-  height: 80vh;
-  flex-direction: center;
-  justify-content: center;
-  align-items: center;
-  background-color: #f5f4f0;
-}
-
-
-#sliderBanner {
-  
-  width: 80%;
-  max-width: 500px;
-  height: 25vw;
-  max-height: 150px;
-
-  position: relative;
-}
-
-#sliderBanner img{
-  position: absolute;
-  padding-top: 5rem;
+#dvslider {
   width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-
-  transition: opacity 800ms;
+  height: 80vh;
+  position: relative;
 }
-
-#sliderBanner img.selected {
-  opacity: 1;
-}
-
-
-
-
-
-
-/* PRODUTOS */
 
 /*******************
 03. SOBRE NÓS
@@ -446,8 +386,62 @@ h4 {
     margin-left: 1vw;
   }
 }
-.slider .thumbnail {
-  margin-left: 1vw;
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container-products {
+    position: relative;
+    /* background-image: url("./assets/background-products.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+    background-size:100%; */
+    background-color: #20100d;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container-products .title{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    position: relative;
+    color: #ffffff;
+    font-family: Sunflower;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 4vw;
+    margin-top: 2em;
+    text-decoration-line: underline;
+    text-decoration-color: #b89b34;
+  }
+  .container-products .slider {
+    width: 70vw;
+    margin: 0 auto;
+    cursor: pointer;
+    padding-bottom: 8vh;
+  }
+  .slider img {
+    margin: 0 auto;
+    max-width: 16vw !important;
+  }
+  .slider .product-details {
+    color: white;
+  }
+  .slider .product-details h2 {
+    font-family: Montserrat;
+    font-size: 1.7vw;
+  }
+  .slider .product-details p {
+    font-family: Montserrat;
+    color: #b89b34;
+    font-size: 1.4vw;
+  }
+  .slider .thumbnail {
+    margin-left: 1vw;
+  }
 }
 
 
