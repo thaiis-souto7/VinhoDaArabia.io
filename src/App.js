@@ -8,15 +8,9 @@ import Header from "./components/Header";
 
 //Import Sobre nós
 import iconSN from "./assets/iconSN.png";
-<<<<<<< HEAD
-import img1 from "./assets/img1.png"
-import img2 from "./assets/img2.png"
-import img3 from "./assets/img3.png"
-=======
 import img1 from "./assets/img1.png";
 import img2 from "./assets/img2.png";
 import img3 from "./assets/img3.png";
->>>>>>> 2eef9e6402f269365b38d0441d8a0fcb35bc1228
 
 //Import Products
 import Marcador from "./assets/marcador.png";
