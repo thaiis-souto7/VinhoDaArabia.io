@@ -70,9 +70,8 @@ function App() {
 
   return (
     <div className="App">
-      {/* <header className="App-header"></header> */}
-      <body>
-        <div class="navBar">
+       <header className="App-header"> 
+       <div class="navBar">
           <img class="logo" src={Logo} />
           <ul class="nav">
             <li>
@@ -89,9 +88,30 @@ function App() {
             </li>
           </ul>
         </div>
+        </header>
+      <body>
+        
 
         {/* Banner */}
-        <div class="banner" id="home"></div>
+          <div id="items-wrapper">
+          <div id="items">
+            <div class="item">
+              <img src={s1} />
+            </div>
+            <div class="item">
+              <img src={s2} />
+            </div>
+            <div class="item">
+              <img src={s3} />
+            </div>
+            <div class="item">
+              <img src={s4} />
+            </div>
+            <div class="item">
+              <img src={s5} />
+            </div>
+          </div>
+        </div>   
 
         {/* Sobre a empresa */}
 
