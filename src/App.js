@@ -76,8 +76,13 @@ function App() {
 
   return (
     <div className="App">
+<<<<<<< HEAD
       <header className="App-header">
         <div class="navBar">
+=======
+       <header className="App-header"> 
+       <div class="navBar">
+>>>>>>> 5fc4a2ada8cefabff9b4343c3ab69ee41e0b9dd6
           <img class="logo" src={Logo} />
           <ul class="nav">
             <li>
@@ -94,10 +99,19 @@ function App() {
             </li>
           </ul>
         </div>
+<<<<<<< HEAD
       </header>
       <body>
         {/* Banner */}
         <div id="items-wrapper">
+=======
+        </header>
+      <body>
+        
+
+        {/* Banner */}
+          <div id="items-wrapper">
+>>>>>>> 5fc4a2ada8cefabff9b4343c3ab69ee41e0b9dd6
           <div id="items">
             <div class="item">
               <img src={s1} />
@@ -115,7 +129,11 @@ function App() {
               <img src={s5} />
             </div>
           </div>
+<<<<<<< HEAD
         </div>
+=======
+        </div>   
+>>>>>>> 5fc4a2ada8cefabff9b4343c3ab69ee41e0b9dd6
 
         {/* Sobre a empresa */}
 
@@ -318,6 +336,7 @@ function App() {
 
         <div id="contact">
           <div class="basic">
+<<<<<<< HEAD
             <h1 class="basic-title-contact">CONTATO</h1>
           </div>
 
@@ -351,6 +370,29 @@ function App() {
         {/* FOOTER */}
         <Footer/>
         {/* <Footer/>  */}
+=======
+            <h1 class="basic-title">CONTATO</h1>
+            <h6 class="text-contact">
+              Av. Castelo Branco, 123 - Bairro República
+            </h6>
+            <h6 class="text-contact">vinhodaarabia@outlook.com</h6>
+            <h6 class="text-contact">(31) 3456-7890 / (31) 4002-8922</h6>
+            <h4 class="text-contact-2">
+              Envie-nos uma mensagem através do formulário abaixo
+            </h4>
+          </div>
+
+          <div class="mapsForms">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753.6328584850276!2d-43.18409268563655!3d-19.81315793980183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa5a9dba712abdb%3A0x6c4a86310f77da0b!2sAv.%20Castelo%20Branco%2C%20123%20-%20Republica%2C%20Jo%C3%A3o%20Monlevade%20-%20MG%2C%2035930-090!5e0!3m2!1spt-BR!2sbr!4v1620104017900!5m2!1spt-BR!2sbr"
+              allowfullscreen
+            ></iframe>
+            {/* FORMS */}
+          </div>
+        </div>
+
+        {/* END CONTACT */}
+>>>>>>> 5fc4a2ada8cefabff9b4343c3ab69ee41e0b9dd6
       </body>
     </div>
   );
