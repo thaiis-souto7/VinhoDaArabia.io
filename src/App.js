@@ -3,18 +3,20 @@ import React from "react";
 
 //Import NavBar
 import Logo from "./assets/logoPrincipal.png";
-
 //Import Banner
+import s1 from "./assets/s1.jpg";
+import s2 from "./assets/s1.jpg";
+import s3 from "./assets/s1.jpg";
+import s4 from "./assets/s1.jpg";
+import s5 from "./assets/s1.jpg";
 
 //Import Sobre nós
 import iconSN from "./assets/iconSN.png";
-import img1 from "./assets/img1.png"
-import img2 from "./assets/img2.png"
-import img3 from "./assets/img3.png"
-
+import img1 from "./assets/img1.png";
+import img2 from "./assets/img2.png";
+import img3 from "./assets/img3.png";
 
 //Import Products
-
 import Marcador from "./assets/marcador.png";
 import Almofada from "./assets/almofada.png";
 import Capsula from "./assets/capsula.png";
@@ -31,7 +33,7 @@ import Slider from "react-slick";
 import Forms from "./components/Forms";
 
 //Import Footer
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 
 function App() {
   var settings = {
@@ -56,7 +58,7 @@ function App() {
       {
         breakpoint: 600,
         settings: {
-          arrows:false,
+          arrows: false,
           slidesToShow: 1,
           slidesToScroll: 1,
         },
@@ -64,7 +66,7 @@ function App() {
       {
         breakpoint: 330,
         settings: {
-          arrows:false,
+          arrows: false,
           slidesToShow: 1,
           slidesToScroll: 1,
         },
@@ -72,71 +74,61 @@ function App() {
     ],
   };
 
-  var imgs = [];
-  var sliderBanner;
-  var imgCurrent;
-  var maxImg;
-  var time;
-  var timeChange;
-
-  function preLoading() {
-    var s = 1;
-    for (var i = 0; i < 5; i++) {
-      imgs[i] = new Image();
-      imgs[i].src = "assets/s" + s + ".jpg";
-      s++;
-    }
-  }
-
-  function loadImg(img) {
-    sliderBanner.style.backgroundImage = "url('" + imgs[img].src + "')";
-  }
-
-  function start() {
-    preLoading();
-    imgCurrent = 0;
-    maxImg = imgs.length - 1;
-    sliderBanner = document.getElementById("dvslider");
-    loadImg(imgCurrent);
-    timeChange = 3000;
-    time = setInterval(change, timeChange);
-  }
-
-  function change() {
-    imgCurrent++;
-    if (imgCurrent > maxImg) {
-      imgCurrent = 0;
-    }
-    loadImg(imgCurrent);
-  }
-
-  window.addEventListener("load", start);  
-
   return (
     <div className="App">
-      {/* <header className="App-header"></header> */}
+      <header className="App-header">
+        <div class="navBar">
+          <img class="logo" src={Logo} />
+          <ul class="nav">
+            <li>
+              <a href="#home">Início</a>
+            </li>
+            <li>
+              <a href="#about">Sobre Nós</a>
+            </li>
+            <li>
+              <a href="#product">Produtos</a>
+            </li>
+            <li>
+              <a href="#contact">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </header>
       <body>
-      <div class="container-navbar">
-      <header id="header">
-				<nav>
-          <img src={Logo} alt="logo" href="index.html"/>
-					<ul>
-						<li><a href="#index">Início</a></li>
-						<li><a href="#about">Sobre Nós</a></li>
-						<li><a href="#products">Produtos</a></li>
-						<li><a href="#contact">Contato</a></li>
-					</ul>
-				</nav>
-			</header>
-      </div>
         {/* Banner */}
-
-        <div id="dvslider"></div>
+        <div id="items-wrapper">
+          <div id="items">
+            <div class="item">
+              <img src={s1} />
+            </div>
+            <div class="item">
+              <img src={s2} />
+            </div>
+            <div class="item">
+              <img src={s3} />
+            </div>
+            <div class="item">
+              <img src={s4} />
+            </div>
+            <div class="item">
+              <img src={s5} />
+            </div>
+          </div>
+        </div>
 
         {/* Sobre a empresa */}
 
         <div id="about" class="basic">
-          <center><img src={iconSN} alt="icon-sobre-nos" id="icon-sobre-nos" width="120vw" height="100vh"/></center>
+          <center>
+            <img
+              src={iconSN}
+              alt="icon-sobre-nos"
+              id="icon-sobre-nos"
+              width="120vw"
+              height="100vh"
+            />
+          </center>
           <h1 class="basic-title">SOBRE NÓS</h1>
         </div>
 
@@ -157,8 +149,8 @@ function App() {
 
           <div class="card">
             <div class="card-body">
-             <div class="card-title">Visão</div>
-             <hr class="card-divisor"></hr>
+              <div class="card-title">Visão</div>
+              <hr class="card-divisor"></hr>
               <ul>
                 <li>
                   <h6>Transparência</h6>
@@ -202,7 +194,7 @@ function App() {
 
         <div class="basic-2">
           <div class="basic-2-image">
-            <img src={img1} alt="icon-1" id="icon-1"/>         
+            <img src={img1} alt="icon-1" id="icon-1" />
           </div>
           <div class="container" id="text-1">
             <div class="container-2">
@@ -224,8 +216,8 @@ function App() {
               <div class="container-text-2">
                 <h4>Conhecida como vinho da Arábia, </h4>
                 <h4>o café ganhou escala comercial no </h4>
-                <h4>séc. XIV, na região de Moka, principal</h4> 
-                <h4>porto do Iêmen, que foi responsável  </h4>
+                <h4>séc. XIV, na região de Moka, principal</h4>
+                <h4>porto do Iêmen, que foi responsável </h4>
                 <h4>por um dosmaiores cultivos do </h4>
                 <h4>produto no mundo árabe. E o seu </h4>
                 <h4>porto, o maior exportador.</h4>
@@ -233,26 +225,28 @@ function App() {
             </div>
           </div>
           <div class="basic-2-image">
-            <img src={img2} alt="icon-1" id="icon-1"/>         
+            <img src={img2} alt="icon-1" id="icon-1" />
           </div>
         </div>
 
         <div class="basic-2">
           <div class="basic-2-image">
-            <img src={img3} alt="icon-1" id="icon-1"/>         
+            <img src={img3} alt="icon-1" id="icon-1" />
           </div>
           <div class="container">
             <div class="container-2">
               <div class="container-text-3">
-                <h4>Diante do fato histórico, temos o prazer de vincular nossa marca e  cultura, originando o nome da nossa empresa.</h4>
+                <h4>
+                  Diante do fato histórico, temos o prazer de vincular nossa
+                  marca e cultura, originando o nome da nossa empresa.
+                </h4>
               </div>
             </div>
           </div>
         </div>
 
-
-          {/* PRODUCTS */}
-          <div id="products" className="container-products">
+        {/* PRODUCTS */}
+        <div id="product" className="container-products">
           <h1 class="title">PRODUTOS</h1>
           <div class="line" />
           <div class="slider">
@@ -318,41 +312,45 @@ function App() {
         </div>
         {/* PRODUCTS */}
 
-
-
         {/* BEGIN CONTACT */}
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous"></link>
 
         <div id="contact">
           <div class="basic">
             <h1 class="basic-title-contact">CONTATO</h1>
           </div>
 
-          <div class= "formulario">
-              <Forms/>
+          <div class="formulario">
+            <Forms/>
+          </div>
+
+          <div class="container-mapadata">
+            <div class="basic">
+              <h5 class="text-contact-nameVA">Vinho da Arábia</h5>
+              <h6 class="text-contact-data"><i class="fas fa-envelope"></i>vinhodaarabia@outlook.com</h6>
+              <h6 class="text-contact-data"><i class="fas fa-phone-alt"></i>(31) 3456-7890 / (31) 4002-8922</h6>
             </div>
-          
-          <div class = "container-mapadata">
-          <div class = "basic">
-            <h5 class="text-contact-nameVA">Vinho da Arábia</h5> 
-            <h6 class="text-contact-data">vinhodaarabia@outlook.com</h6>
-            <h6 class="text-contact-data">(31) 3456-7890 / (31) 4002-8922</h6>
-          </div>
           </div>
 
-          
           <div class="maps">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753.6328584850276!2d-43.18409268563655!3d-19.81315793980183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa5a9dba712abdb%3A0x6c4a86310f77da0b!2sAv.%20Castelo%20Branco%2C%20123%20-%20Republica%2C%20Jo%C3%A3o%20Monlevade%20-%20MG%2C%2035930-090!5e0!3m2!1spt-BR!2sbr!4v1620104017900!5m2!1spt-BR!2sbr" allowfullscreen></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753.6328584850276!2d-43.18409268563655!3d-19.81315793980183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa5a9dba712abdb%3A0x6c4a86310f77da0b!2sAv.%20Castelo%20Branco%2C%20123%20-%20Republica%2C%20Jo%C3%A3o%20Monlevade%20-%20MG%2C%2035930-090!5e0!3m2!1spt-BR!2sbr!4v1620104017900!5m2!1spt-BR!2sbr"
+              allowfullscreen
+            ></iframe>
           </div>
 
-          <div class= "basic">
-            <h6 class="text-contact-adress">Av. Castelo Branco, nº 123, Bairro República - João Monlevade </h6>
+          <div class="basic">
+            <h6 class="text-contact-adress">
+            <i class="fas fa-map-marker-alt"></i> Av. Castelo Branco, nº 123, Bairro República - João Monlevade
+            </h6>
           </div>
         </div>
         {/* END CONTACT */}
 
         {/* FOOTER */}
+        <Footer/>
         {/* <Footer/>  */}
-
       </body>
     </div>
   );

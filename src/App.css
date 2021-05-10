@@ -22,7 +22,7 @@ Table Of Contents:
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -35,89 +35,77 @@ Table Of Contents:
 01. HEADER
 *******************/
 
-.container-navbar {
-  display: grid;
-  margin: 0px;
-}
-
-#header {
-  position: fixed;
-  z-index: 10000;
-  left: 0;
-  top: 0;
+.navBar{
+  position: relative;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #20100D;
   width: 100%;
-  background: rgba(32, 16, 13, 0.95);
-  height: 7em;
-  line-height: 3em;
-  box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
+  height: 8rem;
+  z-index: 1;
 }
 
-#header img {
-  position: absolute;
-  left: -32em;
-  top: 0;
-  height: 7em;
-  line-height: 3em;
-  cursor: default;
-}
-
-#header h1 a {
-  font-size: 1.9em;
-}
-
-#header nav {
-  position: absolute;
-  right: 0.5em;
-  top: 0;
-  height: 3em;
-  line-height: 3em;
-}
-
-#header nav ul {
-  margin: 0;
-}
-
-#header nav ul li {
-  display: inline-block;
-  margin-left: 0.5em;
-  font-size: 1.99em;
-  color: rgba(193, 143, 29, 0.95);
-}
-
-#header nav ul li a {
+.nav{
   display: block;
-  color: inherit;
-  text-decoration: none;
-  height: 3em;
-  line-height: 3em;
-  padding: 0 0.5em 0 0.5em;
-  outline: 0;
+  list-style: none;
+  text-align: center;
+  height: 1.0rem;
+  margin-top: 2rem;
+  margin-right: 3rem;
+  float: right;
+  
 }
 
-@media screen and (max-width: 736px) {
-  #header {
-    height: 2.5em;
-    line-height: 2.5em;
-  }
+.logo{
+  height: 8rem;
+  justify-content: flex-start;
+  float: left;
+  
+}
 
-  #header h1 {
-    text-align: center;
+a{
+ margin: 15px;
+ color:#C18F1D;
+ text-decoration: none;
+ text-transform: uppercase;
+}
+
+a:hover{
+  color: rgb(255, 255, 255);
+}
+ 
+@media screen and (min-width: 768px) {
+  
+  .navBar{
     position: relative;
-    left: 0;
-    top: 0;
-    height: 2.5em;
-    line-height: 2.5em;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #20100D;
+    width: 100%;
+    height: 8rem;
+    z-index: 1;
+    clear: both;
+  
   }
 
-  #header h1 a {
-    font-size: 1em;
+  .nav{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    height: 1.0rem;
+    float: right;
+    margin-top: 3.3rem;
   }
 
-  #header nav {
-    display: none;
+  .logo{
+    height: 8rem;
+    float: left;
+    
   }
-}
 
+} */
+
+ 
 /*******************
 01. BODY
 *******************/
@@ -129,6 +117,8 @@ html {
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 @media screen and (max-width: 736px) {
@@ -140,12 +130,38 @@ html {
 /*******************
 02. BANNER
 *******************/
-
-#dvslider {
-  width: 100%;
-  height: 80vh;
-  position: relative;
+/* 
+#items-wrapper{
+  width:100vw;
+  margin: 0rem 0 0;
 }
+
+#items {
+  display: flex;
+
+  overflow-x: auto;
+scroll-snap-type: x mandatory;
+-webkit-overflow-scrolling: touch;
+scroll-behavior: smooth;
+}
+
+.item {
+  flex: none;
+
+ width: 100%;
+height: 40rem;
+
+scroll-snap-align: start;
+pointer-events: none;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+
+object-fit: cover;
+} */
+
 
 /*******************
 03. SOBRE NÓS
@@ -220,7 +236,7 @@ h4 {
   margin-bottom: 3rem;
   margin-left: 2rem;
   margin-right: 2rem;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   display: flex;
 }
@@ -236,7 +252,7 @@ h4 {
   margin-left: 3rem;
 	background: #20100D;
 	border-radius: 0.5rem;
-  align-items: center; 
+  align-items: center;
 }
 
 .card-body {
@@ -275,7 +291,7 @@ h4 {
   margin-right: 2rem;
   margin-left: 2rem;
 	background: #f2e6d6;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
 }
 
@@ -324,14 +340,19 @@ h4 {
 @media only screen and (max-width: 600px) {
   .container-products {
     position: relative;
-    background-color: #20100d;
+    background-image: url("./assets/background-coffe-beans.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #464646;
+    
     display: flex;
     flex-direction: column;
   }
-  
+
   .container-products .title{
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     position: relative;
     color: #ffffff;
@@ -374,14 +395,19 @@ h4 {
 @media only screen and (min-width: 600px) {
   .container-products {
     position: relative;
-    background-color: #20100d;
+    background-image: url("./assets/background-coffe-beans.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #464646;
+    background-size:100%; 
     display: flex;
     flex-direction: column;
   }
-  
+
   .container-products .title{
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     position: relative;
     color: #ffffff;
@@ -402,7 +428,7 @@ h4 {
   }
   .slider img {
     margin: 0 auto;
-    max-width: 12.5vw !important;
+    max-width: 11vw !important;
   }
   .slider .product-details {
     color: white;
@@ -425,21 +451,19 @@ h4 {
 @media only screen and (min-width: 1200px) {
   .container-products {
     position: relative;
-    /* background-image: url("./assets/background-products.jpg");
+    background-image: url("./assets/background-coffe-beans.jpg");
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     background-color: #464646;
-    background-size:100%; */
-    background-color: #20100d;
+    background-size:100%; 
     display: flex;
     flex-direction: column;
   }
-  
+
   .container-products .title{
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     position: relative;
     color: #ffffff;
@@ -470,7 +494,7 @@ h4 {
   }
   .slider .product-details p {
     font-family: Montserrat;
-    color: #b89b34;
+    color: #d8b63b;
     font-size: 1.4vw;
   }
   .slider .thumbnail {
@@ -630,7 +654,7 @@ h4 {
   .container{
     width: 20rem;
     height: 20rem;
-  }  
+  }
   .container-2{
     height: 19rem;
   }
