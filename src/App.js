@@ -3,9 +3,11 @@ import React from "react";
 
 //Import NavBar
 import Logo from "./assets/logoPrincipal.png";
-import Header from "./components/Header";
 
 //Import Banner
+
+import "react-slideshow-image/dist/styles.css"
+import Slideshow from './slider';
 
 //Import Sobre nós
 import iconSN from "./assets/iconSN.png";
@@ -65,71 +67,35 @@ function App() {
     ],
   };
 
-  // var imgs = [];
-  // var sliderBanner;
-  // var imgCurrent;
-  // var maxImg;
-  // var time;
-  // var timeChange;
-
-  // function preLoading() {
-  //   var s = 1;
-  //   for (var i = 0; i < 5; i++) {
-  //     imgs[i] = new Image();
-  //     imgs[i].src = "assets/s" + s + ".jpg";
-  //     s++;
-  //   }
-  // }
-
-  // function loadImg(img) {
-  //   sliderBanner.style.backgroundImage = "url('" + imgs[img].src + "')";
-  // }
-
-  // function start() {
-  //   preLoading();
-  //   imgCurrent = 0;
-  //   maxImg = imgs.length - 1;
-  //   sliderBanner = document.getElementById("dvslider");
-  //   loadImg(imgCurrent);
-  //   timeChange = 3000;
-  //   time = setInterval(change, timeChange);
-  // }
-
-  // function change() {
-  //   imgCurrent++;
-  //   if (imgCurrent > maxImg) {
-  //     imgCurrent = 0;
-  //   }
-  //   loadImg(imgCurrent);
-  // }
-
-  // window.addEventListener("load", start);
-
   return (
     <div className="App">
-      {/* <header className="App-header"></header> */}
-      <body>
-        <Header />
-        {/* <nav>
-          <ul>
+       <header className="App-header"> 
+       <div class="navBar">
+          <img class="logo" src={Logo} />
+          <ul class="nav">
             <li>
-              <a href="#intro">Início</a>
+              <a href="#home">Início</a>
             </li>
             <li>
               <a href="#about">Sobre Nós</a>
             </li>
             <li>
-              <a href="#products">Produtos</a>
+              <a href="#product">Produtos</a>
             </li>
             <li>
               <a href="#contact">Contato</a>
             </li>
           </ul>
-        </nav> */}
+        </div>
+        </header>
 
+      <body>
         {/* Banner */}
-
-        <div id="dvslider"></div>
+        <div id="home" className="containerBanner">
+          <div img >
+          <Slideshow />
+          </div>           
+        </div>
 
         {/* Sobre a empresa */}
 
@@ -260,7 +226,7 @@ function App() {
         </div>
 
         {/* PRODUCTS */}
-        <div id="products" className="container-products">
+        <div id="product" className="container-products">
           <h1 class="title">PRODUTOS</h1>
           <div class="line" />
           <div class="slider">

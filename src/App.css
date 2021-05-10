@@ -17,12 +17,12 @@ Table Of Contents:
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #20100D;
+  height: 3.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -35,55 +35,112 @@ Table Of Contents:
 01. HEADER
 *******************/
 
- nav {
-  position: absolute;
-  float:right;
-  right: 0.9em;
-  margin: -5em 0 0 0;
+.navBar{
+  position: relative;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #20100D;
+  width: 100%;
+  height: 8rem;
+  z-index: 1;
 }
 
-nav ul li {
-  display: inline-block;
-  margin-left: 0.5em;
-  font-size: 1.99em;
-  color: rgba(193, 143, 29, 0.95);
+.nav{
+  display: block;
+  list-style: none;
+  text-align: center;
+  height: 1.0rem;
+  margin-top: 2rem;
+  margin-right: 3rem;
+  float: right;
+  
+}
+
+.logo{
+  height: 8rem;
+  justify-content: flex-start;
+  float: left;
+  
+}
+
+a{
+ margin: 15px;
+ color:#C18F1D;
+ text-decoration: none;
+ text-transform: uppercase;
+}
+
+a:hover{
+  color: rgb(255, 255, 255);
 }
  
-nav ul li a {
-  color: inherit;
-  text-decoration: none;
-  padding: 0 0.5em 0 0.5em;
+@media screen and (min-width: 768px) {
+  
+  .navBar{
+    position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #20100D;
+    width: 100%;
+    height: 8rem;
+    z-index: 1;
+    clear: both;
+  
+  }
+
+  .nav{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    height: 1.0rem;
+    float: right;
+    margin-top: 3.3rem;
+  }
+
+  .logo{
+    height: 8rem;
+    float: left;
+  }
+
+  a:hover{
+    color: rgb(255, 255, 255);
+  }
 
 } 
 
-nav ul li a:hover{
-  color: #f7f7f7;
-}
-
-@media screen and (max-width: 736px) {
-  #header {
-    height: 2.5em;
-    line-height: 2.5em;
-  }
-
-  #header h1 {
-    text-align: center;
+@media screen and (max-width: 320px) {
+  
+  .navBar{
     position: relative;
-    left: 0;
-    top: 0;
-    height: 2.5em;
-    line-height: 2.5em;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #20100D;
+    width: 100%;
+    height: 7rem;
+    z-index: 1;
+    clear: both;
+  
   }
 
-  #header h1 a {
-    font-size: 1em;
+  .nav{
+    list-style: none;
+    text-align: center;
+    float: right;
   }
 
-  #header nav {
-    display: none;
+  .logo{
+    height: 5rem;
+    float: center;
+    margin-top: 1.5rem;
   }
+
+  a:hover{
+    color: rgb(255, 255, 255);
+  }
+  
 }
 
+ 
 /*******************
 01. BODY
 *******************/
@@ -95,6 +152,8 @@ html {
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 @media screen and (max-width: 736px) {
@@ -106,11 +165,20 @@ html {
 /*******************
 02. BANNER
 *******************/
+.react-slideshow-container .default-nav:last-of-type {
+   margin-left: -1rem;
+   margin-right: -0.5rem;
+}
 
-#dvslider {
+.containerBanner {
   width: 100%;
-  height: 80vh;
   position: relative;
+  margin: auto;
+}
+
+.containerBanner img {
+  width: 90%;
+  margin: auto;
 }
 
 /*******************
@@ -186,7 +254,7 @@ h4 {
   margin-bottom: 3rem;
   margin-left: 2rem;
   margin-right: 2rem;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   display: flex;
 }
@@ -202,7 +270,7 @@ h4 {
   margin-left: 3rem;
 	background: #20100D;
 	border-radius: 0.5rem;
-  align-items: center; 
+  align-items: center;
 }
 
 .card-body {
@@ -241,7 +309,7 @@ h4 {
   margin-right: 2rem;
   margin-left: 2rem;
 	background: #f2e6d6;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
 }
 
@@ -290,14 +358,19 @@ h4 {
 @media only screen and (max-width: 600px) {
   .container-products {
     position: relative;
-    background-color: #20100d;
+    background-image: url("./assets/background-coffe-beans.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #464646;
+    
     display: flex;
     flex-direction: column;
   }
-  
+
   .container-products .title{
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     position: relative;
     color: #ffffff;
@@ -340,14 +413,19 @@ h4 {
 @media only screen and (min-width: 600px) {
   .container-products {
     position: relative;
-    background-color: #20100d;
+    background-image: url("./assets/background-coffe-beans.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #464646;
+    background-size:100%; 
     display: flex;
     flex-direction: column;
   }
-  
+
   .container-products .title{
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     position: relative;
     color: #ffffff;
@@ -368,7 +446,7 @@ h4 {
   }
   .slider img {
     margin: 0 auto;
-    max-width: 12.5vw !important;
+    max-width: 11vw !important;
   }
   .slider .product-details {
     color: white;
@@ -391,21 +469,19 @@ h4 {
 @media only screen and (min-width: 1200px) {
   .container-products {
     position: relative;
-    /* background-image: url("./assets/background-products.jpg");
+    background-image: url("./assets/background-coffe-beans.jpg");
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     background-color: #464646;
-    background-size:100%; */
-    background-color: #20100d;
+    background-size:100%; 
     display: flex;
     flex-direction: column;
   }
-  
+
   .container-products .title{
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     position: relative;
     color: #ffffff;
@@ -436,7 +512,7 @@ h4 {
   }
   .slider .product-details p {
     font-family: Montserrat;
-    color: #b89b34;
+    color: #d8b63b;
     font-size: 1.4vw;
   }
   .slider .thumbnail {
@@ -450,6 +526,27 @@ h4 {
 05. CONTATO
 *******************/
 
+.basic-title-contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #20100d;
+  font-family: Sunflower;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 4vw;
+  text-decoration-line: underline;
+  text-decoration-color: #b89b34;
+}
+
+.container-mapadata{
+  background: #f2e6d6;
+  display: flex;
+  padding-top: 5rem;
+  align-items: center;
+  justify-content: relative;
+}
 .text-contact {
   color: #20100d;
   font-family: Montserrat;
@@ -463,7 +560,43 @@ h4 {
   font-weight: bold;
 }
 
-.text-contact-2 {
+.formulario{
+  background: #f2e6d6;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.text-contact-adress{
+  color: #20100d;
+  font-family: Montserrat;
+  display: block;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 0.1em;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.text-contact-nameVA {
+  background-color: #f2e6d6;
+  color: #20100d;
+  font-family: Montserrat;
+  display: block;
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 3em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.text-contact-data{
+  background-color: #f2e6d6;
   color: #20100d;
   font-family: Montserrat;
   display: block;
@@ -476,14 +609,27 @@ h4 {
   font-weight: bold;
 }
 
-.mapsForms {
+/* .text-contact-2 {
+  color: #20100d;
+  font-family: Montserrat;
+  display: block;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 3em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+} */
+
+.maps {
   background: #f2e6d6;
   position: relative;
   overflow: hidden;
-  padding-bottom: 5%;
+  padding-bottom: 0;
 }
 
-.mapsForms iframe {
+.maps iframe {
   margin-top: 2rem;
   position: relative;
   top: 0;
@@ -526,7 +672,7 @@ h4 {
   .container{
     width: 20rem;
     height: 20rem;
-  }  
+  }
   .container-2{
     height: 19rem;
   }
