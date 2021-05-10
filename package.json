@@ -19,6 +19,7 @@
     "react-slick": "^0.28.1",
     "react-slideshow-image": "^3.4.6",
     "slick-carousel": "^1.8.1",
+    "stat": "^0.0.5",
     "styled-components": "^5.3.0",
     "web-vitals": "^1.1.1",
     "yup": "^0.32.9"
