@@ -91,7 +91,7 @@ function App() {
 
       <body>
         {/* Banner */}
-        <div className="containerBanner">
+        <div id="home" className="containerBanner">
           <div img >
           <Slideshow />
           </div>           
