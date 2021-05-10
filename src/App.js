@@ -27,6 +27,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
+//Import Contacts
+import Forms from "./components/Forms";
+
+//Import Footer
+// import Footer from './components/Footer';
+
 function App() {
   var settings = {
     centerMode: true,
@@ -318,25 +324,34 @@ function App() {
 
         <div id="contact">
           <div class="basic">
-            <h1 class="basic-title">CONTATO</h1>
-            <h6 class="text-contact">Av. Castelo Branco, 123 - Bairro República</h6>
-            <h6 class="text-contact">vinhodaarabia@outlook.com</h6>
-            <h6 class="text-contact">(31) 3456-7890 / (31) 4002-8922</h6>
-            <h4 class="text-contact-2">Envie-nos uma mensagem através do formulário abaixo</h4>
+            <h1 class="basic-title-contact">CONTATO</h1>
+          </div>
+
+          <div class= "formulario">
+              <Forms/>
+            </div>
+          
+          <div class = "container-mapadata">
+          <div class = "basic">
+            <h5 class="text-contact-nameVA">Vinho da Arábia</h5> 
+            <h6 class="text-contact-data">vinhodaarabia@outlook.com</h6>
+            <h6 class="text-contact-data">(31) 3456-7890 / (31) 4002-8922</h6>
+          </div>
           </div>
 
           
-          <div class="mapsForms">
+          <div class="maps">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753.6328584850276!2d-43.18409268563655!3d-19.81315793980183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa5a9dba712abdb%3A0x6c4a86310f77da0b!2sAv.%20Castelo%20Branco%2C%20123%20-%20Republica%2C%20Jo%C3%A3o%20Monlevade%20-%20MG%2C%2035930-090!5e0!3m2!1spt-BR!2sbr!4v1620104017900!5m2!1spt-BR!2sbr" allowfullscreen></iframe>
-            {/* FORMS */}
+          </div>
+
+          <div class= "basic">
+            <h6 class="text-contact-adress">Av. Castelo Branco, nº 123, Bairro República - João Monlevade </h6>
           </div>
         </div>
-        
-        
-
         {/* END CONTACT */}
 
-
+        {/* FOOTER */}
+        {/* <Footer/>  */}
 
       </body>
     </div>

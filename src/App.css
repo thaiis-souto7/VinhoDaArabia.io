@@ -484,6 +484,27 @@ h4 {
 05. CONTATO
 *******************/
 
+.basic-title-contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #20100d;
+  font-family: Sunflower;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 4vw;
+  text-decoration-line: underline;
+  text-decoration-color: #b89b34;
+}
+
+.container-mapadata{
+  background: #f2e6d6;
+  display: flex;
+  padding-top: 5rem;
+  align-items: center;
+  justify-content: relative;
+}
 .text-contact {
   color: #20100d;
   font-family: Montserrat;
@@ -497,7 +518,43 @@ h4 {
   font-weight: bold;
 }
 
-.text-contact-2 {
+.formulario{
+  background: #f2e6d6;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.text-contact-adress{
+  color: #20100d;
+  font-family: Montserrat;
+  display: block;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 0.1em;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.text-contact-nameVA {
+  background-color: #f2e6d6;
+  color: #20100d;
+  font-family: Montserrat;
+  display: block;
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 3em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.text-contact-data{
+  background-color: #f2e6d6;
   color: #20100d;
   font-family: Montserrat;
   display: block;
@@ -510,14 +567,27 @@ h4 {
   font-weight: bold;
 }
 
-.mapsForms {
+/* .text-contact-2 {
+  color: #20100d;
+  font-family: Montserrat;
+  display: block;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 3em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+} */
+
+.maps {
   background: #f2e6d6;
   position: relative;
   overflow: hidden;
-  padding-bottom: 5%;
+  padding-bottom: 0;
 }
 
-.mapsForms iframe {
+.maps iframe {
   margin-top: 2rem;
   position: relative;
   top: 0;

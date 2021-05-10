@@ -1,9 +1,12 @@
 input[type="email"],
 input[type="text"],
 input[type="number"],
+input[type="textarea"],
 textarea,
 select {
   width: 400px;
+  background-color: #ffffff;
+  
 }
 
 label {
@@ -16,4 +19,7 @@ label.checkbox {
 
 button[type="submit"] {
   margin-top: 1rem;
+  background-color:#b89b34;
+  
 }
+
