@@ -10,28 +10,6 @@ Table Of Contents:
 *******************/
 
 /*******************
-01. APP
-*******************/
-.App {
-  text-align: center;
-}
-
-.App-header {
-  background-color: #20100D;
-  height: 3.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-/*******************
 01. HEADER
 *******************/
 
@@ -170,6 +148,11 @@ ul.indicators{
    margin:0;
 }
 
+.react-slideshow-container {
+  margin-left: -1rem;
+  margin-right: -0.5rem;
+}
+
 .react-slideshow-container .default-nav:last-of-type {
    margin-left: -1rem;
    margin-right: -0.5rem;
@@ -177,7 +160,7 @@ ul.indicators{
 
 .containerBanner {
   width: 100%;
-  position: relative;
+  position: flex;
   margin: auto;
   background: #f2e6d6;
 }
