@@ -90,17 +90,12 @@ function App() {
         </header>
 
       <body>
-        
-
         {/* Banner */}
         <div className="containerBanner">
           <div img >
           <Slideshow />
-          </div>
-            
+          </div>           
         </div>
-       
-        
 
         {/* Sobre a empresa */}
 
