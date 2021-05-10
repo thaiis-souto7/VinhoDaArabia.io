@@ -167,7 +167,7 @@ html {
 *******************/
 .react-slideshow-container .default-nav:last-of-type {
    margin-left: -1rem;
-   margin-right: 1.3rem;
+   margin-right: -0.5rem;
 }
 
 .containerBanner {
