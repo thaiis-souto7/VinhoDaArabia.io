@@ -11,7 +11,7 @@ const CallbackExample = () => {
 
   const style = {
     textAlign: "center",
-    margin: "5rem 3rem 0rem 2rem ",
+    margin: "5rem 0rem 0rem 0rem ",
     width: "100%",
   };
 
@@ -29,7 +29,7 @@ const CallbackExample = () => {
       <div>
         <Fade {...properties}>
           <div style={{...style}}>
-            <img src={s1}></img>
+            <img src={s4}></img>
           </div>
           <div style={{...style}}>
             <img src={s2}></img>
@@ -38,7 +38,7 @@ const CallbackExample = () => {
           <img src={s3}></img>
           </div>
           <div style={{...style}}>
-          <img src={s4}></img>
+          <img src={s1}></img>
           </div>
         </Fade>
       </div>
