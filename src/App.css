@@ -17,8 +17,8 @@ Table Of Contents:
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #20100D;
+  height: 3.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -103,7 +103,35 @@ a:hover{
     
   }
 
-} */
+} 
+
+@media screen and (max-width: 320px) {
+  
+  .navBar{
+    position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #20100D;
+    width: 100%;
+    height: 7rem;
+    z-index: 1;
+    clear: both;
+  
+  }
+
+  .nav{
+    list-style: none;
+    text-align: center;
+    float: right;
+  }
+
+  .logo{
+    height: 5rem;
+    float: center;
+    margin-top: 1.5rem;
+  }
+  
+}
 
  
 /*******************
@@ -130,38 +158,17 @@ html {
 /*******************
 02. BANNER
 *******************/
-/* 
-#items-wrapper{
-  width:100vw;
-  margin: 0rem 0 0;
-}
 
-#items {
-  display: flex;
 
-  overflow-x: auto;
-scroll-snap-type: x mandatory;
--webkit-overflow-scrolling: touch;
-scroll-behavior: smooth;
-}
-
-.item {
-  flex: none;
-
- width: 100%;
-height: 40rem;
-
-scroll-snap-align: start;
-pointer-events: none;
-}
-
-img{
+.containerBanner {
   width: 100%;
-  height: 100%;
+  position: relative;
+  margin: auto;
+}
 
-object-fit: cover;
-} */
-
+.containerBanner img {
+  width: 100%;
+}
 
 /*******************
 03. SOBRE NÓS
