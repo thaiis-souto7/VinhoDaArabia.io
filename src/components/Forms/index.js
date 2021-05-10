@@ -35,60 +35,70 @@ const MyTextArea = ({ label, ...props }) => {
   );
 };
 
+
+
 // And now we can use these
 const SignupForm = () => {
   return (
     <>
+    <h4 class= "text-forms">Envie-nos uma mensagem pelo formulário abaixo</h4>
       <Formik
         initialValues={{
           nome: "",
           email: "",
-          mensagem: ""
+          numero: "",
+          mensagem: "" 
         }}
         validationSchema={Yup.object({
-          nome: Yup.string().required("Campo obrigatório"),
-          email: Yup.string()
-            .email("Endereço de e-mail inválido")
+          nome: Yup.string()
             .required("Campo obrigatório"),
-          mensagem: Yup.string().required("Campo obrigatório")
+          email: Yup.string()
+            .required("Campo obrigatório")
+            .email("Endereço de e-mail inválido"),
+          numero: Yup.string()
+            .required("Campo obrigatório"),
+          mensagem: Yup.string()
+            .required("Campo Obrigatório"),
         })}
         onSubmit={async (values, { setSubmitting }) => {
-          await new Promise((r) => setTimeout(r, 500));
+          await new Promise(r => setTimeout(r, 500));
           setSubmitting(false);
         }}
       >
         <Form>
           <MyTextInput
-            label="Nome Completo"
+            //label="Nome"
             name="nome"
             type="text"
-            placeholder="Ex: Luís Inácio Lula da Silva"
+            placeholder="Nome:"
           />
           <MyTextInput
-            label="E-mail"
+            //label="Email"
             name="email"
-            type="email"
-            placeholder="Ex: exemplo@exemplo.com"
+            type="text"
+            placeholder="Email:"
           />
-          <MyTextArea
-            label="Mensagem"
-            name="mensagem"
-            rows="6"
-            placeholder="Digite sua mensagem aqui..."
+          <MyTextInput
+            //label="Número"
+            name="numero"
+            type="text"
+            placeholder="Telefone:"
           />
 
-          <button type="submit">Enviar</button>
+          <MyTextInput
+            //label="Mensagem"
+            name="mensagem"
+            rows="6"
+            type="text"
+            placeholder="Digite sua mensagem aqui..."
+          />
+          
+
+          <button type="submit">Enviar Mensagem</button>
         </Form>
       </Formik>
     </>
   );
 };
 
-function App() {
-  return <SignupForm />;
-}
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement)
-
-export default App;
+export default SignupForm;

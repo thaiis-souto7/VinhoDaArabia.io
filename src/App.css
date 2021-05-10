@@ -10,38 +10,13 @@ Table Of Contents:
 *******************/
 
 /*******************
-01. APP
-*******************/
-.App {
-  text-align: center;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-/*******************
 01. HEADER
 *******************/
 
 .navBar{
-  position:relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   background-color: #20100D;
   width: 100%;
   height: 8rem;
@@ -49,17 +24,21 @@ Table Of Contents:
 }
 
 .nav{
-  display: flex;
-  justify-content: right;
+  display: block;
   list-style: none;
-  margin-right: 2rem;
+  text-align: center;
+  height: 1.0rem;
+  margin-top: 2rem;
+  margin-right: 3rem;
+  float: right;
+  
 }
 
 .logo{
   height: 8rem;
-  padding: 0 1rem;
-  float:left;
-  margin-right: 40rem;
+  justify-content: flex-start;
+  float: left;
+  
 }
 
 a{
@@ -72,6 +51,73 @@ a{
 a:hover{
   color: rgb(255, 255, 255);
 }
+ 
+@media screen and (min-width: 768px) {
+  
+  .navBar{
+    position: fixed;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #20100D;
+    width: 100%;
+    height: 8rem;
+    z-index: 1;
+    clear: both;
+  
+  }
+
+  .nav{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    height: 1.0rem;
+    float: right;
+    margin-top: 3.3rem;
+  }
+
+  .logo{
+    height: 8rem;
+    float: left;
+  }
+
+  a:hover{
+    color: rgb(255, 255, 255);
+  }
+
+} 
+
+@media screen and (max-width: 320px) {
+  
+  .navBar{
+    position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #20100D;
+    width: 100%;
+    height: 7rem;
+    z-index: 1;
+    clear: both;
+  
+  }
+
+  .nav{
+    list-style: none;
+    text-align: center;
+    float: right;
+  }
+
+  .logo{
+    height: 5rem;
+    float: center;
+    margin-top: 1.5rem;
+  }
+
+  a:hover{
+    color: rgb(255, 255, 255);
+  }
+  
+}
+
  
 /*******************
 01. BODY
@@ -98,6 +144,31 @@ html {
 02. BANNER
 *******************/
 
+ul.indicators{
+   margin:0;
+}
+
+.react-slideshow-container {
+  margin-left: -1rem;
+  margin-right: -0.5rem;
+}
+
+.react-slideshow-container .default-nav:last-of-type {
+   margin-left: -1rem;
+   margin-right: -0.5rem;
+}
+
+.containerBanner {
+  width: 100%;
+  position: flex;
+  margin: auto;
+  background: #f2e6d6;
+}
+
+.containerBanner img {
+  width: 100%;
+  margin: 0;
+}
 
 /*******************
 03. SOBRE NÓS
@@ -444,6 +515,27 @@ h4 {
 05. CONTATO
 *******************/
 
+.basic-title-contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #20100d;
+  font-family: Sunflower;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 4vw;
+  text-decoration-line: underline;
+  text-decoration-color: #b89b34;
+}
+
+.container-mapadata{
+  background: #f2e6d6;
+  display: flex;
+  padding-top: 5rem;
+  align-items: center;
+  justify-content: relative;
+}
 .text-contact {
   color: #20100d;
   font-family: Montserrat;
@@ -457,7 +549,43 @@ h4 {
   font-weight: bold;
 }
 
-.text-contact-2 {
+.formulario{
+  background: #f2e6d6;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.text-contact-adress{
+  color: #20100d;
+  font-family: Montserrat;
+  display: block;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 0.1em;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.text-contact-nameVA {
+  background-color: #f2e6d6;
+  color: #20100d;
+  font-family: Montserrat;
+  display: block;
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 3em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.text-contact-data{
+  background-color: #f2e6d6;
   color: #20100d;
   font-family: Montserrat;
   display: block;
@@ -470,14 +598,27 @@ h4 {
   font-weight: bold;
 }
 
-.mapsForms {
+/* .text-contact-2 {
+  color: #20100d;
+  font-family: Montserrat;
+  display: block;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 3em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+} */
+
+.maps {
   background: #f2e6d6;
   position: relative;
   overflow: hidden;
-  padding-bottom: 5%;
+  padding-bottom: 0;
 }
 
-.mapsForms iframe {
+.maps iframe {
   margin-top: 2rem;
   position: relative;
   top: 0;

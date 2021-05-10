@@ -3,12 +3,11 @@ import React from "react";
 
 //Import NavBar
 import Logo from "./assets/logoPrincipal.png";
+
 //Import Banner
-import s1 from "./assets/s1.jpg";
-import s2 from "./assets/s1.jpg";
-import s3 from "./assets/s1.jpg";
-import s4 from "./assets/s1.jpg";
-import s5 from "./assets/s1.jpg";
+
+import "react-slideshow-image/dist/styles.css"
+import Slideshow from './slider';
 
 //Import Sobre nós
 import iconSN from "./assets/iconSN.png";
@@ -28,6 +27,12 @@ import Xicara from "./assets/xicara.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+
+//Import Contact
+import Forms from "./components/Forms";
+
+//Import Footer
+import Footer from "./components/Footer";
 
 function App() {
   var settings = {
@@ -70,9 +75,8 @@ function App() {
 
   return (
     <div className="App">
-      {/* <header className="App-header"></header> */}
-      <body>
-        <div class="navBar">
+       <header className="App-header"> 
+       <div class="navBar">
           <img class="logo" src={Logo} />
           <ul class="nav">
             <li>
@@ -89,9 +93,15 @@ function App() {
             </li>
           </ul>
         </div>
+        </header>
 
+      <body>
         {/* Banner */}
-        <div class="banner" id="home"></div>
+        <div id="home" className="containerBanner">
+          <div img >
+          <Slideshow />
+          </div>           
+        </div>
 
         {/* Sobre a empresa */}
 
@@ -288,31 +298,44 @@ function App() {
         </div>
         {/* PRODUCTS */}
 
-        {/* BEGIN CONTACT */}
+
+        {/* CONTACT */}
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous"></link>
 
         <div id="contact">
           <div class="basic">
-            <h1 class="basic-title">CONTATO</h1>
-            <h6 class="text-contact">
-              Av. Castelo Branco, 123 - Bairro República
-            </h6>
-            <h6 class="text-contact">vinhodaarabia@outlook.com</h6>
-            <h6 class="text-contact">(31) 3456-7890 / (31) 4002-8922</h6>
-            <h4 class="text-contact-2">
-              Envie-nos uma mensagem através do formulário abaixo
-            </h4>
+            <h1 class="basic-title-contact">CONTATO</h1>
           </div>
 
-          <div class="mapsForms">
+          <div class="formulario">
+            <Forms/>
+          </div>
+
+          <div class="container-mapadata">
+            <div class="basic">
+              <h5 class="text-contact-nameVA">Vinho da Arábia</h5>
+              <h6 class="text-contact-data"><i class="fas fa-envelope"></i>vinhodaarabia@outlook.com</h6>
+              <h6 class="text-contact-data"><i class="fas fa-phone-alt"></i>(31) 3456-7890 / (31) 4002-8922</h6>
+            </div>
+          </div>
+
+          <div class="maps">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753.6328584850276!2d-43.18409268563655!3d-19.81315793980183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa5a9dba712abdb%3A0x6c4a86310f77da0b!2sAv.%20Castelo%20Branco%2C%20123%20-%20Republica%2C%20Jo%C3%A3o%20Monlevade%20-%20MG%2C%2035930-090!5e0!3m2!1spt-BR!2sbr!4v1620104017900!5m2!1spt-BR!2sbr"
               allowfullscreen
             ></iframe>
-            {/* FORMS */}
           </div>
-        </div>
+          <div class="basic">
+            <h6 class="text-contact-adress">
+            <i class="fas fa-map-marker-alt"></i> Av. Castelo Branco, nº 123, Bairro República - João Monlevade
+            </h6>
+          </div>
+          </div>
+        {/* CONTACT */}
 
-        {/* END CONTACT */}
+        {/* FOOTER */}
+        <Footer/>
+        {/* <Footer/>  */}
       </body>
     </div>
   );
