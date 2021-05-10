@@ -3,12 +3,11 @@ import React from "react";
 
 //Import NavBar
 import Logo from "./assets/logoPrincipal.png";
+
 //Import Banner
-import s1 from "./assets/s1.jpg";
-import s2 from "./assets/s1.jpg";
-import s3 from "./assets/s1.jpg";
-import s4 from "./assets/s1.jpg";
-import s5 from "./assets/s1.jpg";
+
+import "react-slideshow-image/dist/styles.css"
+import Slideshow from './slider';
 
 //Import Sobre nós
 import iconSN from "./assets/iconSN.png";
@@ -89,29 +88,19 @@ function App() {
           </ul>
         </div>
         </header>
+
       <body>
         
 
         {/* Banner */}
-          <div id="items-wrapper">
-          <div id="items">
-            <div class="item">
-              <img src={s1} />
-            </div>
-            <div class="item">
-              <img src={s2} />
-            </div>
-            <div class="item">
-              <img src={s3} />
-            </div>
-            <div class="item">
-              <img src={s4} />
-            </div>
-            <div class="item">
-              <img src={s5} />
-            </div>
+        <div className="containerBanner">
+          <div img >
+          <Slideshow />
           </div>
-        </div>   
+            
+        </div>
+       
+        
 
         {/* Sobre a empresa */}
 
