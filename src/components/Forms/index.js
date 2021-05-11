@@ -85,11 +85,11 @@ const SignupForm = () => {
             placeholder="Telefone:"
           />
 
-          <MyTextInput
+          <MyTextArea
             //label="Mensagem"
             name="mensagem"
             rows="6"
-            type="text"
+            type="textarea"
             placeholder="Digite sua mensagem aqui..."
           />
           
