@@ -22,6 +22,7 @@ html {
   margin-left: 0;
   margin-right: 0;
   padding: 0;
+  position: flex;
   scroll-behavior: smooth;
 }
 
@@ -218,7 +219,7 @@ h4 {
   background-color: #f9f9f9;
 }
 
-.container {
+.box-about {
   border-color: #20100d;
   border-style: solid;
   border-width: 0.4rem;
@@ -234,13 +235,13 @@ h4 {
   justify-content: center;
 }
 
-.container-2 {
+.box-2 {
   align-items: center;
   justify-content: center;
   color: #f9f9f9;
   display: flex;
-  width: 29rem;
-  height: 17rem;
+  width: 27rem;
+  height: 18rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
@@ -248,7 +249,7 @@ h4 {
   background: #20100d;
 }
 
-.container-text-1 {
+.box-text-1 {
   padding: 3rem;
   font-family: montserrat;
   text-align: center;
@@ -256,7 +257,7 @@ h4 {
   justify-content: center;
 }
 
-.container-text-2 {
+.box-text-2 {
   padding: 2.5rem;
   font-family: montserrat;
   text-align: center;
@@ -264,7 +265,7 @@ h4 {
   justify-content: center;
 }
 
-.container-text-3 {
+.box-text-3 {
   padding: 6rem;
   font-family: montserrat;
   text-align: center;
@@ -707,20 +708,20 @@ h4 {
   .basic-2-image #icon-3 {
     width: 22rem;
   }
-  .container {
+  .box-about {
     width: 20rem;
     height: 20rem;
   }
-  .container-2 {
+  .box-2 {
     height: 17rem;
   }
-  .container-text-1 {
+  .box-text-1 {
     font-size: 70%;
   }
-  .container-text-2 {
+  .box-text-2 {
     font-size: 60%;
   }
-  .container-text-3 {
+  .box-text-3 {
     font-size: 75%;
   }
   .basic-title {

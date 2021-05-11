@@ -185,9 +185,9 @@ function App() {
           <div class="basic-2-image">
             <img src={img1} alt="icon-1" id="icon-1" />
           </div>
-          <div class="container" id="text-1">
-            <div class="container-2">
-              <div class="container-text-1">
+          <div class="box-about" id="text-1">
+            <div class="box-2">
+              <div class="box-text-1">
                 <h4>Embora a planta tenha origem</h4>
                 <h4>africana, foi no Iêmen, região oeste</h4>
                 <h4>da Arábia, que ela começou a ser</h4>
@@ -200,9 +200,9 @@ function App() {
         </div>
 
         <div class="basic-2" id="reverse">
-          <div class="container">
-            <div class="container-2">
-              <div class="container-text-2">
+          <div class="box-about">
+            <div class="box-2">
+              <div class="box-text-2">
                 <h4>Conhecida como vinho da Arábia, </h4>
                 <h4>o café ganhou escala comercial no </h4>
                 <h4>séc. XIV, na região de Moka, principal</h4>
@@ -222,9 +222,9 @@ function App() {
           <div class="basic-2-image">
             <img src={img3} alt="icon-1" id="icon-1" />
           </div>
-          <div class="container">
-            <div class="container-2">
-              <div class="container-text-3">
+          <div class="box-about">
+            <div class="box-2">
+              <div class="box-text-3">
                 <h4>
                   Diante do fato histórico, temos o prazer de vincular nossa
                   marca e cultura, originando o nome da nossa empresa.
