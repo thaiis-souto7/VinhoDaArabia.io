@@ -114,15 +114,13 @@ function App() {
             </ul>
           </div>
         </nav>
+
+        <div id="home" className="containerBanner">
+            <Slideshow />
+        </div>  
       </header>
 
-      <body>
-        {/* Banner */}
-         <div id="home" className="containerBanner">
-          <div img>
-            <Slideshow />
-          </div>
-        </div> 
+      <body>         
 
         {/* Sobre a empresa */}
 
