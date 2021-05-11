@@ -1,8 +1,7 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import "./styles.js";
+import {Button} from "./styles.js";
 
 export default function SimpleMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -17,7 +16,7 @@ export default function SimpleMenu() {
 
   return (
     <div>
-      <Button color="white" aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
+      <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
         Menu
       </Button>
       <Menu
@@ -28,10 +27,10 @@ export default function SimpleMenu() {
         onClose={handleClose}
       >
           
-        <MenuItem onClick={handleClose}><a href="home">Início</a></MenuItem>
-        <a href="about"><MenuItem  onClick={handleClose}><a href="about">Sobre Nós</a></MenuItem></a>
-        <a href="product"><MenuItem  onClick={handleClose}>Produtos</MenuItem></a>
-        <a href="contact"><MenuItem  onClick={handleClose}>Contato</MenuItem></a>
+        <MenuItem href="home" onClick={handleClose}><a href="home" id="home">Início</a></MenuItem>
+        <MenuItem href="about" onClick={handleClose}><a href="about" id="about">Sobre Nós</a></MenuItem>
+        <MenuItem  onClick={handleClose}><a href="product" id="product">Produtos</a></MenuItem>
+        <MenuItem  onClick={handleClose}><a href="contact" id="contact">Contato </a></MenuItem>
       </Menu>
     </div>
   );
