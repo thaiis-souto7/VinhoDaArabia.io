@@ -3,6 +3,7 @@ import React from "react";
 
 //Import NavBar
 import Logo from "./assets/logoPrincipal.png";
+import Menu from "./components/Menu/index.js";
 
 //Import Banner
 
@@ -32,10 +33,10 @@ import Slider from "react-slick";
 import Forms from "./components/Forms";
 
 //Import Footer
-//import Footer from "./components/Footer";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+
 
 function App() {
   var settings = {
@@ -76,35 +77,52 @@ function App() {
     ],
   };
 
+
   return (
     <div className="App">
       <header className="App-header">
-        <div class="navBar">
-          <img class="logo" src={Logo} />
-          <ul class="nav">
-            <li>
-              <a href="#home">Início</a>
-            </li>
-            <li>
-              <a href="#about">Sobre Nós</a>
-            </li>
-            <li>
-              <a href="#product">Produtos</a>
-            </li>
-            <li>
-              <a href="#contact">Contato</a>
-            </li>
-          </ul>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-custom fixed-top top-nav-collapse">
+          <a class="navbar-brand logo-image" href="index.html">
+            <img src={Logo} />
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <Menu />
+        </button>    
+          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#home">
+                  Início <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#about">
+                  Sobre Nós
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#product">
+                  Produtos
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#contact">
+                  Contato
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </header>
 
       <body>
         {/* Banner */}
-        <div id="home" className="containerBanner">
+         <div id="home" className="containerBanner">
           <div img>
             <Slideshow />
           </div>
-        </div>
+        </div> 
 
         {/* Sobre a empresa */}
 
@@ -315,7 +333,7 @@ function App() {
           </div>
 
           <div class="formulario">
-            <Forms/>
+            <Forms />
           </div>
 
           <div class="container-mapadata">
