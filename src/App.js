@@ -336,7 +336,7 @@ function App() {
 
           <div class="container-mapadata">
             <div class="basic-1">
-              <h5 class="text-contact-nameVA">Vinho da Arábia</h5>
+              <h5 class="text-contact-nameVA">VINHO DA ARÁBIA</h5>
               <h6 class="text-contact-data">
                 <i class="fas fa-envelope"></i>vinhodaarabia@outlook.com
               </h6>
