@@ -13,6 +13,7 @@ Table Of Contents:
 01. HEADER
 *******************/
 
+
 .navbar-custom {
   background-color: #20100D;
   box-shadow: 0 0.0625rem 0.375rem 0 rgb(255, 254, 254);
@@ -51,10 +52,20 @@ Table Of Contents:
   padding: 0;
 }
 
-.MuiButton-root {
-  color: rgba(240, 18, 18, 0.87);
+.fixed-top {
+  position: absolute; 
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
- 
+button.navbar-toggler{
+ align-items:center;
+ font-size: 1.5rem;
+}
+
+
+
 /*******************
 01. BODY
 *******************/
