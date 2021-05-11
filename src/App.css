@@ -13,7 +13,6 @@ Table Of Contents:
 01. HEADER
 *******************/
 
-
 .navbar-custom {
   background-color: #20100D;
   box-shadow: 0 0.0625rem 0.375rem 0 rgb(255, 254, 254);
@@ -73,12 +72,6 @@ html {
   scroll-behavior: smooth;
 }
 
-@media screen and (max-width: 736px) {
-  body {
-    /* padding-top: 2.5em; */
-  }
-}
-
 /*******************
 02. BANNER
 *******************/
@@ -101,6 +94,7 @@ ul.indicators {
   width: 100%;
   margin: 0;
 }
+
 
 
 /*******************

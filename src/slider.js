@@ -12,6 +12,7 @@ const CallbackExample = () => {
   const style = {
     textAlign: "center",
     margin: "8.0rem 0 1rem 0",
+    fontSize: "30px",
   };
 
   const properties = {
@@ -20,24 +21,24 @@ const CallbackExample = () => {
     onChange: (previous, next) => {
       setPreviousIndex(previous);
       setNextIndex(next);
-    }
+    },
   };
 
   return (
     <div>
       <div>
         <Fade {...properties}>
-          <div style={{...style}}>
+          <div style={{ ...style }}>
             <img src={s4}></img>
           </div>
-          <div style={{...style}}>
+          <div style={{ ...style }}>
             <img src={s2}></img>
           </div>
-          <div style={{...style}}>
-          <img src={s3}></img>
+          <div style={{ ...style }}>
+            <img src={s3}></img>
           </div>
-          <div style={{...style}}>
-          <img src={s1}></img>
+          <div style={{ ...style }}>
+            <img src={s1}></img>
           </div>
         </Fade>
       </div>
