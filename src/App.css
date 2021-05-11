@@ -702,12 +702,6 @@ h4 {
   .basic-2-image #icon-3 {
     width: 21rem;
   }
-  .basic-2-image #icon-2 {
-    width: 22rem;
-  }
-  .basic-2-image #icon-3 {
-    width: 22rem;
-  }
   .box-about {
     width: 20rem;
     height: 20rem;
@@ -728,6 +722,41 @@ h4 {
     font-size: 2rem;
   }
   .container-products .title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 100%;
+  }
+  .basic-2-image #icon-1 {
+    width: 30rem;
+  }
+  .basic-2-image #icon-2 {
+    width: 30rem;
+  }
+  .basic-2-image #icon-3 {
+    width: 30rem;
+  }
+  .box-about {
+    width: 17rem;
+    height: 17rem;
+  }
+  .box-2 {
+    height: 15rem;
+    width: 15rem;
+  }
+  .box-text-1 {
+    font-size: 60%;
+  }
+  .box-text-2 {
+    font-size: 55%;
+  }
+  .box-text-3 {
+    font-size: 65%;
+  }
+  .basic-title {
     font-size: 2rem;
   }
 }
