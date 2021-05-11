@@ -4,22 +4,24 @@ input[type="number"],
 input[type="textarea"],
 textarea,
 select {
-  width: 400px;
+  width: 50vw;
   background-color: #ffffff;
-  
+  font-family: Montserrat;
 }
 
-label {
+
+
+/* label {
   margin-top: 1rem;
 }
 
 label.checkbox {
   font-weight: normal;
-}
+} */
 
 button[type="submit"] {
   margin-top: 1rem;
   background-color:#b89b34;
-  
+  display: block;
 }
 

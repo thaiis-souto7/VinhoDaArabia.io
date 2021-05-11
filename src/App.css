@@ -55,7 +55,6 @@ Table Of Contents:
 }
 
 
-
 /*******************
 01. BODY
 *******************/
@@ -70,6 +69,12 @@ html {
   padding: 0;
   scroll-behavior: smooth;
 }
+
+/* @media screen and (max-width: 736px) {
+   body {
+     padding-top: 2.5em; 
+  } 
+} */
 
 /*******************
 02. BANNER
@@ -455,7 +460,7 @@ h4 {
 05. CONTATO
 *******************/
 
-.basic-title-contact {
+/* .basic-title-contact{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -467,16 +472,31 @@ h4 {
   font-size: 4vw;
   text-decoration-line: underline;
   text-decoration-color: #b89b34;
+} */
+
+.basic-1{
+  background: #f2e6d6;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .container-mapadata {
   background: #f2e6d6;
   display: flex;
-  padding-top: 5rem;
+  padding-top: 2rem;
   align-items: center;
-  justify-content: relative;
+  justify-content: space-around;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  flex-wrap: wrap;
 }
-.text-contact {
+
+/* .text-contact {
   color: #20100d;
   font-family: Montserrat;
   display: block;
@@ -487,27 +507,41 @@ h4 {
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
-}
+} */
+
+
 
 .formulario {
   background: #f2e6d6;
-  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  /* margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
-  margin-right: 0;
+  margin-right: 0; */
 }
 
-.text-contact-adress {
+
+.text-contact-adress{
   color: #20100d;
   font-family: Montserrat;
   display: block;
   text-align: center;
   font-size: 1.2em;
   margin-top: 0.1em;
-  margin-bottom: 0;
+  margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
+}
+
+.text-contact-adress i{
+  margin-right: 1em;
 }
 
 .text-contact-nameVA {
@@ -517,7 +551,7 @@ h4 {
   display: block;
   text-align: center;
   font-size: 1.5em;
-  margin-top: 3em;
+  margin-top: 0.5em;
   margin-bottom: 0.5em;
   margin-left: 0;
   margin-right: 0;
@@ -528,28 +562,20 @@ h4 {
   background-color: #f2e6d6;
   color: #20100d;
   font-family: Montserrat;
-  display: block;
+  display: relative;
   text-align: center;
   font-size: 1.2em;
-  margin-top: 3em;
-  margin-bottom: 0.5em;
+  margin-top: 0.4em;
+  margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
 }
 
-/* .text-contact-2 {
-  color: #20100d;
-  font-family: Montserrat;
-  display: block;
-  text-align: center;
-  font-size: 1.2em;
-  margin-top: 3em;
-  margin-bottom: 0.5em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-} */
+.text-contact-data i{
+  margin-right: 1em;
+}
+
 
 .maps {
   background: #f2e6d6;
@@ -569,6 +595,79 @@ h4 {
   justify-content: center;
   align-items: center;
 }
+
+/*******************
+05. FOOTER
+*******************/
+
+.footer{
+  height: 24vh;
+  background-color: #20100D;
+  margin: 0;
+	padding: 0;
+	border: 0;
+  vertical-align: baseline;
+}
+
+.container-footer{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.ul-footer{
+  margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+  list-style: none;
+}
+
+.grid-8-1{
+	float: left;
+	margin-left: 3.5vw;
+	margin-right: 3.5vw;
+  float: center;
+}
+
+.grid-4-1{
+  float: left;
+	margin-left: 3.5vw;
+	margin-right: 4vw;
+}
+
+.grid-4-2{
+  float: left;
+	margin-left: 3.5vw;
+	margin-right: 3.5vw;
+}
+
+.footer h1{
+  color: #E5AC23;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 50px;
+  font-family: Montserrat;
+  vertical-align: baseline;
+  float: left; 
+}
+
+.footer p{
+  color: #E5AC23;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 50px;
+  font-family: Montserrat;
+  vertical-align: text-bottom;
+  float: center; 
+}
+
+.redes-sociais{
+  margin-top: 50px;
+  float: right;
+}
+
+
 /*******************
 06. MEDIA
 *******************/
