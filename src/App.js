@@ -3,11 +3,12 @@ import React from "react";
 
 //Import NavBar
 import Logo from "./assets/logoPrincipal.png";
+import Menu from "./components/Menu/index.js";
 
 //Import Banner
 
-import "react-slideshow-image/dist/styles.css"
-import Slideshow from './slider';
+import "react-slideshow-image/dist/styles.css";
+import Slideshow from "./slider";
 
 //Import Sobre nós
 import iconSN from "./assets/iconSN.png";
@@ -33,6 +34,7 @@ import Forms from "./components/Forms";
 
 //Import Footer
 import Footer from "./components/Footer";
+
 
 function App() {
   var settings = {
@@ -73,34 +75,51 @@ function App() {
     ],
   };
 
+
   return (
     <div className="App">
-       <header className="App-header"> 
-       <div class="navBar">
-          <img class="logo" src={Logo} />
-          <ul class="nav">
-            <li>
-              <a href="#home">Início</a>
-            </li>
-            <li>
-              <a href="#about">Sobre Nós</a>
-            </li>
-            <li>
-              <a href="#product">Produtos</a>
-            </li>
-            <li>
-              <a href="#contact">Contato</a>
-            </li>
-          </ul>
-        </div>
-        </header>
+      <header className="App-header">
+        <nav class="navbar navbar-expand-lg navbar-custom fixed-top top-nav-collapse">
+          <a class="navbar-brand logo-image" href="index.html">
+            <img src={Logo} />
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <Menu />
+        </button>    
+          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#home">
+                  Início <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#about">
+                  Sobre Nós
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#product">
+                  Produtos
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#contact">
+                  Contato
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
 
       <body>
         {/* Banner */}
         <div id="home" className="containerBanner">
-          <div img >
-          <Slideshow />
-          </div>           
+          <div img>
+            <Slideshow />
+          </div>
         </div>
 
         {/* Sobre a empresa */}
@@ -298,9 +317,13 @@ function App() {
         </div>
         {/* PRODUCTS */}
 
-
         {/* CONTACT */}
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous"></link>
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+          integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+          crossorigin="anonymous"
+        ></link>
 
         <div id="contact">
           <div class="basic">
@@ -308,14 +331,18 @@ function App() {
           </div>
 
           <div class="formulario">
-            <Forms/>
+            <Forms />
           </div>
 
           <div class="container-mapadata">
             <div class="basic">
               <h5 class="text-contact-nameVA">Vinho da Arábia</h5>
-              <h6 class="text-contact-data"><i class="fas fa-envelope"></i>vinhodaarabia@outlook.com</h6>
-              <h6 class="text-contact-data"><i class="fas fa-phone-alt"></i>(31) 3456-7890 / (31) 4002-8922</h6>
+              <h6 class="text-contact-data">
+                <i class="fas fa-envelope"></i>vinhodaarabia@outlook.com
+              </h6>
+              <h6 class="text-contact-data">
+                <i class="fas fa-phone-alt"></i>(31) 3456-7890 / (31) 4002-8922
+              </h6>
             </div>
           </div>
 
@@ -327,14 +354,15 @@ function App() {
           </div>
           <div class="basic">
             <h6 class="text-contact-adress">
-            <i class="fas fa-map-marker-alt"></i> Av. Castelo Branco, nº 123, Bairro República - João Monlevade
+              <i class="fas fa-map-marker-alt"></i> Av. Castelo Branco, nº 123,
+              Bairro República - João Monlevade
             </h6>
           </div>
-          </div>
+        </div>
         {/* CONTACT */}
 
         {/* FOOTER */}
-        <Footer/>
+        <Footer />
         {/* <Footer/>  */}
       </body>
     </div>

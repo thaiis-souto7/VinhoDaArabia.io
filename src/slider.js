@@ -11,7 +11,7 @@ const CallbackExample = () => {
 
   const style = {
     textAlign: "center",
-    margin: "4.3rem 0rem 0rem 0rem ",
+    margin: "8.0rem 0rem 0rem 0rem ",
     width: "100%",
   };
 
