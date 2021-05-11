@@ -11,13 +11,14 @@ const CallbackExample = () => {
 
   const style = {
     textAlign: "center",
-    margin: "8.0rem 0 1rem 0",
+    margin: "5.6rem 0 1rem 0",
     fontSize: "30px",
   };
 
   const properties = {
+    arrows: false,
     autoplay: true,
-    indicators: true,
+    indicators: false,
     onChange: (previous, next) => {
       setPreviousIndex(previous);
       setNextIndex(next);
