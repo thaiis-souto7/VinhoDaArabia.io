@@ -125,8 +125,8 @@ hr {
 
 .text-forms{
   font-family: Montserrat;
-  margin-top:0;
-  margin-bottom: 1rem;
+  margin-top: 3rem;
+  margin-bottom:0;
   margin-left: 0;
   margin-right: 0;
   text-align: center;
@@ -147,8 +147,9 @@ input[type="textarea"] {
   background-color: var(--gray-100);
   color: var(--gray-800);
   border-radius: 10px;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
+  display: block;
   align-items: center;
   justify-content: center;
   /* -webkit-appearance: none;
@@ -217,20 +218,22 @@ textarea {
   /* -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none; */
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  padding: 0.65rem 0.5rem;
   font-size: 1rem;
   border: 2px solid var(--gray-200);
   color: var(--gray-700);
   border-radius: 10px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
   resize: vertical;
   background-color: var(--gray-100);
+  display: block;
   /* box-sizing: border-box; */
-  padding: 0.65rem 0.5rem;
-  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir,
+  
+  /* font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir,
     "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial,
-    sans-serif;
-    
+    sans-serif; */
+  
   align-items: center;
   justify-content: center;
 }
@@ -372,12 +375,8 @@ button {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
-  display: inline-block;
-  
-  align-items: center;
-  justify-content: center;
   /* -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none; 

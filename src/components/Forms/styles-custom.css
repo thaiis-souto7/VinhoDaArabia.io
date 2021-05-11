@@ -6,6 +6,7 @@ textarea,
 select {
   width: 50vw;
   background-color: #ffffff;
+  font-family: Montserrat;
 }
 
 
@@ -21,5 +22,6 @@ label.checkbox {
 button[type="submit"] {
   margin-top: 1rem;
   background-color:#b89b34;
+  display: block;
 }
 
