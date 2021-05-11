@@ -17,7 +17,7 @@ Table Of Contents:
 .navbar-custom {
   background-color: #20100D;
   box-shadow: 0 0.0625rem 0.375rem 0 rgb(255, 254, 254);
-  font: 600 0.875rem/0.875rem "Raleway", sans-serif;
+  font: 600 0.875rem/0.875rem "Sunflower", sans-serif;
   transition: all 0.2s;
 }
 
@@ -54,14 +54,6 @@ Table Of Contents:
 
 .fixed-top {
   position: absolute; 
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-button.navbar-toggler{
- align-items:center;
- font-size: 1.5rem;
 }
 
 
@@ -83,7 +75,7 @@ html {
 
 @media screen and (max-width: 736px) {
   body {
-    padding-top: 2.5em;
+    /* padding-top: 2.5em; */
   }
 }
 
@@ -96,8 +88,7 @@ ul.indicators {
 }
 
 .react-slideshow-container {
-  margin-left: -1rem;
-  margin-right: 0rem;
+  margin: 0rem;
 }
 
 .react-slideshow-container .default-nav:last-of-type {

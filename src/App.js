@@ -116,11 +116,11 @@ function App() {
 
       <body>
         {/* Banner */}
-        <div id="home" className="containerBanner">
+         <div id="home" className="containerBanner">
           <div img>
             <Slideshow />
           </div>
-        </div>
+        </div> 
 
         {/* Sobre a empresa */}
 

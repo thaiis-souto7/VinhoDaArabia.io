@@ -27,10 +27,10 @@ export default function SimpleMenu() {
         onClose={handleClose}
       >
           
-        <MenuItem href="home" onClick={handleClose}><a href="home" id="home">Início</a></MenuItem>
-        <MenuItem href="about" onClick={handleClose}><a href="about" id="about">Sobre Nós</a></MenuItem>
-        <MenuItem  onClick={handleClose}><a href="product" id="product">Produtos</a></MenuItem>
-        <MenuItem  onClick={handleClose}><a href="contact" id="contact">Contato </a></MenuItem>
+        <MenuItem  onClick={handleClose}>Início</MenuItem>
+        <MenuItem href="about" onClick={handleClose}>Sobre Nós</MenuItem>
+        <MenuItem  onClick={handleClose}>Produtos</MenuItem>
+        <MenuItem  onClick={handleClose}>Contato</MenuItem>
       </Menu>
     </div>
   );
