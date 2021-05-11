@@ -87,15 +87,13 @@ html {
 
 .containerBanner {
   width: 100%;
-  
   margin: auto;
   background: #f2e6d6;
 }
 
 .containerBanner img {
   width: 100%;
-  height: 70vh;
- 
+  height: 65vh;
   margin: 0;
 }
 
