@@ -7,5 +7,3 @@ margin: 1.5px 0px 0px 0px;
 font-size: 24px;
 
 `;
-
-

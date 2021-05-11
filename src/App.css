@@ -53,7 +53,7 @@ Table Of Contents:
 }
 
 .fixed-top {
-  position: absolute; 
+  position: absolute;
 }
 
 
@@ -84,16 +84,11 @@ html {
 *******************/
 
 ul.indicators {
-  margin: 0;
+  margin:-3rem;
 }
 
 .react-slideshow-container {
   margin: 0rem;
-}
-
-.react-slideshow-container .default-nav:last-of-type {
-  margin-left: -1rem;
-  margin-right: -0.5rem;
 }
 
 .containerBanner {
@@ -106,6 +101,7 @@ ul.indicators {
   width: 100%;
   margin: 0;
 }
+
 
 /*******************
 03. SOBRE NÓS
@@ -459,7 +455,7 @@ h4 {
   button.slick-arrow:before {
     position: relative;
     left: -0.4vw;
-    font-size: 2rem; 
+    font-size: 2rem;
   }
 }
 
