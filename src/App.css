@@ -74,8 +74,8 @@ html {
 
 /* @media screen and (max-width: 736px) {
    body {
-     padding-top: 2.5em; 
-  } 
+     padding-top: 2.5em;
+  }
 } */
 
 /*******************
@@ -550,6 +550,7 @@ h4 {
   background-color: #f2e6d6;
   color: #20100d;
   font-family: Montserrat;
+  text-decoration: underline;
   display: block;
   text-align: center;
   font-size: 1.5em;
@@ -603,7 +604,7 @@ h4 {
 *******************/
 
 .footer{
-  height: 24vh;
+  height: 16vh;
   background-color: #20100D;
   margin: 0;
 	padding: 0;
@@ -612,12 +613,13 @@ h4 {
 }
 
 .container-footer{
-    width: 100%;
+    width: 100vw;
     margin: 0 auto;
     position: relative;
 }
 
 .ul-footer{
+  width: 100wh;
   margin: 0;
 	padding: 0;
 	border: 0;
@@ -626,47 +628,53 @@ h4 {
 }
 
 .grid-8-1{
+  width:33vw;
 	float: left;
-	margin-left: 3.5vw;
-	margin-right: 3.5vw;
-  float: center;
+	/* margin-left: 3.5vw;
+	margin-right: 3.5vw; */
 }
 
 .grid-4-1{
+  width:33vw;
   float: left;
-	margin-left: 3.5vw;
-	margin-right: 4vw;
+	/* margin-left: 3.5vw;
+	margin-right: 4vw; */
 }
 
 .grid-4-2{
+  width:33vw;
   float: left;
-	margin-left: 3.5vw;
-	margin-right: 3.5vw;
+	/* margin-left: 3.5vw;
+	margin-right: 3.5vw; */
 }
 
 .footer h1{
   color: #E5AC23;
   font-weight: bold;
-  text-align: left;
+  text-align: center;
+  justify-content: center;
   margin-top: 50px;
   font-family: Montserrat;
   vertical-align: baseline;
-  float: left; 
+  float: center;
+  /* float: left; */
 }
 
 .footer p{
   color: #E5AC23;
   font-weight: bold;
-  text-align: left;
+  text-align: center;
+  justify-content: center;
   margin-top: 50px;
   font-family: Montserrat;
   vertical-align: text-bottom;
-  float: center; 
+  float: center;
 }
 
 .redes-sociais{
+  justify-content: center;
   margin-top: 50px;
-  float: right;
+  float: center;
 }
 
 
