@@ -91,8 +91,8 @@ html {
 02. BANNER
 *******************/
 
-ul.indicators{
-   margin:0;
+ul.indicators {
+  margin: 0;
 }
 
 .react-slideshow-container {
@@ -101,8 +101,8 @@ ul.indicators{
 }
 
 .react-slideshow-container .default-nav:last-of-type {
-   margin-left: -1rem;
-   margin-right: -0.5rem;
+  margin-left: -1rem;
+  margin-right: -0.5rem;
 }
 
 .containerBanner {
@@ -203,8 +203,8 @@ h4 {
   margin-bottom: 5rem;
   margin-right: 3rem;
   margin-left: 3rem;
-	background: #20100D;
-	border-radius: 0.5rem;
+  background: #20100d;
+  border-radius: 0.5rem;
   align-items: center;
 }
 
@@ -243,7 +243,7 @@ h4 {
   margin-bottom: 5rem;
   margin-right: 2rem;
   margin-left: 2rem;
-	background: #f2e6d6;
+  background: #f2e6d6;
   align-items: center;
   justify-content: center;
 }
@@ -298,12 +298,12 @@ h4 {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #464646;
-    
+
     display: flex;
     flex-direction: column;
   }
 
-  .container-products .title{
+  .container-products .title {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -331,10 +331,14 @@ h4 {
     color: white;
   }
   .slider .product-details h2 {
+    display: flex;
+    justify-content: center;
     font-family: Montserrat;
     font-size: 4vw;
   }
   .slider .product-details p {
+    display: flex;
+    justify-content: center;
     font-family: Montserrat;
     color: #b89b34;
     font-size: 4vw;
@@ -353,12 +357,12 @@ h4 {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #464646;
-    background-size:100%; 
+    background-size: 100%;
     display: flex;
     flex-direction: column;
   }
 
-  .container-products .title{
+  .container-products .title {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -387,10 +391,14 @@ h4 {
     color: white;
   }
   .slider .product-details h2 {
+    display: flex;
+    justify-content: center;
     font-family: Montserrat;
     font-size: 2vw;
   }
   .slider .product-details p {
+    display: flex;
+    justify-content: center;
     font-family: Montserrat;
     color: #b89b34;
     font-size: 2vw;
@@ -409,12 +417,12 @@ h4 {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #464646;
-    background-size:100%; 
+    background-size: 100%;
     display: flex;
     flex-direction: column;
   }
 
-  .container-products .title{
+  .container-products .title {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -442,10 +450,14 @@ h4 {
     color: white;
   }
   .slider .product-details h2 {
+    display: flex;
+    justify-content: center;
     font-family: Montserrat;
     font-size: 1.7vw;
   }
   .slider .product-details p {
+    display: flex;
+    justify-content: center;
     font-family: Montserrat;
     color: #d8b63b;
     font-size: 1.4vw;
@@ -453,15 +465,18 @@ h4 {
   .slider .thumbnail {
     margin-left: 1vw;
   }
+  button.slick-arrow:before {
+    position: relative;
+    left: -0.4vw;
+    font-size: 2rem; 
+  }
 }
-
-
 
 /*******************
 05. CONTATO
 *******************/
 
-.basic-title-contact{
+.basic-title-contact {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -475,7 +490,7 @@ h4 {
   text-decoration-color: #b89b34;
 }
 
-.container-mapadata{
+.container-mapadata {
   background: #f2e6d6;
   display: flex;
   padding-top: 5rem;
@@ -495,7 +510,7 @@ h4 {
   font-weight: bold;
 }
 
-.formulario{
+.formulario {
   background: #f2e6d6;
   margin-top: 0;
   margin-bottom: 0;
@@ -503,7 +518,7 @@ h4 {
   margin-right: 0;
 }
 
-.text-contact-adress{
+.text-contact-adress {
   color: #20100d;
   font-family: Montserrat;
   display: block;
@@ -530,7 +545,7 @@ h4 {
   font-weight: bold;
 }
 
-.text-contact-data{
+.text-contact-data {
   background-color: #f2e6d6;
   color: #20100d;
   font-family: Montserrat;
@@ -579,14 +594,14 @@ h4 {
 06. MEDIA
 *******************/
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   html {
     font-size: 100%;
   }
-  .basic-2{
+  .basic-2 {
     flex-direction: column;
   }
-  #reverse{
+  #reverse {
     flex-direction: column-reverse;
   }
   .basic-2-image #icon-1 {
@@ -604,27 +619,26 @@ h4 {
   .basic-2-image #icon-3 {
     width: 22rem;
   }
-  .container{
+  .container {
     width: 20rem;
     height: 20rem;
   }
-  .container-2{
+  .container-2 {
     height: 19rem;
   }
-  .container-text-1{
+  .container-text-1 {
     font-size: 80%;
   }
-  .container-text-2{
+  .container-text-2 {
     font-size: 70%;
   }
-  .container-text-3{
+  .container-text-3 {
     font-size: 80%;
   }
-  .basic-title{
+  .basic-title {
     font-size: 2rem;
   }
-  .container-products .title{
+  .container-products .title {
     font-size: 2rem;
   }
 }
-
