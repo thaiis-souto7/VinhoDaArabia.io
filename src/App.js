@@ -142,13 +142,13 @@ function App() {
             <div class="card-body">
               <div class="card-title">Missão</div>
               <hr class="card-divisor"></hr>
-              <h5>Comprometer-se ao </h5>
+              <center><h5>Comprometer-se ao </h5>
               <h5>negócio para que as</h5>
               <h5>pessoas optem por</h5>
               <h5>nossos serviços e</h5>
               <h5>tenham orgulho de</h5>
               <h5>consumir, garantindo a</h5>
-              <h5>sustentabilidade.</h5>
+              <h5>sustentabilidade.</h5></center>
             </div>
           </div>
 
@@ -156,29 +156,13 @@ function App() {
             <div class="card-body">
               <div class="card-title">Visão</div>
               <hr class="card-divisor"></hr>
-              <ul>
-                <li>
-                  <h6>Transparência</h6>
-                </li>
-                <li>
-                  <h6>Sustentabilidade</h6>
-                </li>
-                <li>
-                  <h6>Empatia</h6>
-                </li>
-                <li>
-                  <h6>Integridade</h6>
-                </li>
-                <li>
-                  <h6>Respeito</h6>
-                </li>
-                <li>
-                  <h6>Inclusão</h6>
-                </li>
-                <li>
-                  <h6>Compromisso</h6>
-                </li>
-              </ul>
+                  <h6>- Transparência</h6>
+                  <h6>- Sustentabilidade</h6>
+                  <h6>- Empatia</h6>
+                  <h6>- Integridade</h6>
+                  <h6>- Respeito</h6>
+                  <h6>- Inclusão</h6>
+                  <h6>- Compromisso</h6>      
             </div>
           </div>
 
@@ -186,13 +170,13 @@ function App() {
             <div class="card-body">
               <div class="card-title">Valores</div>
               <hr class="card-divisor"></hr>
-              <h5>Ser referência no</h5>
+              <center><h5>Ser referência no</h5>
               <h5>mercado cafeeiro</h5>
               <h5>com qualidade</h5>
               <h5>garantida do</h5>
               <h5>produto e </h5>
               <h5>cumprindo com os </h5>
-              <h5>valores da empresa.</h5>
+              <h5>valores da empresa.</h5></center>
             </div>
           </div>
         </div>
