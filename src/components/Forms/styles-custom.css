@@ -4,7 +4,7 @@ input[type="number"],
 input[type="textarea"],
 textarea,
 select {
-  width: 50vw;
+  width: 40vw;
   background-color: #ffffff;
   font-family: Montserrat;
 }

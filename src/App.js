@@ -33,9 +33,6 @@ import Slider from "react-slick";
 import Forms from "./components/Forms";
 
 //Import Footer
-import { FaWhatsapp } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
 
 
 function App() {
@@ -77,7 +74,6 @@ function App() {
     ],
   };
 
-
   return (
     <div className="App">
       <header className="App-header">
@@ -86,9 +82,17 @@ function App() {
             <img src={Logo} />
           </a>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-          <Menu />
-        </button>    
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <Menu />
+          </button>
           <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
@@ -116,12 +120,11 @@ function App() {
         </nav>
 
         <div id="home" className="containerBanner">
-            <Slideshow />
-        </div>  
+          <Slideshow />
+        </div>
       </header>
 
-      <body>         
-
+      <body>
         {/* Sobre a empresa */}
 
         <div id="about" class="basic">
@@ -183,7 +186,7 @@ function App() {
 
         <div class="basic-2">
           <div class="basic-2-image">
-            <img src={img1} alt="icon-1" id="icon-1" />
+            <img src={img1} alt="icon-1" id="icon-1"/>
           </div>
           <div class="box-about" id="text-1">
             <div class="box-2">
@@ -214,13 +217,13 @@ function App() {
             </div>
           </div>
           <div class="basic-2-image">
-            <img src={img2} alt="icon-1" id="icon-1" />
+            <img src={img2} alt="icon-2" id="icon-2" />
           </div>
         </div>
 
         <div class="basic-2">
           <div class="basic-2-image">
-            <img src={img3} alt="icon-1" id="icon-1" />
+            <img src={img3} alt="icon-3" id="icon-3" />
           </div>
           <div class="box-about">
             <div class="box-2">
@@ -302,31 +305,26 @@ function App() {
         {/* PRODUCTS */}
 
         {/* CONTACT */}
-        <link
-          rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-          integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
-          crossorigin="anonymous"
-        ></link>
 
         <div id="contact">
-          <div class="basic">
-            <h1 class="basic-title">CONTATO</h1>
-          </div>
-
-          <div class="formulario">
-            <Forms />
-          </div>
-
-          <div class="container-mapadata">
-            <div class="basic-1">
-              <h5 class="text-contact-nameVA">VINHO DA ARÁBIA</h5>
-              <h6 class="text-contact-data">
-                <i class="fas fa-envelope"></i>vinhodaarabia@outlook.com
-              </h6>
-              <h6 class="text-contact-data">
-                <i class="fas fa-phone-alt"></i>(31) 3456-7890 / (31) 4002-8922
-              </h6>
+            <div class="contact-dados">
+              <div class="uniao">
+                <h1 class="title-contact">CONTATO</h1>
+                <h6 class="text-contact-data">
+                  <i class="fas fa-envelope"></i>vinhodaarabia@outlook.com
+                </h6>
+                <h6 class="text-contact-data">
+                  <i class="fas fa-phone-alt"></i>(31) 3456-7890 / (31)
+                  4002-8922
+                </h6>
+                <h6 class="text-contact-data">
+                  <i class="fas fa-map-marker-alt"></i>Av. Castelo Branco, nº
+                  123, Bairro República - João Monlevade
+                </h6>
+              </div>
+              <div class="formulario">
+                <Forms />
+              </div>
             </div>
 
             <div class="maps">
@@ -336,54 +334,43 @@ function App() {
               ></iframe>
             </div>
           </div>
-
-          <div class="basic">
-            <h6 class="text-contact-adress">
-              <i class="fas fa-map-marker-alt"></i>Av. Castelo Branco, nº 123,
-              Bairro República - João Monlevade
-            </h6>
-          </div>
-        </div>
         {/* CONTACT */}
 
         {/* FOOTER */}
-        {/* <Footer/> */}
-        <section class="footer">
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+          integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+          crossorigin="anonymous"
+></link>
+
+        <footer>
           <div class="container-footer">
-            <ul class="ul-footer">
-              <li class="grid-8-1">
-                <h1>VINHO DA ARÁBIA</h1>
-              </li>
+            <h3 id="nomeEmpresa">VINHO DA ARÁBIA</h3>
 
-              <li class="grid-4-1">
-                <p>Desenvolvido por DevCapulus</p>
-              </li>
+            <h6 id="copyright">Desenvolvido por DevCapulus</h6>
 
-              <li class="grid-4-2">
-                <a
-                  href="https://api.whatsapp.com/send?phone=5537991994465"
-                  class="redes-sociais"
-                >
-                  <FaWhatsapp size="40" color="E5AC23" />
-                </a>
+            <div class="redesocial">
+              <a
+                href="https://api.whatsapp.com/send?phone=5537991994465"
+                class="redes-sociais"
+              >
+                <i class="fab fa-whatsapp fa-lg"></i>
+              </a>
 
-                <a
-                  href="/https://www.facebook.com/unae.tupinambas"
-                  class="redes-sociais"
-                >
-                  <FaFacebook size="40" color="E5AC23" />
-                </a>
+              <a
+                href="/https://www.facebook.com/unae.tupinambas"
+                class="redes-sociais"
+              >
+                <i class="fab fa-facebook-square fa-lg"></i>
+              </a>
 
-                <a
-                  href="https://www.instagram.com/unae30/"
-                  class="redes-sociais"
-                >
-                  <FaInstagram size="40" color="E5AC23" />
-                </a>
-              </li>
-            </ul>
+              <a href="https://www.instagram.com/unae30/" class="redes-sociais">
+                <i class="fab fa-instagram fa-lg"></i>
+              </a>
+            </div>
           </div>
-        </section>
+        </footer>
         {/* Footer  */}
       </body>
     </div>
