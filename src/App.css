@@ -86,7 +86,7 @@ html {
 
 .containerBanner {
   width: 100%;
-  
+
   margin: auto;
   background: #f2e6d6;
 }
@@ -94,7 +94,7 @@ html {
 .containerBanner img {
   width: 100%;
   height: 64vh;
- 
+
   margin: 0;
 }
 
@@ -460,138 +460,82 @@ h4 {
 05. CONTATO
 *******************/
 
-/* .basic-title-contact{
+.basic-contact{
+  background: #f2e6d6;
   display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
   align-items: center;
   justify-content: center;
-  position: relative;
+}
+
+#contact{
+ background-color: #f2e6d6;
+ width: 100%;
+}
+
+.contact-dados{
+  display: flex;
+  align-items: stretch;
+  justify-content:center;
+}
+
+.uniao{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10rem;
+  margin-right: 5rem;
+}
+
+.title-contact{
+  background-color: #f2e6d6;
   color: #20100d;
   font-family: Sunflower;
   font-style: normal;
   font-weight: 200;
-  font-size: 4vw;
+  font-size: 8vw;
   text-decoration-line: underline;
   text-decoration-color: #b89b34;
-} */
-
-.basic-1{
-  background: #f2e6d6;
-  display: flex;
-  flex-direction: column;
-  padding-top: 0rem;
-  align-items: center;
-  justify-content: center;
-}
-
-.container-mapadata {
-  background: #f2e6d6;
-  display: flex;
-  padding-top: 2rem;
-  align-items: center;
-  justify-content: space-around;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  flex-wrap: wrap;
-}
-
-/* .text-contact {
-  color: #20100d;
-  font-family: Montserrat;
-  display: block;
   text-align: center;
-  font-size: 0.9em;
-  margin-top: 0.5em;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-} */
-
-
-
-.formulario {
-  background: #f2e6d6;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  /* margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0; */
-}
-
-
-.text-contact-adress{
-  color: #20100d;
-  font-family: Montserrat;
-  display: block;
-  text-align: center;
-  font-size: 1.2em;
-  margin-top: 0.1em;
-  margin-bottom: 1em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-}
-
-.text-contact-adress i{
-  margin-right: 1em;
-}
-
-.text-contact-nameVA {
-  background-color: #f2e6d6;
-  color: #20100d;
-  font-family: Montserrat;
-  text-decoration: underline;
-  display: block;
-  text-align: center;
-  font-size: 1.5em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
 }
 
 .text-contact-data {
   background-color: #f2e6d6;
   color: #20100d;
   font-family: Montserrat;
-  display: relative;
-  text-align: center;
-  font-size: 1.2em;
-  margin-top: 0.4em;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
+  font-size: 1.2vw;
   font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .text-contact-data i{
-  margin-right: 1em;
+  margin-right: 1rem;
 }
 
+.formulario {
+  background: #f2e6d6;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+}
 
 .maps {
-  background: #f2e6d6;
+  display: flex;
   position: relative;
-  overflow: hidden;
-  padding-bottom: 0;
+  padding-bottom: 5rem;
+  margin-top: 5rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2e6d6;
 }
 
 .maps iframe {
-  margin-top: 2rem;
   position: relative;
-  top: 0;
-  left: 0;
-  width: 30rem;
-  height: 20rem;
+  width: 83vw;
+  height: 60vh;
   border: none;
   justify-content: center;
   align-items: center;
@@ -600,79 +544,41 @@ h4 {
 /*******************
 05. FOOTER
 *******************/
+.container-footer {
+  display: flex;
+  flex-direction: row;
+}
 
-.footer{
+footer{
+  width: 100%;
   height: 16vh;
-  background-color: #20100D;
-  margin: 0;
-	padding: 0;
-	border: 0;
-  vertical-align: baseline;
-}
-
-.container-footer{
-    width: 100vw;
-    margin: 0 auto;
-    position: relative;
-}
-
-.ul-footer{
-  width: 100wh;
-  margin: 0;
-	padding: 0;
-	border: 0;
-	vertical-align: baseline;
-  list-style: none;
-}
-
-.grid-8-1{
-  width:33vw;
-	float: left;
-	/* margin-left: 3.5vw;
-	margin-right: 3.5vw; */
-}
-
-.grid-4-1{
-  width:33vw;
-  float: left;
-	/* margin-left: 3.5vw;
-	margin-right: 4vw; */
-}
-
-.grid-4-2{
-  width:33vw;
-  float: left;
-	/* margin-left: 3.5vw;
-	margin-right: 3.5vw; */
-}
-
-.footer h1{
-  color: #E5AC23;
-  font-weight: bold;
-  text-align: center;
-  justify-content: center;
-  margin-top: 50px;
+  background-color: #20100d;
   font-family: Montserrat;
-  vertical-align: baseline;
-  float: center;
-  /* float: left; */
-}
-
-.footer p{
-  color: #E5AC23;
+  color: #b89b34;
   font-weight: bold;
-  text-align: center;
-  justify-content: center;
-  margin-top: 50px;
-  font-family: Montserrat;
-  vertical-align: text-bottom;
-  float: center;
 }
 
-.redes-sociais{
-  justify-content: center;
-  margin-top: 50px;
-  float: center;
+#nomeEmpresa{
+  font-size: 2vw;
+  margin-top: 1.5em;
+  margin-left: 1em;
+}
+
+#copyright{
+  font-size: 1vw;
+  margin-top: 6em;
+  margin-left: 22em;
+  margin-right: 24em;
+}
+
+.redesocial{
+  margin-top: 2.3em;
+}
+
+
+ .icons-rs{
+  width:5vw;
+  height:5vh;
 }
 
 
@@ -727,4 +633,15 @@ h4 {
   .container-products .title {
     font-size: 2rem;
   }
+}
+
+
+@media (max-width: 768px) {
+
+  .contact-dados{
+    display: flex;
+    align-items: column;
+    
+  }
+   
 }

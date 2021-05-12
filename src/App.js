@@ -37,7 +37,6 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 
-
 function App() {
   var settings = {
     centerMode: true,
@@ -77,7 +76,6 @@ function App() {
     ],
   };
 
-
   return (
     <div className="App">
       <header className="App-header">
@@ -86,9 +84,17 @@ function App() {
             <img src={Logo} />
           </a>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-          <Menu />
-        </button>    
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <Menu />
+          </button>
           <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
@@ -116,12 +122,11 @@ function App() {
         </nav>
 
         <div id="home" className="containerBanner">
-            <Slideshow />
-        </div>  
+          <Slideshow />
+        </div>
       </header>
 
-      <body>         
-
+      <body>
         {/* Sobre a empresa */}
 
         <div id="about" class="basic">
@@ -326,23 +331,24 @@ function App() {
         ></link>
 
         <div id="contact">
-          <div class="basic">
-            <h1 class="basic-title">CONTATO</h1>
-          </div>
-
-          <div class="formulario">
-            <Forms />
-          </div>
-
-          <div class="container-mapadata">
-            <div class="basic-1">
-              <h5 class="text-contact-nameVA">VINHO DA ARÁBIA</h5>
-              <h6 class="text-contact-data">
-                <i class="fas fa-envelope"></i>vinhodaarabia@outlook.com
-              </h6>
-              <h6 class="text-contact-data">
-                <i class="fas fa-phone-alt"></i>(31) 3456-7890 / (31) 4002-8922
-              </h6>
+            <div class="contact-dados">
+              <div class="uniao">
+                <h1 class="title-contact">CONTATO</h1>
+                <h6 class="text-contact-data">
+                  <i class="fas fa-envelope"></i>vinhodaarabia@outlook.com
+                </h6>
+                <h6 class="text-contact-data">
+                  <i class="fas fa-phone-alt"></i>(31) 3456-7890 / (31)
+                  4002-8922
+                </h6>
+                <h6 class="text-contact-data">
+                  <i class="fas fa-map-marker-alt"></i>Av. Castelo Branco, nº
+                  123, Bairro República - João Monlevade
+                </h6>
+              </div>
+              <div class="formulario">
+                <Forms />
+              </div>
             </div>
 
             <div class="maps">
@@ -352,19 +358,39 @@ function App() {
               ></iframe>
             </div>
           </div>
-
-          <div class="basic">
-            <h6 class="text-contact-adress">
-              <i class="fas fa-map-marker-alt"></i>Av. Castelo Branco, nº 123,
-              Bairro República - João Monlevade
-            </h6>
-          </div>
-        </div>
         {/* CONTACT */}
 
         {/* FOOTER */}
-        {/* <Footer/> */}
-        <section class="footer">
+
+        <footer>
+          <div class="container-footer">
+            <h3 id="nomeEmpresa">VINHO DA ARÁBIA</h3>
+
+            <h6 id="copyright">Desenvolvido por DevCapulus</h6>
+
+            <div class="redesocial">
+              <a
+                href="https://api.whatsapp.com/send?phone=5537991994465"
+                class="redes-sociais"
+              >
+                <FaWhatsapp color="E5AC23" class="icons-rs" />
+              </a>
+
+              <a
+                href="/https://www.facebook.com/unae.tupinambas"
+                class="redes-sociais"
+              >
+                <FaFacebook color="E5AC23" class="icons-rs" />
+              </a>
+
+              <a href="https://www.instagram.com/unae30/" class="redes-sociais">
+                <FaInstagram color="E5AC23" class="icons-rs" />
+              </a>
+            </div>
+          </div>
+        </footer>
+
+        {/* <section class="footer">
           <div class="container-footer">
             <ul class="ul-footer">
               <li class="grid-8-1">
@@ -399,7 +425,7 @@ function App() {
               </li>
             </ul>
           </div>
-        </section>
+        </section> */}
         {/* Footer  */}
       </body>
     </div>

@@ -94,7 +94,7 @@ const SignupForm = () => {
           />
           
 
-          <button type="submit">Enviar Mensagem</button>
+          <center> <button type="submit">Enviar Mensagem</button> </center>
         </Form>
       </Formik>
     </>
