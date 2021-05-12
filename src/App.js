@@ -183,7 +183,7 @@ function App() {
 
         <div class="basic-2">
           <div class="basic-2-image">
-            <img src={img1} alt="icon-1" id="icon-1" />
+            <img src={img1} alt="icon-1" id="icon-1"/>
           </div>
           <div class="box-about" id="text-1">
             <div class="box-2">
@@ -214,13 +214,13 @@ function App() {
             </div>
           </div>
           <div class="basic-2-image">
-            <img src={img2} alt="icon-1" id="icon-1" />
+            <img src={img2} alt="icon-2" id="icon-2" />
           </div>
         </div>
 
         <div class="basic-2">
           <div class="basic-2-image">
-            <img src={img3} alt="icon-1" id="icon-1" />
+            <img src={img3} alt="icon-3" id="icon-3" />
           </div>
           <div class="box-about">
             <div class="box-2">

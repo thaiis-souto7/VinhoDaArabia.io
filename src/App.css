@@ -170,7 +170,8 @@ h4 {
   justify-content: center;
 }
 
-.basic-2-image {
+.basic-2-image{
+  overflow-x: hidden;
   margin-bottom: 3rem;
   margin-left: 2rem;
   margin-right: 2rem;
@@ -178,6 +179,7 @@ h4 {
   justify-content: center;
   display: flex;
 }
+
 
 .card {
   justify-content: center;
