@@ -603,7 +603,7 @@ footer{
   justify-content:center;
   align-items: center;
   font-size: 2vw;
-  /* margin-top: 0.4em; */
+  margin-left: 2.4em;
 }
 
 .fab{
@@ -702,7 +702,7 @@ footer{
   html {
     font-size: 100%;
   }
-  
+
   .contact-dados{
     display: flex;
     flex-direction: column;

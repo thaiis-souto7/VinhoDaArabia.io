@@ -5,23 +5,16 @@ input[type="textarea"],
 textarea,
 select {
   width: 40vw;
+  height: 6vh;
   background-color: #ffffff;
   font-family: Montserrat;
 }
 
-
-
-/* label {
-  margin-top: 1rem;
-}
-
-label.checkbox {
-  font-weight: normal;
-} */
-
 button[type="submit"] {
+  width: 12vw;
+  height: 8vh;
   margin-top: 1rem;
+  flex-wrap: nowrap;
   background-color:#b89b34;
-  display: block;
 }
 
