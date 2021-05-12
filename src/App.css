@@ -99,6 +99,17 @@ html {
 }
 
 
+@media only screen and (max-width: 425px) {
+  
+  .containerBanner img {
+    width: 100%;
+    height: 30vh;
+    margin: 0;
+  }
+
+}
+
+
 
 /*******************
 03. SOBRE NÓS
