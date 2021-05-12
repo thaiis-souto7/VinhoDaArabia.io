@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Fade } from "react-slideshow-image";
-import s1 from "./assets/s1.jpg";
+import s1 from "./assets/s1.png";
 import s2 from "./assets/s2.jpg";
-import s3 from "./assets/s3.jpg";
-import s4 from "./assets/s4.jpg";
+import s3 from "./assets/s3.png";
+import s4 from "./assets/s4.png";
 
 const CallbackExample = () => {
   const [previousIndex, setPreviousIndex] = useState(null);
@@ -30,7 +30,7 @@ const CallbackExample = () => {
       <div>
         <Fade {...properties}>
           <div style={{ ...style }}>
-            <img src={s4}></img>
+            <img src={s1}></img>
           </div>
           <div style={{ ...style }}>
             <img src={s2}></img>
@@ -39,7 +39,7 @@ const CallbackExample = () => {
             <img src={s3}></img>
           </div>
           <div style={{ ...style }}>
-            <img src={s1}></img>
+            <img src={s4}></img>
           </div>
         </Fade>
       </div>

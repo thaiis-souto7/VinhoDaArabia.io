@@ -147,13 +147,13 @@ function App() {
             <div class="card-body">
               <div class="card-title">Missão</div>
               <hr class="card-divisor"></hr>
-              <h5>Comprometer-se ao </h5>
+              <center><h5>Comprometer-se ao </h5>
               <h5>negócio para que as</h5>
               <h5>pessoas optem por</h5>
               <h5>nossos serviços e</h5>
               <h5>tenham orgulho de</h5>
               <h5>consumir, garantindo a</h5>
-              <h5>sustentabilidade.</h5>
+              <h5>sustentabilidade.</h5></center>
             </div>
           </div>
 
@@ -161,29 +161,13 @@ function App() {
             <div class="card-body">
               <div class="card-title">Visão</div>
               <hr class="card-divisor"></hr>
-              <ul>
-                <li>
-                  <h6>Transparência</h6>
-                </li>
-                <li>
-                  <h6>Sustentabilidade</h6>
-                </li>
-                <li>
-                  <h6>Empatia</h6>
-                </li>
-                <li>
-                  <h6>Integridade</h6>
-                </li>
-                <li>
-                  <h6>Respeito</h6>
-                </li>
-                <li>
-                  <h6>Inclusão</h6>
-                </li>
-                <li>
-                  <h6>Compromisso</h6>
-                </li>
-              </ul>
+                  <h6>- Transparência</h6>
+                  <h6>- Sustentabilidade</h6>
+                  <h6>- Empatia</h6>
+                  <h6>- Integridade</h6>
+                  <h6>- Respeito</h6>
+                  <h6>- Inclusão</h6>
+                  <h6>- Compromisso</h6>      
             </div>
           </div>
 
@@ -191,13 +175,13 @@ function App() {
             <div class="card-body">
               <div class="card-title">Valores</div>
               <hr class="card-divisor"></hr>
-              <h5>Ser referência no</h5>
+              <center><h5>Ser referência no</h5>
               <h5>mercado cafeeiro</h5>
               <h5>com qualidade</h5>
               <h5>garantida do</h5>
               <h5>produto e </h5>
               <h5>cumprindo com os </h5>
-              <h5>valores da empresa.</h5>
+              <h5>valores da empresa.</h5></center>
             </div>
           </div>
         </div>
@@ -206,9 +190,9 @@ function App() {
           <div class="basic-2-image">
             <img src={img1} alt="icon-1" id="icon-1" />
           </div>
-          <div class="container" id="text-1">
-            <div class="container-2">
-              <div class="container-text-1">
+          <div class="box-about" id="text-1">
+            <div class="box-2">
+              <div class="box-text-1">
                 <h4>Embora a planta tenha origem</h4>
                 <h4>africana, foi no Iêmen, região oeste</h4>
                 <h4>da Arábia, que ela começou a ser</h4>
@@ -221,9 +205,9 @@ function App() {
         </div>
 
         <div class="basic-2" id="reverse">
-          <div class="container">
-            <div class="container-2">
-              <div class="container-text-2">
+          <div class="box-about">
+            <div class="box-2">
+              <div class="box-text-2">
                 <h4>Conhecida como vinho da Arábia, </h4>
                 <h4>o café ganhou escala comercial no </h4>
                 <h4>séc. XIV, na região de Moka, principal</h4>
@@ -243,9 +227,9 @@ function App() {
           <div class="basic-2-image">
             <img src={img3} alt="icon-1" id="icon-1" />
           </div>
-          <div class="container">
-            <div class="container-2">
-              <div class="container-text-3">
+          <div class="box-about">
+            <div class="box-2">
+              <div class="box-text-3">
                 <h4>
                   Diante do fato histórico, temos o prazer de vincular nossa
                   marca e cultura, originando o nome da nossa empresa.
