@@ -1,5 +1,7 @@
 # Instale os seguintes pacotes:
+
 ==========================================
+
 npm i react-slick
 npm install slick-carousel --save
 npm install react-slick --save
@@ -14,4 +16,5 @@ npm install react-icons
 npm i react-icons
 npm install --save stat
 npm install --save styled-components
+
 ==========================================
