@@ -475,20 +475,37 @@ h4 {
 #contact{
  background-color: #f2e6d6;
  width: 100%;
+ padding-top: 5rem;
+ display:flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
 }
 
+/*União dos dados+título com o forms*/
 .contact-dados{
-  display: flex;
+  /* display: flex;
   align-items: stretch;
-  justify-content:center;
+  justify-content:center; */
+
+  /*Tste*/
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /*Fom do teste*/
 }
 
+/*União do título e os dados*/
 .uniao{
   display: flex;
-  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  margin-top: 10rem;
-  margin-right: 5rem;
+  flex-direction: column;
+  padding-right: 2.5em;
+  padding-left: 2.5em;
+  /* margin-left: 5rem; */
 }
 
 .title-contact{
@@ -519,10 +536,15 @@ h4 {
 }
 
 .formulario {
-  background: #f2e6d6;
+  background-color: #f2e6d6;
+
   display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  margin-left: 5rem;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
 }
 
 .maps {
@@ -579,7 +601,7 @@ footer{
   justify-content:center;
   align-items: center;
   font-size: 2vw;
-  margin-top: 0.4em;
+  /* margin-top: 0.4em; */
 }
 
 .fab{
@@ -669,5 +691,21 @@ footer{
   }
   .basic-title {
     font-size: 2rem;
+  }
+}
+
+/* @media contato*/
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 100%;
+  }
+  
+  .contact-dados{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    
   }
 }

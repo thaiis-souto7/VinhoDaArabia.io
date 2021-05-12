@@ -371,43 +371,6 @@ function App() {
             </div>
           </div>
         </footer>
-
-         {/* <section class="footer">
-          <div class="container-footer">
-            <ul class="ul-footer">
-              <li class="grid-8-1">
-                <h1>VINHO DA ARÁBIA</h1>
-              </li>
-
-              <li class="grid-4-1">
-                <p>Desenvolvido por DevCapulus</p>
-              </li>
-
-              <li class="grid-4-2">
-                <a
-                  href="https://api.whatsapp.com/send?phone=5537991994465"
-                  class="redes-sociais"
-                >
-                  <FaWhatsapp size="40" color="E5AC23" />
-                </a>
-
-                <a
-                  href="/https://www.facebook.com/unae.tupinambas"
-                  class="redes-sociais"
-                >
-                  <FaFacebook size="40" color="E5AC23" />
-                </a>
-
-                <a
-                  href="https://www.instagram.com/unae30/"
-                  class="redes-sociais"
-                >
-                  <FaInstagram size="40" color="E5AC23" />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section> */}
         {/* Footer  */}
       </body>
     </div>

@@ -26,6 +26,8 @@ input[type="textarea"] {
   display: block;
   align-items: center;
   justify-content: center;
+
+
 }
 
 
@@ -37,7 +39,7 @@ textarea,
 select {
   width: 50vw;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
 }
 
 
