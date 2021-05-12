@@ -33,9 +33,7 @@ import Slider from "react-slick";
 import Forms from "./components/Forms";
 
 //Import Footer
-import { FaWhatsapp } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+
 
 function App() {
   var settings = {
@@ -307,12 +305,6 @@ function App() {
         {/* PRODUCTS */}
 
         {/* CONTACT */}
-        <link
-          rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-          integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
-          crossorigin="anonymous"
-        ></link>
 
         <div id="contact">
             <div class="contact-dados">
@@ -345,6 +337,12 @@ function App() {
         {/* CONTACT */}
 
         {/* FOOTER */}
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+          integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+          crossorigin="anonymous"
+></link>
 
         <footer>
           <div class="container-footer">
@@ -357,24 +355,24 @@ function App() {
                 href="https://api.whatsapp.com/send?phone=5537991994465"
                 class="redes-sociais"
               >
-                <FaWhatsapp color="E5AC23" class="icons-rs" />
+                <i class="fab fa-whatsapp fa-lg"></i>
               </a>
 
               <a
                 href="/https://www.facebook.com/unae.tupinambas"
                 class="redes-sociais"
               >
-                <FaFacebook color="E5AC23" class="icons-rs" />
+                <i class="fab fa-facebook-square fa-lg"></i>
               </a>
 
               <a href="https://www.instagram.com/unae30/" class="redes-sociais">
-                <FaInstagram color="E5AC23" class="icons-rs" />
+                <i class="fab fa-instagram fa-lg"></i>
               </a>
             </div>
           </div>
         </footer>
 
-        {/* <section class="footer">
+         {/* <section class="footer">
           <div class="container-footer">
             <ul class="ul-footer">
               <li class="grid-8-1">

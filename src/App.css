@@ -575,14 +575,19 @@ footer{
 }
 
 .redesocial{
-  margin-top: 2.3em;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  font-size: 2vw;
+  margin-top: 0.4em;
+}
+
+.fab{
+  color:#b89b34;
+  margin-right: 0.5em;
 }
 
 
- .icons-rs{
-  width:5vw;
-  height:5vh;
-}
 
 
 /*******************
