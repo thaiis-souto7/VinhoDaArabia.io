@@ -1,4 +1,43 @@
-input[type="email"],
+@media only screen and (max-width: 600px) {
+  input[type="email"],
+  input[type="text"],
+  input[type="number"],
+  input[type="textarea"],
+  textarea,
+  select {
+    width: 65vw;
+    height: 6vh;
+    background-color: #ffffff;
+    font-family: Montserrat;
+  }
+}
+@media only screen and (min-width: 600px) {
+  input[type="email"],
+  input[type="text"],
+  input[type="number"],
+  input[type="textarea"],
+  textarea,
+  select {
+    width: 60vw;
+    height: 8vh;
+    background-color: #ffffff;
+    font-family: Montserrat;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  input[type="text"],
+  input[type="number"],
+  input[type="textarea"],
+  textarea,
+  select {
+    width: 40vw;
+    height: 6vh;
+    background-color: #ffffff;
+    font-family: Montserrat;
+  }
+}
+
+/* input[type="email"],
 input[type="text"],
 input[type="number"],
 input[type="textarea"],
@@ -8,7 +47,7 @@ select {
   height: 6vh;
   background-color: #ffffff;
   font-family: Montserrat;
-}
+} */
 
 /* button[type="button"] {
   width: 12vw;
@@ -17,4 +56,3 @@ select {
   flex-wrap: nowrap;
   background-color:#b89b34; 
 } */
-
