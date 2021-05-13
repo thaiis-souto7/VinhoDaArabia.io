@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Fade } from "react-slideshow-image";
-import s1 from "./assets/s1.png";
+import s1 from "./assets/s1.jpg";
 import s2 from "./assets/s2.jpg";
 import s3 from "./assets/s3.png";
 import s4 from "./assets/s4.png";
