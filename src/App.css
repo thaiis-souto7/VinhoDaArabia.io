@@ -163,7 +163,7 @@ h4 {
   justify-content: center;
   position: relative;
   color: #20100d;
-  font-family: Sunflower;
+  font-family: Open Sans;
   font-style: normal;
   font-weight: 200;
   font-size: 4vw;
@@ -309,7 +309,7 @@ h4 {
     justify-content: center;
     position: relative;
     color: #ffffff;
-    font-family: Sunflower;
+    font-family: Open Sans;
     font-style: normal;
     font-weight: 200;
     font-size: 6vw;
@@ -368,7 +368,7 @@ h4 {
     justify-content: center;
     position: relative;
     color: #ffffff;
-    font-family: Sunflower;
+    font-family: Open Sans;
     font-style: normal;
     font-weight: 200;
     font-size: 4vw;
@@ -428,7 +428,7 @@ h4 {
     justify-content: center;
     position: relative;
     color: #ffffff;
-    font-family: Sunflower;
+    font-family: Open Sans;
     font-style: normal;
     font-weight: 200;
     font-size: 4vw;
@@ -524,7 +524,7 @@ h4 {
 .title-contact{
   background-color: #f2e6d6;
   color: #20100d;
-  font-family: Sunflower;
+  font-family: Open Sans;
   font-style: normal;
   font-weight: 200;
   font-size: 6.5vw;
@@ -669,7 +669,7 @@ footer{
   }
 }
 
-@media (max-width: 1024px) {
+@media (width: 1024px) {
   html {
     font-size: 100%;
   }

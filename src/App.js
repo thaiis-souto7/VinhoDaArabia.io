@@ -359,7 +359,7 @@ function App() {
               </a>
 
               <a
-                href="/https://www.facebook.com/unae.tupinambas"
+                href="https://www.facebook.com/unae.tupinambas"
                 class="redes-sociais"
               >
                 <i class="fab fa-facebook-square fa-lg"></i>

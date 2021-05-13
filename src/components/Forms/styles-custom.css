@@ -10,11 +10,11 @@ select {
   font-family: Montserrat;
 }
 
-button[type="submit"] {
+/* button[type="button"] {
   width: 12vw;
   height: 8vh;
   margin-top: 1rem;
   flex-wrap: nowrap;
-  background-color:#b89b34;
-}
+  background-color:#b89b34; 
+} */
 
